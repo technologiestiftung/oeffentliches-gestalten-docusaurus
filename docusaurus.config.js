@@ -69,7 +69,11 @@ const config = {
             position: 'left',
             label: 'Handbuch',
           },
-          //{to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Methodenbox', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -120,7 +124,7 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
       },
       prism: {
         theme: lightCodeTheme,
