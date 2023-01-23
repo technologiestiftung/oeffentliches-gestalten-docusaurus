@@ -1,44 +1,91 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@layer base {
+  @font-face {
+    font-family: "National";
+    font-style: normal;
+    font-weight: 400;
+    src: local("National"),
+      url(../assets/fonts/NationalWeb-Regular.woff2) format("woff2"),
+      url(../assets/fonts/NationalWeb-Regular.woff) format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "National";
+    font-style: italic;
+    font-weight: 400;
+    src: local("National Regular Italic"),
+      url(../assets/fonts/NationalWeb-RegularItalic.woff2) format("woff2"),
+      url(../assets/fonts/NationalWeb-RegularItalic.woff) format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "National";
+    font-style: normal;
+    font-weight: 800;
+    src: local("National Extrabold"),
+      url(../assets/fonts/NationalWeb-Extrabold.woff2) format("woff2"),
+      url(../assets/fonts/NationalWeb-Extrabold.woff) format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "National";
+    font-style: italic;
+    font-weight: 800;
+    src: local("National Extrabold Italic"),
+      url(../assets/fonts/NationalWeb-ExtraboldItalic.woff2) format("woff2"),
+      url(../assets/fonts/NationalWeb-ExtraboldItalic.woff) format("woff");
+    font-display: swap;
+  }
 
-:root {
-  --ifm-color-primary: #2f2fa2;
-  --ifm-color-primary-dark: #2a2a92;
-  --ifm-color-primary-darker: #28288a;
-  --ifm-color-primary-darkest: #212171;
-  --ifm-color-primary-light: #3434b2;
-  --ifm-color-primary-lighter: #3636ba;
-  --ifm-color-primary-lightest: #4646c9;
+  /**
+   * Any CSS included here will be global. The classic template
+   * bundles Infima by default. Infima is a CSS framework designed to
+   * work well for content-centric websites.
+   */
 
-  --ifm-color-gray-100: #d7d8df;
-  --ifm-color-gray-200: #b0b0bf;
-  --ifm-color-gray-300: #8889a0;
-  --ifm-color-gray-400: #616180;
-  --ifm-color-gray-500: #393a60;
-  --ifm-color-gray-600: #2e2e4d;
-  --ifm-color-gray-700: #22233a;
-  --ifm-color-gray-800: #171726;
-  --ifm-color-gray-900: #0b0c13;
+  :root {
+    --ifm-color-primary: #2f2fa2;
+    --ifm-color-primary-dark: #2a2a92;
+    --ifm-color-primary-darker: #28288a;
+    --ifm-color-primary-darkest: #212171;
+    --ifm-color-primary-light: #3434b2;
+    --ifm-color-primary-lighter: #3636ba;
+    --ifm-color-primary-lightest: #4646c9;
 
-  --ifm-color-content: var(--ifm-color-gray-700);
-  --ifm-color-content-secondary: #f64c72;
+    --ifm-color-gray-100: #d7d8df;
+    --ifm-color-gray-200: #b0b0bf;
+    --ifm-color-gray-300: #8889a0;
+    --ifm-color-gray-400: #616180;
+    --ifm-color-gray-500: #393a60;
+    --ifm-color-gray-600: #2e2e4d;
+    --ifm-color-gray-700: #22233a;
+    --ifm-color-gray-800: #171726;
+    --ifm-color-gray-900: #0b0c13;
 
-  --ifm-font-color-secondary: var(--ifm-color-content-secondary);
+    --ifm-color-content: var(--ifm-color-gray-700);
+    --ifm-color-content-secondary: #f64c72;
 
-  --ifm-heading-color: var(--ifm-color-primary);
-}
+    --ifm-font-color-secondary: var(--ifm-color-content-secondary);
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: inherit;
+    --ifm-heading-color: var(--ifm-color-primary);
+    --ifm-font-family-base: "National", sans-serif;
+  }
+
+  html,
+  body {
+    font-size: 20px;
+    line-height: 28px;
+    @apply font-sans;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+  }
 }
