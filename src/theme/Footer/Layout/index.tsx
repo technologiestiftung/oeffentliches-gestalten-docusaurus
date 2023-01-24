@@ -22,7 +22,7 @@ export default function FooterLayout({
             Entstanden durch die Zusammenarbeit von
           </p>
           <div className="flex gap-x-3">
-            <CitylabLogo className="w-36 h-auto pr-3" />
+            <CitylabLogo className="w-44 h-auto pr-3" />
             <P4tLogo className="w-32 h-auto pr-3" />
           </div>
         </div>
