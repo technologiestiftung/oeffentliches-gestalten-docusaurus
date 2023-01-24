@@ -47,26 +47,59 @@
    */
 
   :root {
-    --ifm-color-primary: #2f2fa2;
-    --ifm-color-primary-dark: #2a2a92;
-    --ifm-color-primary-darker: #28288a;
-    --ifm-color-primary-darkest: #212171;
-    --ifm-color-primary-light: #3434b2;
-    --ifm-color-primary-lighter: #3636ba;
-    --ifm-color-primary-lightest: #4646c9;
+    --blue-50: 244 244 250;
+    --blue-100: 219 219 241;
+    --blue-200: 172 172 218;
+    --blue-300: 151 151 209;
+    --blue-400: 111 111 198;
+    --blue-500: 47 47 162;
+    --blue-600: 28 28 148;
+    --blue-700: 6 6 119;
+    --blue-800: 0 0 91;
+    --blue-900: 1 1 60;
 
-    --ifm-color-gray-100: #d7d8df;
-    --ifm-color-gray-200: #b0b0bf;
-    --ifm-color-gray-300: #8889a0;
-    --ifm-color-gray-400: #616180;
-    --ifm-color-gray-500: #393a60;
-    --ifm-color-gray-600: #2e2e4d;
-    --ifm-color-gray-700: #22233a;
-    --ifm-color-gray-800: #171726;
-    --ifm-color-gray-900: #0b0c13;
+    --magenta-50: 249 236 239;
+    --magenta-100: 255 221 229;
+    --magenta-200: 253 202 214;
+    --magenta-300: 250 165 184;
+    --magenta-400: 251 130 157;
+    --magenta-500: 246 76 114;
+    --magenta-600: 226 55 93;
+    --magenta-700: 203 53 86;
+    --magenta-800: 175 38 68;
+    --magenta-900: 142 11 40;
+
+    --grey-50: 236 236 239;
+    --grey-100: 219 219 226;
+    --grey-200: 196 196 208;
+    --grey-300: 156 157 176;
+    --grey-400: 119 120 155;
+    --grey-500: 57 58 96;
+    --grey-600: 29 30 66;
+    --grey-700: 16 17 43;
+    --grey-800: 16 16 25;
+    --grey-900: 14 14 20;
+
+    --ifm-color-primary: rgb(var(--blue-500));
+    --ifm-color-primary-dark: rgb(var(--blue-600));
+    --ifm-color-primary-darker: rgb(var(--blue-700));
+    --ifm-color-primary-darkest: rgb(var(--blue-800));
+    --ifm-color-primary-light: rgb(var(--blue-200));
+    --ifm-color-primary-lighter: rgb(var(--blue-100));
+    --ifm-color-primary-lightest: rgb(var(--blue-50));
+
+    --ifm-color-gray-100: rgb(var(--grey-100));
+    --ifm-color-gray-200: rgb(var(--grey-200));
+    --ifm-color-gray-300: rgb(var(--grey-300));
+    --ifm-color-gray-400: rgb(var(--grey-400));
+    --ifm-color-gray-500: rgb(var(--grey-500));
+    --ifm-color-gray-600: rgb(var(--grey-600));
+    --ifm-color-gray-700: rgb(var(--grey-700));
+    --ifm-color-gray-800: rgb(var(--grey-800));
+    --ifm-color-gray-900: rgb(var(--grey-900));
 
     --ifm-color-content: var(--ifm-color-gray-700);
-    --ifm-color-content-secondary: #f64c72;
+    --ifm-color-content-secondary: rgb(var(--magenta-500));
 
     --ifm-font-color-secondary: var(--ifm-color-content-secondary);
 
