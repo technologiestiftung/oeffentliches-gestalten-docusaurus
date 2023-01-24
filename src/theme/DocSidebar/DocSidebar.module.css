@@ -141,11 +141,11 @@
 
 /* Sidebar border */
 @media (min-width: 997px) {
-  :global(.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module) {
+  :global(.theme-doc-sidebar-container) {
     @apply !border-none relative;
   }
 
-  :global(.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module:before) {
+  :global(.theme-doc-sidebar-container:before) {
     content: "";
     width: 1px;
     @apply h-full absolute top-0 right-0 bg-gradient-to-b from-grey-50 to-white;
