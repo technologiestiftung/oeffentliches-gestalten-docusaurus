@@ -127,11 +127,7 @@ const config = {
     credits: {
       concept: {
         title: "Konzept",
-        people: [
-          "Caroline Paulick-Thiel",
-          "Benjmanin Seibel",
-          "Joshua Pacheco",
-        ],
+        people: ["Caroline Paulick-Thiel", "Benjamin Seibel", "Joshua Pacheco"],
       },
       authors: {
         title: "Autorinnen",
@@ -139,12 +135,17 @@ const config = {
       },
       editing: {
         title: "Redaktion",
-        people: ["Joshua Pacheco", "Benjmanin Seibel"],
+        people: ["Joshua Pacheco", "Benjamin Seibel"],
       },
       illustration: {
         title: "Illustration",
         people: [{ name: "Andrea Ramírez Sabat", url: "www.andrea-rmz.com" }],
       },
+    },
+    socials: {
+      twitter: "https://twitter.com/citylabberlin",
+      instagram: "https://www.instagram.com/citylabbln/",
+      linkedin: "https://www.linkedin.com/company/technologiestiftung/",
     },
   },
 };
