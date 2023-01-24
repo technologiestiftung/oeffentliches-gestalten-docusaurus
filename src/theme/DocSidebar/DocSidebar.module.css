@@ -1,0 +1,22 @@
+/* SIDEBAR_OVERRIDES ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Chapter parent */
+:global(.theme-doc-sidebar-item-link-level-1 .menu__link),
+:global(.theme-doc-sidebar-item-category-level-1 .menu__link--sublist) {
+  @apply pl-10 relative leading-4 pb-2;
+}
+
+/* Chapter symbol */
+:global(.theme-doc-sidebar-item-link-level-1 .menu__link:before),
+:global(.theme-doc-sidebar-item-category-level-1 .menu__link--sublist:before) {
+  content: "";
+  @apply absolute top-1.5 left-1.5 w-4 h-4 ring-2 ring-blue-500 rounded-full;
+}
+
+:global(.menu__list .menu__list) {
+  @apply pl-14;
+}
+
+:global(.menu__link--sublist-caret:after) {
+  @apply absolute top-1.5 right-2;
+}

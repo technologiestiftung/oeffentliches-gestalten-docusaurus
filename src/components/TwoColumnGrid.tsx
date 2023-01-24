@@ -6,11 +6,8 @@ export const TwoColumnGrid: FC<{ gap?: string; children: ReactNode }> = ({
 }) => {
   return (
     <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
-        gap: gap,
-      }}
+      className="grid grid-cols-2"
+      style={{ gap: gap }}
     >
       {children}
     </div>
