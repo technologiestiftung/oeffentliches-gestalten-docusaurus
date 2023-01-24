@@ -1,22 +1,153 @@
 /* SIDEBAR_OVERRIDES ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Chapter parent */
+:global(.theme-doc-sidebar-item-category-level-1 > .menu__list) {
+  @apply pb-6;
+}
+
 :global(.theme-doc-sidebar-item-link-level-1 .menu__link),
 :global(.theme-doc-sidebar-item-category-level-1 .menu__link--sublist) {
-  @apply pl-10 relative leading-4 pb-2;
+  @apply pl-7 relative leading-4 pb-2;
+}
+
+:global(.menu__list-item.theme-doc-sidebar-item-category-level-1) {
+  @apply relative;
+}
+
+:global(.menu__list-item.theme-doc-sidebar-item-category-level-1:before) {
+  content: "";
+  @apply bg-grey-500 absolute top-2.5 left-[14px] w-[1.8px] h-[calc(100%+4px)] transition-all;
+}
+:global(.menu__list-item.menu__list-item--collapsed.theme-doc-sidebar-item-category-level-1:last-child:before) {
+  @apply h-0;
 }
 
 /* Chapter symbol */
 :global(.theme-doc-sidebar-item-link-level-1 .menu__link:before),
 :global(.theme-doc-sidebar-item-category-level-1 .menu__link--sublist:before) {
   content: "";
-  @apply absolute top-1.5 left-1.5 w-4 h-4 ring-2 ring-blue-500 rounded-full;
+  @apply absolute top-2.5 left-1.5 w-3 h-3 ring-2 ring-grey-500 bg-white rounded-full;
 }
 
+:global(.solution-phase.theme-doc-sidebar-item-link-level-1 .menu__link:before),
+:global(.solution-phase.theme-doc-sidebar-item-category-level-1 .menu__link--sublist:before),
+:global(.problem-phase.theme-doc-sidebar-item-link-level-1 .menu__link:before),
+:global(.problem-phase.theme-doc-sidebar-item-category-level-1 .menu__link--sublist:before) {
+  @apply rounded-none rotate-45 w-2.5 h-2.5 left-[8.5px];
+}
+
+:global(.problem-phase .menu__list-item-collapsible .menu__link),
+:global(.problem-phase .menu__list-item-collapsible .menu__link--sublist) {
+  @apply text-magenta-500;
+}
+:global(.solution-phase .menu__list-item-collapsible .menu__link),
+:global(.solution-phase .menu__list-item-collapsible .menu__link--sublist) {
+  @apply text-blue-500;
+}
+
+:global(.menu__link--active) {
+  @apply text-[inherit];
+}
+
+:global(.menu__list-item:not(:first-child)) {
+  @apply m-0;
+}
+
+:global(.menu__link--active:before),
+:global(.theme-doc-sidebar-item-link-level-1 .menu__link--active:before),
+:global(.theme-doc-sidebar-item-category-level-1 .menu__link--active:before) {
+  @apply bg-grey-500;
+}
+
+:global(.problem-phase .menu__link--active:before),
+:global(.problem-phase.theme-doc-sidebar-item-link-level-1 .menu__link--active:before),
+:global(.problem-phase.theme-doc-sidebar-item-category-level-1 .menu__link--active:before) {
+  @apply bg-magenta-500;
+}
+:global(.solution-phase .menu__link--active:before),
+:global(.solution-phase.theme-doc-sidebar-item-link-level-1 .menu__link--active:before),
+:global(.solution-phase.theme-doc-sidebar-item-category-level-1 .menu__link--active:before) {
+  @apply bg-blue-500;
+}
+:global(.intro .menu__link:before),
+:global(.intro.theme-doc-sidebar-item-link-level-1 .menu__link:before),
+:global(.intro.theme-doc-sidebar-item-category-level-1 .menu__link:before) {
+  @apply ring-grey-300 w-3.5 h-3.5 top-[9px] left-[7px] bg-no-repeat;
+  background-image: url('../../assets/icons/flag-grey.svg');
+  background-position: center 3px;
+}
+:global(.intro .menu__link--active:before),
+:global(.intro.theme-doc-sidebar-item-link-level-1 .menu__link--active:before),
+:global(.intro.theme-doc-sidebar-item-category-level-1 .menu__link--active:before) {
+  @apply bg-grey-300 ring-0 w-4 h-4 top-2 left-1 bg-no-repeat;
+  background-image: url('../../assets/icons/flag.svg');
+  background-position: center bottom;
+}
+
+:global(.problem-phase.menu__list-item.theme-doc-sidebar-item-category-level-1:before) {
+  @apply bg-magenta-500;
+}
+:global(.solution-phase.menu__list-item.theme-doc-sidebar-item-category-level-1:before) {
+  @apply bg-blue-500;
+}
+:global(.intro.menu__list-item.theme-doc-sidebar-item-category-level-1:before) {
+  @apply bg-grey-300;
+}
+
+:global(.problem-phase .menu__link:before),
+:global(.problem-phase .menu__link--sublist:before) {
+  @apply ring-magenta-500;
+}
+:global(.solution-phase .menu__link:before),
+:global(.solution-phase .menu__link--sublist:before) {
+  @apply ring-blue-500;
+}
+:global(.intro .menu__link:before),
+:global(.intro .menu__link--sublist:before) {
+  @apply ring-grey-300;
+}
+
+/* Menu link */
+:global(.menu__link--active:not(.menu__link--sublist)),
+:global(.menu__list-item-collapsible--active) {
+  @apply bg-transparent font-bold;
+}
+
+/* Nested menu link */
 :global(.menu__list .menu__list) {
-  @apply pl-14;
+  @apply pl-7;
 }
 
+/* Arrow/Caret */
 :global(.menu__link--sublist-caret:after) {
-  @apply absolute top-1.5 right-2;
+  @apply absolute top-1.5 right-2 rotate-90;
+}
+
+:global(.menu__caret:before),
+:global(.menu__link--sublist-caret:after) {
+  @apply opacity-40;
+}
+
+@media (min-width: 997px) {
+  :global(.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module) {
+    padding: 1rem;
+  }
+  @supports (scrollbar-gutter: stable) {
+    :globa(.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module) {
+      padding: 1rem 0 1rem 1rem;
+    }
+  }
+}
+
+/* Sidebar border */
+@media (min-width: 997px) {
+  :global(.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module) {
+    @apply !border-none relative;
+  }
+
+  :global(.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module:before) {
+    content: "";
+    width: 1px;
+    @apply h-full absolute top-0 right-0 bg-gradient-to-b from-grey-50 to-white;
+  }
 }

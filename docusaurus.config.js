@@ -79,7 +79,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'vorwort',
+            docId: 'einfuehrung/vorwort',
             position: 'left',
             label: 'Handbuch',
           },
@@ -138,12 +138,12 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+      }
     }),
 };
 

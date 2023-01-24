@@ -105,13 +105,15 @@
 
     --ifm-heading-color: var(--ifm-color-primary);
     --ifm-font-family-base: "National", sans-serif;
+
+    --doc-sidebar-width: max(20vw,340px) !important;
   }
 
   html,
   body {
     font-size: 20px;
     line-height: 28px;
-    @apply font-sans;
+    @apply font-sans text-grey-500;
   }
 
   h2,
@@ -120,5 +122,9 @@
   h5,
   h6 {
     color: inherit;
+  }
+
+  .container {
+    padding: max(1rem,2vh) max(1rem,5vw);
   }
 }
