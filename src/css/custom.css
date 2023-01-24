@@ -124,7 +124,7 @@
     color: inherit;
   }
 
-  .container {
+  main > .container {
     padding: max(1rem,2vh) max(1rem,5vw);
   }
 }
