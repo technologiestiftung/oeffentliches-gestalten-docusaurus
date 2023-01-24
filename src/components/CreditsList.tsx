@@ -17,7 +17,7 @@ export interface CreditsListProps {
 const CreditsSection: FC<CreditsItemType> = ({ title, people }) => {
   return (
     <div className="col-span-6 md:col-span-3 lg:col-span-2 pr-6">
-      <h4 className="mb-2">{title}</h4>
+      <h4 className="mb-2 text-grey-500">{title}</h4>
       <ul className="list-none p-0">
         {people.map((person) => {
           return (

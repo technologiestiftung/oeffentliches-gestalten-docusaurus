@@ -48,7 +48,7 @@ export default function FooterLayout({
         >
           {copyright && (
             <div className="lg:col-start-2 col-span-6 md:col-span-3 lg:col-span-2 pr-6 text-sm">
-              <h4 className="mb-2">Copyright</h4>
+              <h4 className="mb-2 text-grey-500">Copyright</h4>
               {copyright}
               <CopyrightIcons className="mt-2" />
             </div>
