@@ -110,7 +110,8 @@ const config = {
             href: "https://www.technologiestiftung-berlin.de/impressum",
           },
         ],
-        copyright: `CC BY-NC-SA 4.0 ${new Date().getFullYear()} Technologiestiftung Berlin`,
+        copyright:
+          "Dieses Werk ist lizenziert unter der Creative Commons Attribution-NonCommercial ShareAlike 4.0 International (CC BY-NC-SA 4.0).",
       },
       colorMode: {
         defaultMode: "light",
@@ -122,6 +123,30 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  customFields: {
+    credits: {
+      concept: {
+        title: "Konzept",
+        people: [
+          "Caroline Paulick-Thiel",
+          "Benjmanin Seibel",
+          "Joshua Pacheco",
+        ],
+      },
+      authors: {
+        title: "Autorinnen",
+        people: ["Caroline Paulick-Thiel", "Henrike Arlt", "Bettina Köbler"],
+      },
+      editing: {
+        title: "Redaktion",
+        people: ["Joshua Pacheco", "Benjmanin Seibel"],
+      },
+      illustration: {
+        title: "Illustration",
+        people: [{ name: "Andrea Ramírez Sabat", url: "www.andrea-rmz.com" }],
+      },
+    },
+  },
 };
 
 module.exports = config;
