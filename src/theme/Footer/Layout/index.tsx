@@ -22,7 +22,7 @@ export default function FooterLayout({
           <p className="mb-4 text-sm">
             Entstanden durch die Zusammenarbeit von
           </p>
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 gap-y-6 flex-wrap">
             <VisualLink
               url="https://citylab-berlin.org"
               title="CityLAB Berlin"
