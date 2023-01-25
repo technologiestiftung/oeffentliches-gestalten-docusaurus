@@ -6,6 +6,7 @@ import CitylabLogo from "@site/static/img/logo_citylab.svg";
 import P4tLogo from "@site/static/img/logo_p4t.svg";
 import TsbLogo from "@site/static/img/logo_tsb.svg";
 import SenatskanzleiLogo from "@site/static/img/logo_senatskanzlei.svg";
+import { VisualLink } from "@site/src/components/VisualLink";
 
 export type FooterLayoutProps = Props & { credits: ReactNode };
 
@@ -22,8 +23,16 @@ export default function FooterLayout({
             Entstanden durch die Zusammenarbeit von
           </p>
           <div className="flex gap-x-3">
-            <CitylabLogo className="w-44 h-auto pr-3" />
-            <P4tLogo className="w-32 h-auto pr-3" />
+            <VisualLink
+              url="https://citylab-berlin.org"
+              title="CityLAB Berlin"
+              visual={<CitylabLogo className="w-44 h-auto pr-3" />}
+            />
+            <VisualLink
+              url="https://www.politicsfortomorrow.eu/"
+              title="Politics for Tomorrow"
+              visual={<P4tLogo className="w-32 h-auto pr-3" />}
+            />
           </div>
         </div>
         <div
@@ -34,11 +43,19 @@ export default function FooterLayout({
         >
           <div>
             <p className="mb-4 text-sm">Ein Projekt der</p>
-            <TsbLogo className="w-28 h-auto" />
+            <VisualLink
+              url="https://www.technologiestiftung-berlin.de/"
+              title="Technologiestiftung Berlin"
+              visual={<TsbLogo className="w-28 h-auto" />}
+            />
           </div>
           <div>
             <p className="mb-4 text-sm">Gefördert durch</p>
-            <SenatskanzleiLogo className="w-24 h-auto" />
+            <VisualLink
+              url="https://www.berlin.de/rbmskzl/"
+              title="Die Regierende Bürgermeisterin von Berlin - Senatskanzlei"
+              visual={<SenatskanzleiLogo className="w-24 h-auto" />}
+            />
           </div>
         </div>
       </div>

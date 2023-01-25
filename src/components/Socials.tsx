@@ -3,7 +3,7 @@ import InstagramIcon from "@site/static/img/icons/instagram.svg";
 import TwitterIcon from "@site/static/img/icons/twitter.svg";
 import LinkedinIcon from "@site/static/img/icons/linkedin.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { LinkIcon } from "./LinkIcon";
+import { VisualLink } from "./VisualLink";
 
 export interface SocialsProps {
   instagram?: string;
@@ -11,6 +11,8 @@ export interface SocialsProps {
   linkedin?: string;
   className?: string;
 }
+
+const ICON_CLASSES = "text-grey-500 transition-colors hover:text-blue-500";
 
 export const Socials: FC<SocialsProps> = ({ className }) => {
   const { siteConfig } = useDocusaurusContext();
@@ -24,24 +26,30 @@ export const Socials: FC<SocialsProps> = ({ className }) => {
   return (
     <div className={className}>
       {socials.instagram && (
-        <LinkIcon
+        <VisualLink
           url={socials.instagram}
           title="Instagram"
-          icon={<InstagramIcon />}
+          visual={<InstagramIcon />}
+          className={ICON_CLASSES}
+          newTab={true}
         />
       )}
       {socials.twitter && (
-        <LinkIcon
+        <VisualLink
           url={socials.twitter}
           title="Twitter"
-          icon={<TwitterIcon />}
+          visual={<TwitterIcon />}
+          className={ICON_CLASSES}
+          newTab={true}
         />
       )}
       {socials.linkedin && (
-        <LinkIcon
+        <VisualLink
           url={socials.linkedin}
           title="LinkedIn"
-          icon={<LinkedinIcon />}
+          visual={<LinkedinIcon />}
+          className={ICON_CLASSES}
+          newTab={true}
         />
       )}
     </div>
