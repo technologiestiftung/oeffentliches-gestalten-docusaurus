@@ -38,7 +38,7 @@ export default function FooterLayout({
         <div
           className={clsx(
             "lg:col-start-8 col-span-12 md:col-span-6 lg:col-span-4",
-            "flex gap-x-6 md:grid md:gap-x-0 grid-cols-2"
+            "flex gap-x-6 flex-wrap gap-y-6 md:grid md:gap-x-0 grid-cols-2"
           )}
         >
           <div>
