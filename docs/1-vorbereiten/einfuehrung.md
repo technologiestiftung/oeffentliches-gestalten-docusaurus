@@ -21,4 +21,32 @@ In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessver
 
 ## Methoden
 
-...
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams. Das Ziel der Vorbereitungsphase ist es, einen eingängigen kommunizierbaren Plan für die gesamte Unternehmung zu erstellen. Dieser Plan dient schließlich als Ausgangspunkt für einen gelungenen Start und bietet im Innovationsprozess Orientierung.
+
+> Hi there, I am a blockquote!
+
+### Heading 3
+
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams.
+
+- hjskdfhjdfjshdfj
+- ksdjkjfhsdfjsfhkjsdhfhfd
+- liujtnbjhbjsjhdjfsdkf
+- fkjsdhfjksdf
+
+#### Heading 4
+
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams.
+
+1. kldvjsdkff
+2. dnsksddsfsj
+3. dfdsfsdfdsfg
+4. dsfddfgdgdggd
+
+##### Heading 5
+
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams.
+
+###### Heading 6
+
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams.
