@@ -15,8 +15,8 @@ export default function FooterLayout({
   copyright,
 }: FooterLayoutProps): JSX.Element {
   return (
-    <footer className={clsx("pt-10", "bg-blue-50")}>
-      <div className={clsx("p-6", "grid gap-y-14 grid-cols-12")}>
+    <footer className={clsx("bg-blue-50", "border-t border-blue-200")}>
+      <div className={clsx("px-6 py-12", "grid gap-y-14 grid-cols-12")}>
         <div className="lg:col-start-2 col-span-12 md:col-span-6 lg:col-span-4">
           <p className="mb-4 text-sm">
             Entstanden durch die Zusammenarbeit von
@@ -33,22 +33,28 @@ export default function FooterLayout({
           )}
         >
           <div>
-            <p className="text-sm">Ein Projekt der</p>
+            <p className="mb-4 text-sm">Ein Projekt der</p>
             <TsbLogo className="w-28 h-auto" />
           </div>
           <div>
-            <p className="text-sm">Gefördert durch</p>
+            <p className="mb-4 text-sm">Gefördert durch</p>
             <SenatskanzleiLogo className="w-24 h-auto" />
           </div>
         </div>
       </div>
-      <div className="mt-8 border-t border-blue-300">
+      <div className="border-t border-blue-100">
         <div
-          className={clsx("grid gap-y-6 grid-cols-12", "p-6", "text-grey-500")}
+          className={clsx(
+            "grid gap-y-6 grid-cols-12",
+            "px-6 py-12",
+            "text-grey-500"
+          )}
         >
           {copyright && (
             <div className="lg:col-start-2 col-span-6 md:col-span-3 lg:col-span-2 pr-6 text-sm">
-              <h4 className="mb-2 text-grey-500">Copyright</h4>
+              <h4 className={clsx("mb-2", "font-bold text-base text-grey-500")}>
+                Copyright
+              </h4>
               {copyright}
               <CopyrightIcons className="mt-2" />
             </div>
