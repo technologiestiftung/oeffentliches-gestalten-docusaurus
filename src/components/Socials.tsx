@@ -3,6 +3,7 @@ import InstagramIcon from "@site/static/img/icons/instagram.svg";
 import TwitterIcon from "@site/static/img/icons/twitter.svg";
 import LinkedinIcon from "@site/static/img/icons/linkedin.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { LinkIcon } from "./LinkIcon";
 
 export interface SocialsProps {
   instagram?: string;
@@ -10,24 +11,6 @@ export interface SocialsProps {
   linkedin?: string;
   className?: string;
 }
-
-const LinkIcon: FC<{
-  url: string;
-  title: string;
-  icon: ReactNode;
-}> = ({ url, title, icon }) => {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={title}
-      className="text-grey-500 transition-colors hover:text-blue-500"
-    >
-      {icon}
-    </a>
-  );
-};
 
 export const Socials: FC<SocialsProps> = ({ className }) => {
   const { siteConfig } = useDocusaurusContext();
