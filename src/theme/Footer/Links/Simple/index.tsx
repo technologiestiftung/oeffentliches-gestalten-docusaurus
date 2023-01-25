@@ -29,7 +29,7 @@ export default function FooterLinksSimple({ links }: Props): JSX.Element {
       <div
         className={clsx(
           "lg:col-start-2 col-span-12 md:col-span-8",
-          "flex gap-4",
+          "flex gap-x-4 gap-y-2 flex-wrap",
           "text-sm"
         )}
       >
