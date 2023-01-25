@@ -6,10 +6,7 @@ import FooterLinks from "@theme/Footer/Links";
 import FooterLogo from "@theme/Footer/Logo";
 import FooterCopyright from "@theme/Footer/Copyright";
 import FooterLayout from "@theme/Footer/Layout";
-import {
-  CreditsList,
-  CreditsListProps,
-} from "@site/src/components/CreditsList";
+import { Credits, CreditsProps } from "@site/src/components/Credits";
 
 function Footer(): JSX.Element | null {
   const { footer } = useThemeConfig();
@@ -27,9 +24,7 @@ function Footer(): JSX.Element | null {
       links={links && links.length > 0 && <FooterLinks links={links} />}
       // @ts-ignore
       credits={
-        <CreditsList
-          credits={customFields.credits as CreditsListProps["credits"]}
-        />
+        <Credits credits={customFields.credits as CreditsProps["credits"]} />
       }
       logo={logo && <FooterLogo logo={logo} />}
       copyright={copyright && <FooterCopyright copyright={copyright} />}

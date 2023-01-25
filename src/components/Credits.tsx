@@ -1,22 +1,25 @@
+import clsx from "clsx";
 import React, { FC } from "react";
 
-interface CreditsItemType {
+type CreditsPersonType = string | { name: string; url: string };
+
+interface CreditsSectionType {
   title: string;
-  people: string[] | { name: string; url: string }[];
+  people: CreditsPersonType[];
 }
 
-export interface CreditsListProps {
+export interface CreditsProps {
   credits: {
-    concept: CreditsItemType;
-    authors: CreditsItemType;
-    editing: CreditsItemType;
-    illustration: CreditsItemType;
+    concept: CreditsSectionType;
+    authors: CreditsSectionType;
+    editing: CreditsSectionType;
+    illustration: CreditsSectionType;
   };
 }
 
-const CreditsSection: FC<CreditsItemType> = ({ title, people }) => {
+const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
   return (
-    <div className="col-span-6 md:col-span-3 lg:col-span-2 pr-6">
+    <div className={clsx("pr-6", "col-span-6 md:col-span-3 lg:col-span-2")}>
       <h4 className="mb-2 text-grey-500">{title}</h4>
       <ul className="list-none p-0">
         {people.map((person) => {
@@ -45,13 +48,11 @@ const CreditsSection: FC<CreditsItemType> = ({ title, people }) => {
   );
 };
 
-export const CreditsList: FC<CreditsListProps> = ({ credits }) => {
+export const Credits: FC<CreditsProps> = ({ credits }) => {
   return (
     <>
-      {Object.entries(credits).map(([key, value]) => {
-        return (
-          <CreditsSection key={key} title={value.title} people={value.people} />
-        );
+      {Object.entries(credits).map(([key, { title, people }]) => {
+        return <CreditsSection key={key} title={title} people={people} />;
       })}
     </>
   );
