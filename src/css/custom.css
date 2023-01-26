@@ -124,5 +124,5 @@
 }
 
 .theme-doc-markdown {
-  @apply prose prose-p:text-grey-500 prose-p:leading-normal prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-7xl prose-h2:text-5xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100;
+  @apply prose prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-7xl prose-h2:text-5xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100 prose-blockquote:pl-3;
 }
