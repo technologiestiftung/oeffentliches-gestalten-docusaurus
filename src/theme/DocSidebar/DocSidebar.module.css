@@ -128,15 +128,10 @@
   @apply opacity-40;
 }
 
-@media (min-width: 997px) {
-  :global(.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module) {
-    padding: 1rem;
-  }
-  @supports (scrollbar-gutter: stable) {
-    :globa(.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module) {
-      padding: 1rem 0 1rem 1rem;
-    }
-  }
+/* Sidebar parent */
+:global(.theme-doc-sidebar-menu) {
+  padding: max(1rem, 2vh) max(1rem, 1.8vw);
+  padding-right: max(0.5rem, 1vw);
 }
 
 /* Sidebar border */
@@ -148,6 +143,80 @@
   :global(.theme-doc-sidebar-container:before) {
     content: "";
     width: 1px;
-    @apply h-full absolute top-0 right-0 bg-gradient-to-b from-grey-50 to-white;
+    @apply h-full fixed bg-gradient-to-b from-grey-50 via-white to-white;
+    top: var(----ifm-navbar-height);
+    left: calc(var(--doc-sidebar-width) - 26px);
+    transition: left 200ms ease-out;
+  }
+
+  :global(aside[class*="docSidebarContainerHidden_"]:before) {
+    left: 34px;
   }
 }
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Sidebar collapse/expand button's container */
+:global(.theme-doc-sidebar-container) {
+  @apply relative;
+}
+
+/* Must add a right padding, because the container uses clip-path to animate the menu in and out*/
+:global(.theme-doc-sidebar-container .menu) {
+  padding-right: 40px;
+}
+
+/* Styling the expand and collapse buttons */
+:global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"]),
+:global(.theme-doc-sidebar-container .menu ~ button) {
+  @apply fixed top-[96px] -translate-x-[46px] p-0 w-8 h-8 rounded-full border-grey-100 border;
+  left: var(--doc-sidebar-width);
+  background: var(--ifm-background-surface-color) url('../../assets/icons/chevrons-left.svg') center center no-repeat;
+}
+
+/* Hidding the original svg icon */
+:global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"] > svg),
+:global(.theme-doc-sidebar-container .menu ~ button > svg) {
+  @apply hidden;
+}
+
+/* For the expand button, flip it and shift it */
+:global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"]) {
+  left: 60px;
+  @apply -scale-x-100;
+}
+
+/* Adding hover styles to the buttons */
+:global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"]:hover),
+:global(.theme-doc-sidebar-container .menu ~ button:hover) {
+  background-color: rgb(var(--grey-50));
+}
+
+/* -––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Steps hacks */
+:global(.menu__list-item.step .menu__link) {
+  @apply pt-6 relative my-1;
+}
+
+:global(.menu__list-item.step .menu__link:before) {
+  @apply absolute text-grey-300 italic top-1 left-3 bg-transparent font-normal;
+}
+
+:global([lang="en"] .menu__list-item.step-1 .menu__link:before) { content: 'Step 1'; }
+:global([lang="en"] .menu__list-item.step-2 .menu__link:before) { content: 'Step 2'; }
+:global([lang="en"] .menu__list-item.step-3 .menu__link:before) { content: 'Step 3'; }
+:global([lang="en"] .menu__list-item.step-4 .menu__link:before) { content: 'Step 4'; }
+:global([lang="en"] .menu__list-item.step-5 .menu__link:before) { content: 'Step 5'; }
+:global([lang="en"] .menu__list-item.step-6 .menu__link:before) { content: 'Step 6'; }
+:global([lang="en"] .menu__list-item.step-7 .menu__link:before) { content: 'Step 7'; }
+:global([lang="en"] .menu__list-item.step-8 .menu__link:before) { content: 'Step 8'; }
+:global([lang="en"] .menu__list-item.step-9 .menu__link:before) { content: 'Step 9'; }
+
+:global([lang="de"] .menu__list-item.step-1 .menu__link:before) { content: 'Etappe 1'; }
+:global([lang="de"] .menu__list-item.step-2 .menu__link:before) { content: 'Etappe 2'; }
+:global([lang="de"] .menu__list-item.step-3 .menu__link:before) { content: 'Etappe 3'; }
+:global([lang="de"] .menu__list-item.step-4 .menu__link:before) { content: 'Etappe 4'; }
+:global([lang="de"] .menu__list-item.step-5 .menu__link:before) { content: 'Etappe 5'; }
+:global([lang="de"] .menu__list-item.step-6 .menu__link:before) { content: 'Etappe 6'; }
+:global([lang="de"] .menu__list-item.step-7 .menu__link:before) { content: 'Etappe 7'; }
+:global([lang="de"] .menu__list-item.step-8 .menu__link:before) { content: 'Etappe 8'; }
+:global([lang="de"] .menu__list-item.step-9 .menu__link:before) { content: 'Etappe 9'; }

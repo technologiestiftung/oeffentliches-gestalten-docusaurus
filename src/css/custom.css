@@ -106,7 +106,8 @@
     --ifm-heading-color: var(--ifm-color-primary);
     --ifm-font-family-base: "National", sans-serif;
 
-    --doc-sidebar-width: max(20vw,340px) !important;
+    --doc-sidebar-width: max(20vw,380px) !important;
+    --doc-sidebar-hidden-width: 60px !important;
   }
 
   html,
@@ -124,7 +125,13 @@
     color: inherit;
   }
 
+  *:focus-visible {
+    outline-color: rgb(var(--magenta-500));
+    outline-width: 2px;
+  }
+
   main > .container {
     padding: max(1rem,2vh) max(1rem,5vw);
   }
+
 }
