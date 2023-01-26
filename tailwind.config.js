@@ -40,7 +40,7 @@ module.exports = {
         900: "rgb(var(--grey-900) / <alpha-value>)",
       },
       white: "#fff",
-      trasparent: "transparent",
+      transparent: "transparent",
       currentColor: "currentColor",
     },
     extend: {
