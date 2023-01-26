@@ -196,8 +196,12 @@
 
 /* -––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Steps hacks */
+:global(.menu__link) {
+  @apply relative;
+}
+
 :global(.menu__list-item.step .menu__link) {
-  @apply pt-6 relative my-1;
+  @apply pt-6 my-1;
 }
 
 :global(.menu__list-item.step .menu__link:before) {
