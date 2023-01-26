@@ -16,7 +16,7 @@ export default function FooterLayout({
   copyright,
 }: FooterLayoutProps): JSX.Element {
   return (
-    <footer className={clsx("bg-blue-50", "border-t border-blue-200")}>
+    <footer className={clsx("bg-blue-50", "border-t border-blue-200", "relative z-10")}>
       <div className={clsx("px-6 py-12", "grid gap-y-14 grid-cols-12")}>
         <div className="lg:col-start-2 col-span-12 md:col-span-6 lg:col-span-4">
           <p className="mb-4 text-sm">
