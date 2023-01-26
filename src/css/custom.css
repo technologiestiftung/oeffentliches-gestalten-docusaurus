@@ -40,6 +40,11 @@
     font-display: swap;
   }
 
+  @counter-style decimal-leading-zero-no-dot {
+    system: extends decimal-leading-zero;
+    suffix: ""; /* dsdsd */
+  }
+
   /**
    * Any CSS included here will be global. The classic template
    * bundles Infima by default. Infima is a CSS framework designed to
@@ -124,5 +129,5 @@
 }
 
 .theme-doc-markdown {
-  @apply prose prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h2:lg:text-5xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100 prose-blockquote:pl-3;
+  @apply prose prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h2:lg:text-5xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-5 prose-ul:pl-5 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100 prose-blockquote:pl-3;
 }

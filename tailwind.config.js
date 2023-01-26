@@ -62,7 +62,7 @@ module.exports = {
         ],
       },
       listStyleType: {
-        "decimal-leading-zero": "decimal-leading-zero",
+        "decimal-leading-zero-no-dot": "decimal-leading-zero-no-dot",
       },
     },
   },
