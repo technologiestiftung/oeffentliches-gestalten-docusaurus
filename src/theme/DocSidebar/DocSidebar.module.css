@@ -130,7 +130,7 @@
 
 /* Sidebar parent */
 :global(.theme-doc-sidebar-menu) {
-  padding: max(1rem, 2vh) max(1rem, 1.8vw);
+  padding: max(1rem, 2vw) max(1rem, 1.8vw);
   padding-right: max(0.5rem, 1vw);
 }
 
@@ -162,7 +162,7 @@
 
 /* Must add a right padding, because the container uses clip-path to animate the menu in and out*/
 :global(.theme-doc-sidebar-container .menu) {
-  @apply pr-4;
+  @apply pr-4 py-0;
 }
 :global(div[class*="sidebar_"]) {
   @apply pr-5;
@@ -171,7 +171,7 @@
 /* Styling the expand and collapse buttons */
 :global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"]),
 :global(.theme-doc-sidebar-container .menu ~ button) {
-  @apply fixed top-[107px] -translate-x-[46px] p-0 w-8 h-8 rounded-full border-grey-100 border;
+  @apply fixed top-[calc(var(--ifm-navbar-height)+max(2vw,1rem))] -translate-x-[46px] p-0 w-8 h-8 rounded-full border-grey-100 border;
   left: var(--doc-sidebar-width);
   background: var(--ifm-background-surface-color) url('../../assets/icons/chevrons-left.svg') center center no-repeat;
 }
@@ -196,8 +196,12 @@
 
 /* -––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Steps hacks */
+:global(.menu__link) {
+  @apply relative;
+}
+
 :global(.menu__list-item.step .menu__link) {
-  @apply pt-6 relative my-1;
+  @apply pt-6 my-1;
 }
 
 :global(.menu__list-item.step .menu__link:before) {
