@@ -162,13 +162,16 @@
 
 /* Must add a right padding, because the container uses clip-path to animate the menu in and out*/
 :global(.theme-doc-sidebar-container .menu) {
-  padding-right: 40px;
+  @apply pr-4;
+}
+:global(div[class*="sidebar_"]) {
+  @apply pr-5;
 }
 
 /* Styling the expand and collapse buttons */
 :global(aside[class*="docSidebarContainerHidden_"] div[class*="expandButton_"]),
 :global(.theme-doc-sidebar-container .menu ~ button) {
-  @apply fixed top-[96px] -translate-x-[46px] p-0 w-8 h-8 rounded-full border-grey-100 border;
+  @apply fixed top-[107px] -translate-x-[46px] p-0 w-8 h-8 rounded-full border-grey-100 border;
   left: var(--doc-sidebar-width);
   background: var(--ifm-background-surface-color) url('../../assets/icons/chevrons-left.svg') center center no-repeat;
 }
