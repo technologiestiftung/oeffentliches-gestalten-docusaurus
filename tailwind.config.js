@@ -63,6 +63,7 @@ module.exports = {
       },
       listStyleType: {
         "decimal-leading-zero-no-dot": "decimal-leading-zero-no-dot",
+        "large-circle": "large-circle",
       },
     },
   },
