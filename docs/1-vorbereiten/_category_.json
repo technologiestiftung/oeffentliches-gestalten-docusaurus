@@ -1,4 +1,5 @@
 {
-  "label": "Kapitel 1: Vorbereiten",
-  "position": 3
+  "label": "Phase 1: Vorbereiten",
+  "position": 2,
+  "className": "phase1",
 }
