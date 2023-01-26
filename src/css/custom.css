@@ -133,7 +133,7 @@
   }
 
   main > .container {
-    padding: max(1rem,2vw) max(1rem,5vw) !important;
+    padding: max(1rem,2vw) max(1rem,5vw) max(3rem,10vh) !important;
   }
 
 }
@@ -236,4 +236,42 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 .breadcrumbs__item--active .breadcrumbs__link {
   @apply bg-transparent font-bold text-grey-500;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Page navigation */
+.pagination-nav {
+  gap: 0;
+}
+
+.pagination-nav__link {
+  @apply border-0 p-0 pt-6 border-t border-grey-50 rounded-none;
+}
+
+.pagination-nav__sublabel {
+  @apply text-grey-300;
+}
+
+.pagination-nav__label {
+  @apply relative;
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before,
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: " ";
+  @apply w-4 h-4 absolute top-[4px] left-0 -translate-x-1 lg:-translate-x-6;
+  background: url('../assets/icons/chevron-left.svg') center center no-repeat;
+}
+
+.pagination-nav__link--prev .pagination-nav__label {
+  @apply pl-4 lg:pl-0;
+}
+
+.pagination-nav__link--next .pagination-nav__label {
+  @apply pr-4 lg:pr-0;
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  @apply left-auto right-0 translate-x-1 lg:translate-x-6;
+  background-image: url('../assets/icons/chevron-right.svg');
 }
