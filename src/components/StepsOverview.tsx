@@ -1,7 +1,40 @@
 import clsx from "clsx";
 import React, { FC } from "react";
 import { StepItem } from "./StepItem";
-import { StepVisual } from "./StepVisual";
+import { StepVisual, StepVisualProps } from "./StepVisual";
+
+interface StepsContentType {
+  title: string;
+  subtitle: string;
+  area?: "Problembereich" | "Lösungsbereich";
+}
+
+const STEPS: StepsContentType[] = [
+  {
+    title: "Vorbereiten",
+    subtitle: "Unternehmung beginnen",
+  },
+  {
+    title: "Erkunden",
+    subtitle: "Untersuchungsfokus setzen",
+    area: "Problembereich",
+  },
+  {
+    title: "Erkennen",
+    subtitle: "Potenzialfelder identifizieren",
+    area: "Problembereich",
+  },
+  {
+    title: "Entwerfen",
+    subtitle: "Lösungsansatz definieren",
+    area: "Lösungsbereich",
+  },
+  {
+    title: "Erproben",
+    subtitle: "Nutzen validieren",
+    area: "Lösungsbereich",
+  },
+];
 
 interface AreaIndicatorProps {
   color: "magenta" | "blue";
@@ -48,6 +81,19 @@ const AreaIndicator: FC<AreaIndicatorProps> = ({
   );
 };
 
+const getStepShape = (
+  stepArea: StepsContentType["area"]
+): StepVisualProps["shape"] => {
+  switch (stepArea) {
+    case "Problembereich":
+      return "square";
+    case "Lösungsbereich":
+      return "square";
+    default:
+      return "circle";
+  }
+};
+
 export const StepsOverview: FC = () => {
   return (
     <div
@@ -56,57 +102,29 @@ export const StepsOverview: FC = () => {
         "mb-10"
       )}
     >
-      <StepItem
-        surtitle="Phase 1"
-        title="Vorbereiten"
-        subtitle="Unternehmung beginnen"
-        visual={<StepVisual shape="circle" stepIndex={1} />}
-        className="col-start-1"
-      />
-      <StepItem
-        surtitle="Phase 2"
-        title="Erkunden"
-        subtitle="Untersuchungsfokus setzen"
-        visual={
-          <StepVisual
-            shape="square"
-            stepIndex={2}
-            bgColorClass="bg-magenta-500"
+      {STEPS.map((step, idx) => {
+        const STEP_NUMBER = idx + 1;
+
+        return (
+          <StepItem
+            surtitle={`Phase ${STEP_NUMBER}`}
+            title={step.title}
+            subtitle={step.subtitle}
+            visual={
+              <StepVisual
+                shape={getStepShape(step.area)}
+                stepIndex={STEP_NUMBER}
+                bgColorClass={
+                  step.area === "Problembereich"
+                    ? "bg-magenta-500"
+                    : "bg-blue-500"
+                }
+              />
+            }
+            className="col-start-1"
           />
-        }
-        className="col-start-1"
-      />
-      <StepItem
-        surtitle="Phase 3"
-        title="Erkennen"
-        subtitle="Potenzialfelder identifizieren"
-        visual={
-          <StepVisual
-            shape="square"
-            stepIndex={3}
-            bgColorClass="bg-magenta-500"
-          />
-        }
-        className="col-start-1"
-      />
-      <StepItem
-        surtitle="Phase 4"
-        title="Entwerfen"
-        subtitle="Lösungsansatz definieren"
-        visual={
-          <StepVisual shape="square" stepIndex={4} bgColorClass="bg-blue-500" />
-        }
-        className="col-start-1"
-      />
-      <StepItem
-        surtitle="Phase 5"
-        title="Erproben"
-        subtitle="Nutzen validieren"
-        visual={
-          <StepVisual shape="square" stepIndex={5} bgColorClass="bg-blue-500" />
-        }
-        className="col-start-1"
-      />
+        );
+      })}
       <AreaIndicator
         color="magenta"
         label="Problembereich"

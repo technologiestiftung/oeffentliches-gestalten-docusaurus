@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React, { FC } from "react";
 
-interface StepVisualProps {
+export interface StepVisualProps {
   stepIndex: number;
   shape?: "circle" | "square";
   bgColorClass?: string;
