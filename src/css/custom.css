@@ -106,6 +106,8 @@
     --ifm-heading-color: var(--ifm-color-primary);
     --ifm-font-family-base: "National", sans-serif;
 
+    --ifm-navbar-height: 3.5rem;
+    
     --doc-sidebar-width: max(20vw,380px) !important;
     --doc-sidebar-hidden-width: 60px !important;
   }
@@ -131,7 +133,7 @@
   }
 
   main > .container {
-    padding: max(1rem,2vh) max(1rem,5vw);
+    padding: max(1rem,2vw) max(1rem,5vw) !important;
   }
 
 }
@@ -146,9 +148,37 @@
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Header */
+.navbar {
+  box-shadow: none;
+  @apply border-b border-grey-50 py-0;
+}
+
+.navbar__brand {
+  width: calc(var(--doc-sidebar-width) - 60px);
+  margin: 0;
+}
+
+@media screen and (min-width: 996px) {
+  .navbar__link {
+    @apply flex items-center leading-tight;
+  }
+}
+
+.dropdown > .navbar__link:after {
+  @apply scale-75;
+}
+
+.navbar__link--active {
+  @apply font-bold text-grey-500;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Breadcrumbs (Unsafe, therefore here) */
 .breadcrumbs {
-  @apply flex items-center mt-1.5;
+  @apply flex items-center mt-[3px];
 }
 
 .breadcrumbs > li {
