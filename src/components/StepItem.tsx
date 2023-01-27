@@ -17,7 +17,13 @@ export const StepItem: FC<StepItemProps> = ({
   className,
 }) => {
   return (
-    <div className={clsx("flex gap-x-3 lg:gap-x-4 items-center", className)}>
+    <div
+      className={clsx(
+        "flex gap-x-3 lg:gap-x-4 items-center",
+        className,
+        "not-prose"
+      )}
+    >
       {visual}
       <div>
         {surtitle && (

@@ -20,7 +20,8 @@ export const StepVisual: FC<StepVisualProps> = ({
         "relative",
         "w-12 md:w-16 lg:w-20",
         "h-12 md:h-16 lg:h-20",
-        "shrink-0"
+        "shrink-0",
+        "not-prose"
       )}
     >
       <div
