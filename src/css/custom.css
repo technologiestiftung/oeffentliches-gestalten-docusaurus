@@ -136,6 +136,16 @@
 
 }
 
+@layer utilities {
+  .clip-circle {
+    clip-path: circle(42%);
+  }
+
+  .clip-standing-square {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+}
+
 /* Breadcrumbs (Unsafe, therefore here) */
 .breadcrumbs {
   @apply flex items-center mt-1.5;
