@@ -72,6 +72,10 @@ module.exports = {
           "monospace",
         ],
       },
+      listStyleType: {
+        "decimal-leading-zero-no-dot": "decimal-leading-zero-no-dot",
+        "large-circle": "large-circle",
+      },
     },
   },
   corePlugins: {
@@ -80,5 +84,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
   ],
 };
