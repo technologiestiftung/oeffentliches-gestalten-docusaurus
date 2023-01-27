@@ -40,6 +40,16 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: local("IBM Plex Mono"),
+      url(../assets/fonts/IBMPlexMono-Bold.woff2) format("woff2"),
+      url(../assets/fonts/IBMPlexMono-Bold.woff) format("woff");
+    font-display: swap;
+  }
+
   /**
    * Any CSS included here will be global. The classic template
    * bundles Infima by default. Infima is a CSS framework designed to
@@ -138,6 +148,16 @@
 
 }
 
+@layer utilities {
+  .clip-circle-50 {
+    clip-path: circle(50%);
+  }
+
+  .clip-standing-square {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Header */
 .navbar {
@@ -165,6 +185,7 @@
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Breadcrumbs (Unsafe, therefore here) */
 .breadcrumbs {
   @apply flex items-center mt-[3px];
