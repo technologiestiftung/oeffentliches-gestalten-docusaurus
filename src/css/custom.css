@@ -188,7 +188,7 @@
 
 /* Breadcrumbs (Unsafe, therefore here) */
 .breadcrumbs {
-  @apply flex items-center mt-[3px];
+  @apply flex items-center mt-[3px] flex-wrap;
 }
 
 .breadcrumbs > li {
@@ -257,4 +257,53 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 .breadcrumbs__item--active .breadcrumbs__link {
   @apply bg-transparent font-bold text-grey-500;
+}
+
+/* Table of Contents */
+html .theme-doc-toc-desktop {
+  @apply fixed right-0;
+  top: var(--ifm-navbar-height);
+  width: 20vw;
+  max-height: calc(100vh - var(--ifm-navbar-height));
+}
+
+.table-of-contents {
+  @apply p-0 py-[max(2vw,1rem)] lg:opacity-60 transition-opacity hover:opacity-100 !border-t-grey-50;
+}
+
+html[lang="de"] .table-of-contents:before {
+  content: "Auf dieser Seite:";
+  @apply hidden lg:block text-base pb-2 mb-2 border-b border-grey-50 font-bold mt-[1px];
+}
+
+.table-of-contents__left-border {
+  border: none;
+}
+
+.table-of-contents li {
+  @apply m-0 text-base;
+}
+
+.table-of-contents__link {
+  @apply px-1.5 py-0.5 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
+}
+
+div[class*="tocCollapsibleContent_"] ul.table-of-contents > li {
+  @apply mx-0 mb-2 pr-2;
+}
+
+.table-of-contents__link--active {
+  @apply text-grey-500 font-bold;
+}
+
+div[class*="tocCollapsibleContent_"] {
+  @apply lg:p-3 border-b lg:border-b-0 border-grey-50 mb-16 lg:mb-0;
+}
+
+html .theme-doc-toc-mobile {
+  @apply bg-transparent;
+}
+
+html .theme-doc-toc-mobile > button.clean-btn {
+  @apply p-0 pb-2;
 }
