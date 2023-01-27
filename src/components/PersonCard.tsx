@@ -32,7 +32,7 @@ export const PersonCard: FC<PersonCardProps> = ({
       </div>
 
       <div>
-        <h3 className="text-xl md:text-2xl font-extrabold">{name}</h3>
+        <h3 className="text-xl md:text-2xl font-extrabold not-prose">{name}</h3>
         <p className="mt-2 leading-snug">{description}</p>
       </div>
     </div>

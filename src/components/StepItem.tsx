@@ -41,7 +41,8 @@ export const StepItem: FC<StepItemProps> = ({
           className={clsx(
             "text-xl sm:text-2xl md:text-3xl lg:text-[40px]",
             "leading-tight sm:leading-none",
-            "font-extrabold"
+            "font-extrabold",
+            "not-prose"
           )}
         >
           {title}
