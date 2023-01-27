@@ -35,7 +35,7 @@ const AreaIndicator: FC<AreaIndicatorProps> = ({
       <div className="w-full h-full flex items-center justify-center">
         <p
           className={clsx(
-            "antialiased font-extrabold",
+            "antialiased font-extrabold text-sm md:text-base",
             COLOR_CLASSES.text,
             "rotate-180"
           )}
