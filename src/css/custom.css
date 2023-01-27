@@ -137,8 +137,8 @@
 }
 
 @layer utilities {
-  .clip-circle {
-    clip-path: circle(42%);
+  .clip-circle-50 {
+    clip-path: circle(50%);
   }
 
   .clip-standing-square {
