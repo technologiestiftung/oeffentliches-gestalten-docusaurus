@@ -6,6 +6,7 @@ interface StepItemProps {
   title: string;
   subtitle?: string;
   visual?: ReactNode;
+  className?: string;
 }
 
 export const StepItem: FC<StepItemProps> = ({
@@ -13,9 +14,10 @@ export const StepItem: FC<StepItemProps> = ({
   title,
   subtitle,
   visual,
+  className,
 }) => {
   return (
-    <div className="flex gap-x-3 lg:gap-x-4 items-center">
+    <div className={clsx("flex gap-x-3 lg:gap-x-4 items-center", className)}>
       {visual}
       <div>
         {surtitle && (
