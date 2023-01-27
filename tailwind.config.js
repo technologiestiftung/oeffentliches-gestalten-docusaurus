@@ -60,6 +60,17 @@ module.exports = {
           "Arial",
           "sans-serif",
         ],
+        mono: [
+          "IBM Plex Mono",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
+        ],
       },
       listStyleType: {
         "decimal-leading-zero-no-dot": "decimal-leading-zero-no-dot",
