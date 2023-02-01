@@ -22,11 +22,7 @@ export const PersonCard: FC<PersonCardProps> = ({
     >
       <div className="w-24 xl:w-full aspect-square clip-circle-50">
         <div
-          className={clsx(
-            "w-full h-full",
-            "shrink-0",
-            "bg-cover bg-grey-500 bg-blend-luminosity"
-          )}
+          className={clsx("w-full h-full", "shrink-0", "bg-cover")}
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
       </div>
