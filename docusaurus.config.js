@@ -128,14 +128,14 @@ const config = {
         {
           name: "Caroline Paulick-Thiel",
           description:
-            "Als Direktorin von Politics for Tomorrow und Mitbegründerin der Creative Bureaucracy Festival Academy, setze ich mich für das kreative Beantworten konkreter öffentlicher Fragestellungen ein. Für mich ist das Buch eine belastbare Brücke zwischen Theorie und Praxis, um öffentliche Innovations-prozesse eigenständig und verantwortungsvoll zu gestalten.",
+            "Als Direktorin von Politics for Tomorrow und Mitbegründerin der Creative Bureaucracy Festival Academy, setze ich mich für das kreative Beantworten konkreter öffentlicher Fragestellungen ein. Für mich ist das Buch eine belastbare Brücke zwischen Theorie und Praxis, um öffentliche Innovationsprozesse eigenständig und verantwortungsvoll zu gestalten.",
           /** Filename with extension. To be placed in ./static/img/ */
           imageFileName: "portrait-cpt.webp",
         },
         {
           name: "Joshua Pacheco",
           description:
-            "Kollaboration und Partizipation bei der Gestaltung für öffentliche Interessen zu ermöglichen, beschäftigt mich als Service Designer im CityLAB Berlin. Um beim Navigieren durch die komplexen Herausforderungen zu nachhaltigen und wirkungsvollen Ergebnissen zu gelangen, sind verschiedene Ansätze möglich – dieses Buch ist einer der vielversprechenden.",
+            "Kollaboration und Partizipation bei der Gestaltung für öffentliche Interessen zu ermöglichen, beschäftigte mich als Service Designer im CityLAB Berlin. Um beim Navigieren durch die komplexen Herausforderungen zu nachhaltigen und wirkungsvollen Ergebnissen zu gelangen, sind verschiedene Ansätze möglich – dieses Buch ist einer der vielversprechenden.",
           /** Filename with extension. To be placed in ./static/img/ */
           imageFileName: "portrait-jp.webp",
         },
@@ -149,7 +149,7 @@ const config = {
         {
           name: "Andrej Balaz",
           description:
-            "Von Huch? zu Aha! Die Reise von Innovationsfragen über Erkenntnisgewinnung bis hin zur Kreation besserer Dienstleistungen beschäftigt mich als Service Designer seit mehr als 8 Jahren. Das Handbuch sehe ich als den perfekten Katalysator, um bereits heute Neues auszu-probieren – damit die bessere Welt von morgen nicht länger auf uns warten muss.",
+            "Von Huch? zu Aha! Die Reise von Innovationsfragen über Erkenntnisgewinnung bis hin zur Kreation besserer Dienstleistungen beschäftigt mich als Service Designer seit mehr als 8 Jahren. Das Handbuch sehe ich als den perfekten Katalysator, um bereits heute Neues auszuprobieren – damit die bessere Welt von morgen nicht länger auf uns warten muss.",
           /** Filename with extension. To be placed in ./static/img/ */
           imageFileName: "portrait-ab.webp",
         },
