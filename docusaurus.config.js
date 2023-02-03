@@ -122,53 +122,6 @@ const config = {
       },
     }),
   customFields: {
-    team: {
-      title: "Die Autor:innen",
-      members: [
-        {
-          name: "Caroline Paulick-Thiel",
-          description:
-            "Als Direktorin von Politics for Tomorrow und Mitbegründerin der Creative Bureaucracy Festival Academy, setze ich mich für das kreative Beantworten konkreter öffentlicher Fragestellungen ein. Für mich ist das Buch eine belastbare Brücke zwischen Theorie und Praxis, um öffentliche Innovationsprozesse eigenständig und verantwortungsvoll zu gestalten.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-cpt.webp",
-        },
-        {
-          name: "Joshua Pacheco",
-          description:
-            "Kollaboration und Partizipation bei der Gestaltung für öffentliche Interessen zu ermöglichen, beschäftigte mich als Service Designer im CityLAB Berlin. Um beim Navigieren durch die komplexen Herausforderungen zu nachhaltigen und wirkungsvollen Ergebnissen zu gelangen, sind verschiedene Ansätze möglich – dieses Buch ist einer der vielversprechenden.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-jp.webp",
-        },
-        {
-          name: "Henrike Arlt",
-          description:
-            "Wie können Veränderungen ermöglicht werden, wenn der zentrale Erfolgsfaktor von Verwaltung seit Jahrzehnten Beständigkeit lautet? Als Innovationsagentin und Beraterin im Inhouse Consulting der Bundesagentur für Arbeit versuche ich dieses Leitmotiv auf den Kopf zu stellen und neu zu interpretieren. Meine wichtigsten Erkenntnisse auf dem bisherigen Weg sind in dieses Buch eingeflossen.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-ra.webp",
-        },
-        {
-          name: "Andrej Balaz",
-          description:
-            "Von Huch? zu Aha! Die Reise von Innovationsfragen über Erkenntnisgewinnung bis hin zur Kreation besserer Dienstleistungen beschäftigt mich als Service Designer seit mehr als 8 Jahren. Das Handbuch sehe ich als den perfekten Katalysator, um bereits heute Neues auszuprobieren – damit die bessere Welt von morgen nicht länger auf uns warten muss.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-ab.webp",
-        },
-        {
-          name: "Andrea Ramírez Sabat",
-          description:
-            "Als Designerin weiß ich, wie wichtig es ist, über einen zuverlässigen Satz von Werkzeugen und Methoden zu verfügen, mit denen sich Teams auf eine Innovationsreise begeben können. Ich bin davon überzeugt, dass dieses Buch mehr als nur eine Anleitung für diejenigen ist, die im öffentlichen Sektor etwas bewirken wollen. Es kann den langfristigen Kompetenzaufbau in der öffentlichen Verwaltung unterstützen.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-ars.webp",
-        },
-        {
-          name: "Bettina Köbler",
-          description:
-            "Als Service Designerin und Dozentin begleite ich multidisziplinäre Teams, einen unvoreingenommenen und radikal nutzerzentrierten Blick auf die Gestaltung dessen zu entwickeln, was sein könnte. Mit dem Handbuch möchte ich dazu befähigen Innovationsprozesse in der öffentlichen Verwaltung zu etablieren und sich bei der Bewältigung gesellschaftlicher Herausforderungen von den Bedürfnissen der Bürger:innen leiten zu lassen.",
-          /** Filename with extension. To be placed in ./static/img/ */
-          imageFileName: "portrait-bk.webp",
-        },
-      ],
-    },
     credits: {
       concept: {
         title: "Konzept",
