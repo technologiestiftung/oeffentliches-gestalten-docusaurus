@@ -13,14 +13,15 @@ export const StepVisual: FC<StepVisualProps> = ({
   bgColorClass = "bg-grey-500",
 }) => {
   const SHAPE_CLASSES =
-    shape === "square" ? "clip-standing-square" : "clip-circle-50 -scale-[87%]";
+    shape === "square" ? "clip-standing-square" : "rounded-full -scale-[87%]";
   return (
     <div
       className={clsx(
         "relative",
         "w-12 md:w-16 lg:w-20",
         "h-12 md:h-16 lg:h-20",
-        "shrink-0"
+        "shrink-0",
+        "not-prose"
       )}
     >
       <div

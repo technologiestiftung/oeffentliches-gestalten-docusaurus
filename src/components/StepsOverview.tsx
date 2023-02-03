@@ -94,12 +94,26 @@ const getStepShape = (
   }
 };
 
+const getStepBgColor = (
+  stepArea: StepsContentType["area"]
+): StepVisualProps["bgColorClass"] => {
+  switch (stepArea) {
+    case "Problembereich":
+      return "bg-magenta-500";
+    case "Lösungsbereich":
+      return "bg-blue-500";
+    default:
+      return "bg-grey-500";
+  }
+};
+
 export const StepsOverview: FC = () => {
   return (
     <div
       className={clsx(
         "grid gap-5 lg:gap-8 grid-cols-[1fr,40px] grid-rows-5",
-        "mb-10"
+        "mb-10",
+        "not-prose"
       )}
     >
       {STEPS.map((step, idx) => {
@@ -107,6 +121,7 @@ export const StepsOverview: FC = () => {
 
         return (
           <StepItem
+            key={step.title}
             surtitle={`Phase ${STEP_NUMBER}`}
             title={step.title}
             subtitle={step.subtitle}
@@ -114,11 +129,7 @@ export const StepsOverview: FC = () => {
               <StepVisual
                 shape={getStepShape(step.area)}
                 stepIndex={STEP_NUMBER}
-                bgColorClass={
-                  step.area === "Problembereich"
-                    ? "bg-magenta-500"
-                    : "bg-blue-500"
-                }
+                bgColorClass={getStepBgColor(step.area)}
               />
             }
             className="col-start-1"

@@ -40,7 +40,7 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
@@ -70,7 +70,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-        }
+        },
       },
       navbar: {
         title: "Öffentliches Gestalten",

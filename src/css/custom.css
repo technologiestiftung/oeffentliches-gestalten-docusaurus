@@ -125,7 +125,7 @@
 
     --ifm-font-color-secondary: var(--ifm-color-content-secondary);
 
-    --ifm-heading-color: var(--ifm-color-primary);
+    --ifm-heading-color: var(--ifm-color-gray-500);
     --ifm-font-family-base: "National", sans-serif;
 
     --ifm-navbar-height: 3.5rem;
