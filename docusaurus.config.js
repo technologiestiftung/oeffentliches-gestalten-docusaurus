@@ -40,7 +40,7 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
@@ -49,6 +49,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          routeBasePath: "/buch",
         },
         blog: {
           showReadingTime: true,
@@ -70,7 +71,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-        }
+        },
       },
       navbar: {
         title: "Öffentliches Gestalten",
