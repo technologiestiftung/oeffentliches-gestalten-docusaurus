@@ -22,6 +22,18 @@ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+### CSS
+
+Docusaurus provides styling out-of-the-box. They currently use a mix of theme class names, Infima (their CSS library) class names and CSS modules. Find the most recent information in their [styling documentation](https://docusaurus.io/docs/styling-layout).
+
+We have additionally added [TailwindCSS](https://tailwindcss.com/) to our project.
+
+Our strategy for customizing the styling is to (wherever possible) override Docusaurus's classes in `src/css/custom.css` by using Tailwind's `@apply` rule. This is to avoid ["swizzling"](https://docusaurus.io/docs/swizzling) Docusaurus components and adding our own Tailwind utilities to the markdown. We do this because swizzling [is only save for some components](https://docusaurus.io/docs/swizzling#what-is-safe-to-swizzle).
+
+Whenever we really need to swizzle a component or we create a custom component we use Tailwind's utility classes in the markup.
+
+Note that we define our color scheme in CSS variables in `src/css/custom.css` and reference them in our `tailwind.config.js` in order to avoid duplicating our theme contents.
+
 ## Content
 
 ### Chapter sidebar
