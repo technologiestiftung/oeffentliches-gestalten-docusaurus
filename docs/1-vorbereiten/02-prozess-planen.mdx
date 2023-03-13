@@ -4,6 +4,8 @@ sidebar_position: 3
 sidebar_class_name: 'step step-2'
 ---
 
+import { MethodSummary } from '@site/src/components/MethodSummary';
+
 # Prozess planen
 
 ## Aufwände einschätzen
@@ -34,39 +36,33 @@ Im Rahmen des Innovationsprozesses werden sie auf Herausforderungen und Hinderni
 
 - Es läuft alles hervorragend, und das Interesse von außen ist enorm. Was ist zu bedenken, wann und für wen?
 
-## Prozessverlauf
-
-<!--linke seitenleiste-->
-
-**Zeitrahmen**
-
-20 – 50 Minuten
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Vorlage, Stifte, Klebezettel
-
-**Anregung**
-
-Wiederholend nutzbar, regelmäßig ergänzen und weiterentwickeln
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Der **Prozessverlauf** ermöglicht allen Beteiligten den zeitlichen Rahmen des Vorhabens auf einen Blick zu erfassen: Was ist in welcher Phase der Unternehmung zu tun? Dabei geht es weniger um die punktgenaue Planung, sondern vielmehr um eine Skizze.
-
-### Mehrwert
-
-In einer schematischen Übersicht wird verdeutlicht, wie viel Umfang die unterschiedlichen Phasen im Gesamtprozess einnehmen. Neben den Beteiligungsformaten werden die dahinter liegenden Aufwände dargestellt. Die Übersicht kann in der Kommunikation mit Führungskräften genutzt werden, um entsprechende Unterstützung zu erhalten. Zusätzlich dient sie zur Gestaltung der Zusammenarbeit mit Teammitgliedern und weiteren internen und externen Beteiligten. Der **Prozessverlauf** wird zum lebenden Dokument, der im Verlauf der Unternehmung Orientierung und Evaluationsgrundlagen liefert.
-
-<!--text unten in klein-->
-
-Innovationsprozesse sind von einer parallelen Kommunikation und Koordination gekennzeichnet. In den unterschiedlichen Phasen sind viele Arbeitsschritte erforderlich, von denen sich einige zeitlich überschneiden. Das bedeutet, dass ein Schritt häufig nicht vollendet werden kann, bevor ein anderer beginnt. Bei der Planung sind deshalb Aufwände nach innen und nach außen gleichermaßen zu berücksichtigen.
+<MethodSummary
+  title="Prozessverlauf"
+  attributes={[
+    {
+      label: "Zeitrahmen",
+      content: "20 – 50 Minuten"
+    },
+    {
+      label: "Niveau",
+      content: "Einfach – Mittel"
+    },
+    {
+      label: "Materialien",
+      content: "Vorlage, Stifte, Klebezettel"
+    },
+    {
+      label: "Anregung",
+      content: "Wiederholend nutzbar, regelmäßig ergänzen und weiterentwickeln"
+    },
+  ]}
+  footer="Innovationsprozesse sind von einer parallelen Kommunikation und Koordination gekennzeichnet. In den unterschiedlichen Phasen sind viele Arbeitsschritte erforderlich, von denen sich einige zeitlich überschneiden. Das bedeutet, dass ein Schritt häufig nicht vollendet werden kann, bevor ein anderer beginnt. Bei der Planung sind deshalb Aufwände nach innen und nach außen gleichermaßen zu berücksichtigen."
+>
+  <h3>Was und wofür?</h3>
+  <p>Der <b>Prozessverlauf</b> ermöglicht allen Beteiligten den zeitlichen Rahmen des Vorhabens auf einen Blick zu erfassen: Was ist in welcher Phase der Unternehmung zu tun? Dabei geht es weniger um die punktgenaue Planung, sondern vielmehr um eine Skizze.</p>
+  <h3>Mehrwert</h3>
+  <p>In einer schematischen Übersicht wird verdeutlicht, wie viel Umfang die unterschiedlichen Phasen im Gesamtprozess einnehmen. Neben den Beteiligungsformaten werden die dahinter liegenden Aufwände dargestellt. Die Übersicht kann in der Kommunikation mit Führungskräften genutzt werden, um entsprechende Unterstützung zu erhalten. Zusätzlich dient sie zur Gestaltung der Zusammenarbeit mit Teammitgliedern und weiteren internen und externen Beteiligten. Der <b>Prozessverlauf</b> wird zum lebenden Dokument, der im Verlauf der Unternehmung Orientierung und Evaluationsgrundlagen liefert.</p>
+</MethodSummary>
 
 ## Vorgehen
 
