@@ -17,7 +17,7 @@ export const MethodSummary: FC<MethodSummaryType> = ({
   return (
     <article
       className={clsx(
-        "border px-7 py-6",
+        "px-7 py-6",
         "grid grid-cols-1 xl:grid-cols-[5fr,3fr] gap-x-6 gap-y-5 md:gap-y-12"
       )}
     >
