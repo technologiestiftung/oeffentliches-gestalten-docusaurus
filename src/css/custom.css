@@ -39,7 +39,7 @@
       url(../assets/fonts/NationalWeb-ExtraboldItalic.woff) format("woff");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "IBM Plex Mono";
     font-style: normal;
@@ -171,7 +171,7 @@
 }
 
 .theme-doc-markdown {
-  @apply prose md:px-6 lg:px-0 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h2:lg:text-5xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
+  @apply prose md:px-6 lg:px-0 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -360,4 +360,18 @@ html .theme-doc-toc-mobile {
 
 html .theme-doc-toc-mobile > button.clean-btn {
   @apply p-0 pb-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-after: 2;
+  hyphenate-limit-before: 3;
 }
