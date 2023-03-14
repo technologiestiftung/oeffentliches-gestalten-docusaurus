@@ -5,6 +5,10 @@ sidebar_class_name: 'step step-1'
 ---
 
 import { Hint } from '@site/src/components/Hint';
+import { MethodCard } from '@site/src/components/MethodCard';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Entwicklungsmatrix from './methods/01/entwicklungsmatrix.md'
 
 # Ist-Zustand betrachten
 
@@ -22,43 +26,24 @@ Durch das Ausfüllen der Felder der [Entwicklungsmatrix](#entwicklungsmatrix) en
 
 <!--illustration auf s.25-->
 
-## Entwicklungsmatrix
+<MethodSummary
+  title={Entwicklungsmatrix.frontMatter.title}
+  time={Entwicklungsmatrix.frontMatter.time}
+  attributes={Entwicklungsmatrix.frontMatter.attributes}
+  footer={Entwicklungsmatrix.frontMatter.note}
+>
+  <Entwicklungsmatrix.default />
+</MethodSummary>
 
-<!--linke seitenleiste-->
-
-**Zeitrahmen**
-
-15 – 20 Minuten
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Vorlage, Stifte, Klebezettel
-
-**Rollen**
-
-Moderation, Dokumentation, Zeitmanagement
-
-**Anregung**
-
-Wiederholend nutzbar, regelmäßig ergänzen und weiterentwickeln, kann auch als **Gesprächsleitfaden** genutzt werden, z.B. bei Strategietreffen
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Mit der **Entwicklungsmatrix** wird der IST-Zustand verdeutlicht und notwendige Entwicklungen werden erfasst. Das Thema wird aus der _Vogelperspektive_ betrachtet, um zu entscheiden, ob eine Neuerung oder das Loslassen einer nicht mehr benötigten Routine die gewünschte Entwicklung einleitet.
-
-### Mehrwert
-
-Diese Matrix ist universell einsetzbar. Sie zeigt gleichzeitig in unterschiedlichen Dimensionen auf, mit welchen Aktivitäten wirkungsvolle Veränderungen angestoßen werden können. Die erstellten Unterlagen werden zu lebenden Dokumenten, die im **Prozessverlauf** die notwendige Orientierung und Evaluationsgrundlage liefert.
-
-<!--text unten in klein-->
-
-Die **Entwicklungsmatrix** basiert auf dem sogenannten adaptiven Zyklus, der die Grundlage aller sozio-ökologischen Systemveränderungen darstellt. Das davon abgeleitete Prinzip liefert einen konzeptionellen Rahmen, der die Beziehungen und Merkmale aller komplexen Systeme – Stabilität und Wandel – modelliert.
+<MethodCard
+  title="Entwicklungsmatrix"
+  surtitle="Arbeitsblatt"
+  attributes={["15 - 20 Minuten"]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  // TODO: fix link
+  footer={<a href={'./assets/01_prozessverlauf.pdf'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+/>
 
 ## Vorgehen
 

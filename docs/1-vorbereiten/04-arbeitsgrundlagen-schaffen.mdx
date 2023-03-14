@@ -6,6 +6,12 @@ sidebar_class_name: 'step step-4'
 
 import { Hint } from '@site/src/components/Hint';
 import { Checkbox } from '@site/src/components/Checkbox';
+import { MethodCard } from '@site/src/components/MethodCard';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Teamarbeitsroutine from './methods/04/teamarbeitsroutine.md'
+import * as FuenfFingerFeedback from './methods/04/fuenf-finger-feedback.md'
+import * as GewaltfreieKommunikation from './methods/04/gewaltfreie-kommunikation.md'
 
 # Arbeitsgrundlagen schaffen
 
@@ -84,43 +90,22 @@ Innovationsprozesse leben durch Kommunikation. Gerade wenn ein dynamisches Vorge
 
 Im Nachfolgenden werden die drei Methoden der Etappe 4 erläutert.
 
-## Teamarbeitsroutine
+<MethodSummary
+  title={Teamarbeitsroutine.frontMatter.title}
+  time={Teamarbeitsroutine.frontMatter.time}
+  attributes={Teamarbeitsroutine.frontMatter.attributes}
+>
+  <Teamarbeitsroutine.default />
+</MethodSummary>
 
-<!--linke seitenleiste-->
-
-**Zeitrahmen**
-
-30 Minuten – mehrere Stunden
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Alles, was für das Treffen oder den Workshop benötigt wird
-
-**Rollen**
-
-Moderation, Dokumentation, Zeitmanagement
-
-**Anregung**
-
-Im Arbeitsalltag auch reguläre Treffen nach diesem Vorgehen planen und durchführen
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Die **Teamarbeitsroutine** hilft, den Ablauf aller Arbeitstreffen, unter Berücksichtigung der Organisationskultur, zu strukturieren. Als Agenda eröffnet sie innerhalb kürzester Zeit einen Schaffensraum und schließt ihn wieder ergebnisorientiert.
-
-### Mehrwert
-
-Dieses Vorgehen ist nicht nur sinnvoll für die Arbeitstreffen im Team, sondern kann in abgewandelter Form für andere Termine genutzt werden – egal ob diese 30 Minuten oder 4 Stunden dauern. Der Mehrwert besteht darin, die zur Verfügung stehende Zeit bestmöglich für das gemeinsame Erarbeiten von Zwischenergebnissen zu nutzen.
-
-<!--text unten klein-->
-
-_Agilität_ ist auch im öffentlichen Sektor in aller Munde. Mit **Teamarbeitsroutinen** lassen sich Arbeitstreffen selbstorganisiert und nach einer klaren Struktur durchführen. Damit ist der Grundstein für agiles Arbeiten gelegt. Die offene und gleichzeitig disziplinierte Art und Weise der Zusammenarbeit ist notwendig, um komplexe Fragestellungen kooperativ zu bearbeiten.
+<MethodCard
+  title={Teamarbeitsroutine.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[Teamarbeitsroutine.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<a href={'./assets/01_prozessverlauf.pdf'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+/>
 
 ## Vorgehen
 
@@ -150,47 +135,23 @@ Mit den folgenden Schritten lässt sich ein zeitlich begrenzter Lernzyklus öffn
 
 <Hint><b>Hinweis:</b> Die zwei wichtigsten Rollen für gelungene Arbeitstreffen sind die Moderator:in und die Zeitmanager:in. Die Moderator:in leitet nicht das Team, sondern unterstützt das <i>Durchlaufen</i> der Arbeitsroutine und hilft der Gruppe, positive Erfahrungen zu machen. Die Moderator:in ist, wie alle, ein:e Teilnehmer:in des Arbeitstreffens und bringt sich mit eigenen Beiträgen ein. Die Zeitmanager:in unterstützt das Arbeiten in Mikrozeiteinheiten und sorgt für das Beibehalten des Fokus während des Arbeitstreffens.</Hint>
 
-<!--pdf teamarbeitsroutine-->
+<MethodSummary
+  title={FuenfFingerFeedback.frontMatter.title}
+  time={FuenfFingerFeedback.frontMatter.time}
+  attributes={FuenfFingerFeedback.frontMatter.attributes}
+  footer={FuenfFingerFeedback.frontMatter.note}
+>
+  <FuenfFingerFeedback.default />
+</MethodSummary>
 
-##  Fünf-Finger-Feedback
-
-<!--seitenleiste links-->
-
-**Zeitrahmen**
-
-10 – 15 Minuten
-
-**Niveau**
-
-Einfach
-
-**Materialien**
-
-Stifte, Klebezettel
-
-**Rollen**
-
-Anmoderation, Dokumentation, Zeitmanagement
-
-**Anregung**
-
-Im Arbeitsalltag Feedback-Routinen einführen und auch kleine Veränderungen dokumentieren und feiern
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Das **Fünf-Finger-Feedback** unterstützt eine schnelle und strukturierte Reflexion. Die Methode kann nach Workshops, Besprechungen oder am Ende eines gemeinsamen Arbeitstages eingesetzt werden.
-
-### Mehrwert
-
-Diese vielschichtige Rückmeldung ermöglicht es, das Erfahrene als Gelerntes in den weiteren Ablauf zu integrieren. Eine visuelle Dokumentation schafft Transparenz und zeigt, dass jede Meinung im Team wertgeschätzt wird.
-
-<!--text unten klein-->
-
-Der Austausch und Kontakt zwischen Menschen lebt von ständigem Feedback. Der häufig unbewusste Vorgang kann durch den Einsatz unterschiedlicher Methoden benannt und verdeutlicht werden. Mit etwas Übung verbessert das die Selbst- und Fremdwahrnehmung. Feedback ist keine Leistungsbewertung, sondern dient dem eigenen und gegenseitigen Lernen. Methoden des Individualfeedbacks sind in der Evaluation von Lernerfahrungen mittlerweile sehr verbreitet.
-
-Goetz, Reinhardt. 2016. Führung: Feedback auf Augenhöhe
+<MethodCard
+  title={FuenfFingerFeedback.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[FuenfFingerFeedback.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<a href={'./assets/01_prozessverlauf.pdf'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+/>
 
 ## Vorgehen
 
@@ -214,46 +175,22 @@ Goetz, Reinhardt. 2016. Führung: Feedback auf Augenhöhe
 
 <Hint><b>Hinweis:</b> Formulierungen wie „<b>Sie</b> haben / <b>Du</b> hast …“ oder „<b>Ihre / Deine</b> Arbeit ist ...“ sollten für ein konstruktives Feedback vermieden werden.</Hint>
 
-<!--pdf fünf-finger-feedback-->
+<MethodSummary
+  title={GewaltfreieKommunikation.frontMatter.title}
+  time={GewaltfreieKommunikation.frontMatter.time}
+  attributes={GewaltfreieKommunikation.frontMatter.attributes}
+>
+  <GewaltfreieKommunikation.default />
+</MethodSummary>
 
-## Gewaltfreie Kommunikation
-
-<!--linke seitenspalte-->
-
-**Zeitrahmen**
-
-30 – 45 Minuten
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Stifte, Klebezettel
-
-**Anregung**
-
-Im Arbeitsalltag regelmäßig wertschätzend kommunizieren
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Das Vier-Schritt Modell der gewaltfreien Kommunikation unterstützt Menschen in intensiven Arbeitszusammenhängen oder alltäglichen Situationen, Konflikte aufzulösen anstatt sie gewinnen zu wollen.
-Folgende Routinen sind zu vermeiden:
-
-- **Analyse:** Das ist falsch, weil …
-- **Kritik:** Ihr Fehler war, dass ...
-- **Interpretation:** Sie machen das, weil ...
-- **Bewertung:** Sie sind ...
-- **Drohung:** Wenn Sie nicht, dann …
-
-Sie verstärken eine schlechte Atmosphäre, indem die darin verborgenen Wünsche nicht direkt angesprochen werden.
-
-### Mehrwert
-
-Durch diese Art der Kommunikation können Routinen vorwurfsfrei auf den Kopf gestellt werden. Anstatt die Schuld beim Gegenüber abzuladen, übernimmt man selbst konstruktiv und wertschätzend Verantwortung für die Verbesserung der Situation.
+<MethodCard
+  title={GewaltfreieKommunikation.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[GewaltfreieKommunikation.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<a href={'./assets/01_prozessverlauf.pdf'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+/>
 
 ## Vorgehen
 
@@ -272,5 +209,3 @@ Die folgenden Schritte für sich selbst durchlaufen:
 <Hint><b>Hinweis:</b> Gewaltfrei zu kommunizieren bedarf ein wenig Übung. Am Anfang hilft es, die wichtigsten Punkte je Schritt zu notieren.</Hint>
 
 6. **Entscheiden,** ob und wann die Essenzen der vier Schritte kommuniziert werden. Erfahrungsgemäß ergeben sich durch das Reflektieren neue Perspektiven auf die Situation. Das kann dazu führen, dass der Konflikt ggf. ohne Gespräch beigelegt werden kann.
-
-<!--pdf gewaltfreie kommunikation-->

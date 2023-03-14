@@ -4,7 +4,12 @@ sidebar_position: 3
 sidebar_class_name: 'step step-2'
 ---
 
+import { MethodCard } from '@site/src/components/MethodCard';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Prozessverlauf from './methods/02/prozessverlauf.md'
 
 # Prozess planen
 
@@ -37,32 +42,23 @@ Im Rahmen des Innovationsprozesses werden sie auf Herausforderungen und Hinderni
 - Es läuft alles hervorragend, und das Interesse von außen ist enorm. Was ist zu bedenken, wann und für wen?
 
 <MethodSummary
-  title="Prozessverlauf"
-  attributes={[
-    {
-      label: "Zeitrahmen",
-      content: "20 – 50 Minuten"
-    },
-    {
-      label: "Niveau",
-      content: "Einfach – Mittel"
-    },
-    {
-      label: "Materialien",
-      content: "Vorlage, Stifte, Klebezettel"
-    },
-    {
-      label: "Anregung",
-      content: "Wiederholend nutzbar, regelmäßig ergänzen und weiterentwickeln"
-    },
-  ]}
-  footer="Innovationsprozesse sind von einer parallelen Kommunikation und Koordination gekennzeichnet. In den unterschiedlichen Phasen sind viele Arbeitsschritte erforderlich, von denen sich einige zeitlich überschneiden. Das bedeutet, dass ein Schritt häufig nicht vollendet werden kann, bevor ein anderer beginnt. Bei der Planung sind deshalb Aufwände nach innen und nach außen gleichermaßen zu berücksichtigen."
+  title={Prozessverlauf.frontMatter.title}
+  time={Prozessverlauf.frontMatter.time}
+  attributes={Prozessverlauf.frontMatter.attributes}
+  footer={Prozessverlauf.frontMatter.note}
 >
-  <h3>Was und wofür?</h3>
-  <p>Der <b>Prozessverlauf</b> ermöglicht allen Beteiligten den zeitlichen Rahmen des Vorhabens auf einen Blick zu erfassen: Was ist in welcher Phase der Unternehmung zu tun? Dabei geht es weniger um die punktgenaue Planung, sondern vielmehr um eine Skizze.</p>
-  <h3>Mehrwert</h3>
-  <p>In einer schematischen Übersicht wird verdeutlicht, wie viel Umfang die unterschiedlichen Phasen im Gesamtprozess einnehmen. Neben den Beteiligungsformaten werden die dahinter liegenden Aufwände dargestellt. Die Übersicht kann in der Kommunikation mit Führungskräften genutzt werden, um entsprechende Unterstützung zu erhalten. Zusätzlich dient sie zur Gestaltung der Zusammenarbeit mit Teammitgliedern und weiteren internen und externen Beteiligten. Der <b>Prozessverlauf</b> wird zum lebenden Dokument, der im Verlauf der Unternehmung Orientierung und Evaluationsgrundlagen liefert.</p>
+  <Prozessverlauf.default />
 </MethodSummary>
+
+<MethodCard
+  title="Prozessverlauf"
+  surtitle="Arbeitsblatt"
+  attributes={["20 - 50 Minuten"]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  // TODO: fix link
+  footer={<a href={'./assets/01_prozessverlauf.pdf'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+/>
 
 ## Vorgehen
 
