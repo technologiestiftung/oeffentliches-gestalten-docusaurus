@@ -171,7 +171,7 @@
 }
 
 .theme-doc-markdown {
-  @apply prose md:px-6 lg:px-0 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
+  @apply prose pl-0 md:pl-3 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -315,9 +315,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 /* Table of Contents */
 html .theme-doc-toc-desktop {
-  @apply fixed right-0;
   top: var(--ifm-navbar-height);
-  width: 20vw;
   max-height: calc(100vh - var(--ifm-navbar-height));
 }
 
@@ -335,11 +333,11 @@ html[lang="de"] .table-of-contents:before {
 }
 
 .table-of-contents li {
-  @apply m-0 text-base;
+  @apply m-0 text-xs;
 }
 
 .table-of-contents__link {
-  @apply px-1.5 py-0.5 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
+  @apply px-1.5 py-1 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
 }
 
 div[class*="tocCollapsibleContent_"] ul.table-of-contents > li {
@@ -362,12 +360,6 @@ html .theme-doc-toc-mobile > button.clean-btn {
   @apply p-0 pb-2;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
