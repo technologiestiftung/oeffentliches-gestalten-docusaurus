@@ -42,6 +42,10 @@ module.exports = {
       white: "#fff",
       transparent: "transparent",
       currentColor: "currentColor",
+      inherit: "inherit",
+    },
+    boxShadow: {
+      DEFAULT: "0 4px 0 0 rgb(var(--grey-100))",
     },
     extend: {
       fontFamily: {
