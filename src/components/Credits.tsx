@@ -26,7 +26,7 @@ const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
       <ul className="list-none p-0">
         {people.map((person) => {
           return (
-            <li className="text-sm">
+            <li className="text-sm" key={person.toString()}>
               {typeof person === "string" && `${person}`}
               {typeof person === "object" && (
                 <>
@@ -54,7 +54,7 @@ export const Credits: FC<CreditsProps> = ({ credits }) => {
   return (
     <>
       {Object.entries(credits).map(([key, { title, people }]) => {
-        return <CreditsSection key={key} title={title} people={people} />;
+        return <CreditsSection key={title} title={title} people={people} />;
       })}
     </>
   );
