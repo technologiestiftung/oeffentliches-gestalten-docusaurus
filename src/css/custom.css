@@ -138,7 +138,7 @@
   body {
     font-size: 20px;
     line-height: 28px;
-    @apply font-sans text-grey-500;
+    @apply font-sans text-grey-500 antialiased;
   }
 
   h2,
@@ -167,6 +167,14 @@
 
   .clip-standing-square {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+
+  .hyphens-auto {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-after: 2;
+    hyphenate-limit-before: 3;
   }
 }
 
@@ -361,9 +369,5 @@ html .theme-doc-toc-mobile > button.clean-btn {
 }
 
 p {
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  hyphenate-limit-after: 2;
-  hyphenate-limit-before: 3;
+  @apply hyphens-auto;
 }
