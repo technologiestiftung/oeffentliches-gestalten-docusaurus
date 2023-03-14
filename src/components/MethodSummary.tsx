@@ -5,6 +5,7 @@ interface MethodSummaryType {
   title: string;
   attributes?: { label: string; content: string }[];
   footer?: string | ReactNode;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -12,14 +13,16 @@ export const MethodSummary: FC<MethodSummaryType> = ({
   title,
   attributes,
   footer,
+  className: additionalClassNames = "",
   children,
 }) => {
   return (
     <article
       className={clsx(
-        "bg-white",
+        "bg-white border border-grey-50",
         "px-7 py-6",
-        "grid grid-cols-1 xl:grid-cols-[5fr,3fr] gap-x-6 gap-y-5 md:gap-y-12"
+        "grid grid-cols-1 xl:grid-cols-[5fr,3fr] gap-x-6 gap-y-5 md:gap-y-12",
+        additionalClassNames
       )}
     >
       <h2 className="xl:col-span-2 !mb-0">
