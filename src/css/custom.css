@@ -315,9 +315,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 /* Table of Contents */
 html .theme-doc-toc-desktop {
-  @apply fixed right-0;
   top: var(--ifm-navbar-height);
-  width: 20vw;
   max-height: calc(100vh - var(--ifm-navbar-height));
 }
 
@@ -335,11 +333,11 @@ html[lang="de"] .table-of-contents:before {
 }
 
 .table-of-contents li {
-  @apply m-0 text-base;
+  @apply m-0 text-xs;
 }
 
 .table-of-contents__link {
-  @apply px-1.5 py-0.5 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
+  @apply px-1.5 py-1 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
 }
 
 div[class*="tocCollapsibleContent_"] ul.table-of-contents > li {
