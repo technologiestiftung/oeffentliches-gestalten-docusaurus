@@ -36,6 +36,51 @@ Note that we define our color scheme in CSS variables in `src/css/custom.css` an
 
 ## Content
 
+The book consists of 5 chapters that we call _phases_, an introduction chapter, and some opening and closing content.
+
+Find the main content in `./docs`:
+
+```plain
+.
+├── 0-einfuehrung
+│   ├── index.mdx
+│   ├── [...]
+├── 1-vorbereiten
+│   ├── 01-ist-zustand-betrachten.mdx
+│   ├── [...]
+│   └── methods
+│       ├── entwicklungsmatrix.md
+│       ├── [...]
+```
+
+Note that the content for each method is stored in the `method` folder of the respective phase. The `.md` files content is then rendered on the actual page (e.g. `01-ist-zustand-betrachten.mdx`) like so:
+
+```mdx
+import { MethodCard } from '@site/src/components/MethodCard';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Entwicklungsmatrix from './methods/entwicklungsmatrix.md'
+
+// [...]
+
+<MethodSummary
+  title={Entwicklungsmatrix.frontMatter.title}
+  time={Entwicklungsmatrix.frontMatter.time}
+  attributes={Entwicklungsmatrix.frontMatter.attributes}
+  footer={Entwicklungsmatrix.frontMatter.note}
+>
+  <Entwicklungsmatrix.default />
+</MethodSummary>
+
+<MethodCard
+  title={Entwicklungsmatrix.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[Entwicklungsmatrix.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+/>
+
+// [...]
+```
+
 ### Chapter sidebar
 
 We autogenerate the contents of the sidebar that displays the book chapters (see `./sidebars.js`). This enables us to not having to think too much about keeping the sidebar and the contents in sync.
