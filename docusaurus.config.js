@@ -46,7 +46,6 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/buch",
-          exclude: ["**/methods/**"],
         },
         blog: {
           showReadingTime: true,

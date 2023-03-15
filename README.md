@@ -41,24 +41,31 @@ The book consists of 5 chapters that we call _phases_, an introduction chapter, 
 Find the main content in `./docs`:
 
 ```plain
-.
+docs
 ├── 0-einfuehrung
 │   ├── index.mdx
 │   ├── [...]
 ├── 1-vorbereiten
 │   ├── 01-ist-zustand-betrachten.mdx
 │   ├── [...]
-│   └── methods
-│       ├── entwicklungsmatrix.md
-│       ├── [...]
 ```
 
-Note that the content for each method is stored in the `method` folder of the respective phase. The `.md` files content is then rendered on the actual page (e.g. `01-ist-zustand-betrachten.mdx`) like so:
+Note that all methods are centrally stored in another directory:
+
+```plain
+src/assets/methods
+├── entwicklungsmatrix.md
+├── fuenf-finger-feedback.md
+├── gewaltfreie-kommunikation.md
+├── [...]
+```
+
+Each of these `.md` files is the central source of truth for the method contents and is used in the rendered pages (e.g. `docs/1-vorbereiten/01-ist-zustand-betrachten.mdx`) like so:
 
 ```mdx
 import { MethodCard } from '@site/src/components/MethodCard';
 import { MethodSummary } from '@site/src/components/MethodSummary';
-import * as Entwicklungsmatrix from './methods/entwicklungsmatrix.md'
+import * as Entwicklungsmatrix from '@site/src/assets/methods/entwicklungsmatrix.md'
 
 // [...]
 
