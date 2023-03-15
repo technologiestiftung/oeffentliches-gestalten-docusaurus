@@ -15,7 +15,7 @@ note: "Die Kommunikationsforschung zeigt, dass Menschen weniger auf logische Fak
 
 ### Was und wofür?
 
-Ein Projektplan mit Kurzpräsentation, Zielrichtung, Aufwänden und zu erwartenden Ergebnissen ist gängige Praxis. Der Entwicklungsplan versammelt zusätzlich die wichtigsten Ergebnisse der Vorbereitungsphase wie den [Prozessverlauf](/buch/vorbereiten/prozess-planen#prozessverlauf) oder das [Teamprofil](/buch/vorbereiten/arbeitsgrundlagen-schaffen#teamprofil).
+Ein Projektplan mit Kurzpräsentation, Zielrichtung, Aufwänden und zu erwartenden Ergebnissen ist gängige Praxis. Der Entwicklungsplan versammelt zusätzlich die wichtigsten Ergebnisse der Vorbereitungsphase wie den [Prozessverlauf](/buch/vorbereiten/prozess-planen#prozessverlauf) oder das [Teamprofil](/buch/vorbereiten/beteiligte-identifizieren-analysieren#teamprofil--selbsteinschätzung).
 
 ### Mehrwert
 
