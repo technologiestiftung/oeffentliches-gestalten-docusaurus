@@ -9,6 +9,7 @@ import { MethodCard } from '@site/src/components/MethodCard';
 import EditIcon from '@site/static/img/icons/edit.svg';
 import { MethodSummary } from '@site/src/components/MethodSummary';
 import * as Entwicklungsmatrix from '@site/src/assets/methods/entwicklungsmatrix.md'
+import { Link } from '@site/src/components/Link';
 
 # Ist-Zustand betrachten
 
@@ -43,8 +44,7 @@ Durch das Ausfüllen der Felder der [Entwicklungsmatrix](#entwicklungsmatrix) en
   attributes={["15 - 20 Minuten"]}
   imageUrl={"/img/01_hero.svg"}
   className="mt-5"
-  // TODO: fix link
-  footer={<a href={'#'} className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" /> PDF-Vorlage</a>}
+  footer={<Link href={'pathname:///arbeitsblatt/01_entwicklungsmatrix.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
 />
 
 ## Vorgehen

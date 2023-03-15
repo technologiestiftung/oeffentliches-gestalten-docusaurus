@@ -10,6 +10,7 @@ import EditIcon from '@site/static/img/icons/edit.svg';
 import { MethodSummary } from '@site/src/components/MethodSummary';
 import * as MitspielerinnenKartieren from '@site/src/assets/methods/mitspielerinnen-kartieren.md'
 import * as Teamprofil from '@site/src/assets/methods/teamprofil.md'
+import { Link } from '@site/src/components/Link';
 
 # Beteiligte identifizieren und analysieren
 
@@ -47,7 +48,7 @@ Die wichtigsten Einheiten in unserem Prozess sind:
   attributes={[MitspielerinnenKartieren.frontMatter.time]}
   imageUrl={"/img/01_hero.svg"}
   className="mt-5"
-  footer={<a href="#" className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" />PDF-Vorlage</a>}
+  footer={<Link href={'pathname:///arbeitsblatt/01_mitspielerinnen_kartieren.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
 />
 
 ## Vorgehen
@@ -109,7 +110,7 @@ Das Vorhaben wird von mehreren Personen geleitet. Sie gehören alle zum Kernteam
   attributes={[Teamprofil.frontMatter.time]}
   imageUrl={"/img/01_hero.svg"}
   className="mt-5"
-  footer={<a href="#" className="!font-normal flex gap-x-1 items-center"><EditIcon className="w-3 h-3 text-inherit" />PDF-Vorlage</a>}
+  footer={<Link href={'pathname:///arbeitsblatt/01_teamprofil_und_selbsteinschaetzung.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
 />
 
 ## Vorgehen
