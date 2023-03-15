@@ -36,6 +36,8 @@ Note that we define our color scheme in CSS variables in `src/css/custom.css` an
 
 ## Content
 
+### Phases and methods
+
 The book consists of 5 chapters that we call _phases_, an introduction chapter, and some opening and closing content.
 
 Find the main content in `./docs`:
@@ -87,6 +89,42 @@ import * as Entwicklungsmatrix from '@site/src/assets/methods/entwicklungsmatrix
 
 // [...]
 ```
+
+#### Updating methods
+
+If you want to change, add, or delete methods, please make the change first in `src/assets/methods`.
+
+Then we have to do something that feels a bit repetitive, but is required for our customized Docusaurus setup.
+
+```mdx
+import * as MyNewMethod from '@site/src/assets/methods/my-new-method.md'
+
+## My method title from MyNewMethod
+
+<MethodSummary
+  title={MyNewMethod.frontMatter.title}
+  time={MyNewMethod.frontMatter.time}
+  attributes={MyNewMethod.frontMatter.attributes}
+  footer={MyNewMethod.frontMatter.note}
+>
+  <MyNewMethod.default />
+</MethodSummary>
+```
+
+Assuming we have created a new method, we import it and render it inside a `MethodSummary`. Unfortunately we also have to add a H2 with the method title right above. This is to make the Docusaurus table of contents work properly. But because we want don't want the headings to be duplicated, we need to hide its ID the heading by adding it in `src/css/custom.css`:
+
+```css
+#entwicklungsmatrix,
+#prozessverlauf
+/* [...] */
+{
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+```
+
+> You can find out the ID by inspecting the generated markup in the browser console.
 
 ### Chapter sidebar
 
