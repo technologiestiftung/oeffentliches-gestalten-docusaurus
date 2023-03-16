@@ -3,6 +3,7 @@ import React, { FC, ReactNode } from "react";
 
 interface MethodSummaryType {
   title: string;
+  time?: string;
   attributes?: { label: string; content: string }[];
   footer?: string | ReactNode;
   className?: string;
@@ -11,11 +12,20 @@ interface MethodSummaryType {
 
 export const MethodSummary: FC<MethodSummaryType> = ({
   title,
+  time,
   attributes,
   footer,
   className: additionalClassNames = "",
   children,
 }) => {
+  const sidebarItems: MethodSummaryType["attributes"] = [
+    time && {
+      label: "Zeitrahmen",
+      content: time,
+    },
+    ...attributes,
+  ].filter(Boolean);
+
   return (
     <article
       className={clsx(
@@ -26,16 +36,16 @@ export const MethodSummary: FC<MethodSummaryType> = ({
       )}
     >
       <h2 className="xl:col-span-2 !mb-0">
-        <span className="font-normal italic">Methode</span>
+        <span className="font-normal italic !text-2xl">Methode</span>
         <br />
         {title}
       </h2>
       <main className="prose-h3:my-0 prose-h3:text-lg">{children}</main>
       <aside className="align-start h-min grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-5 xl:grid-cols-1">
-        {attributes &&
-          attributes.map((attribute) => {
+        {sidebarItems &&
+          sidebarItems.map((attribute) => {
             return (
-              <div>
+              <div key={attribute.label}>
                 <h3 className="!text-lg font-bold !mt-0 !mb-0">
                   {attribute.label}
                 </h3>

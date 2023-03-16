@@ -1,14 +1,14 @@
 import clsx from "clsx";
 import React, { FC } from "react";
 
-export interface StepVisualProps {
-  stepIndex: number;
+export interface PhaseVisualProps {
+  phaseIndex: number;
   shape?: "circle" | "square";
   bgColorClass?: string;
 }
 
-export const StepVisual: FC<StepVisualProps> = ({
-  stepIndex,
+export const PhaseVisual: FC<PhaseVisualProps> = ({
+  phaseIndex,
   shape = "square",
   bgColorClass = "bg-grey-500",
 }) => {
@@ -42,7 +42,7 @@ export const StepVisual: FC<StepVisualProps> = ({
           "font-mono font-bold text-white"
         )}
       >
-        {stepIndex}
+        {phaseIndex}
       </p>
     </div>
   );

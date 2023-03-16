@@ -15,12 +15,7 @@ export const Checkbox: FC<CheckboxProps> = ({
   className: additionalClassname = "",
 }) => {
   return (
-    <div
-      className={clsx(
-        "flex gap-x-3 items-start md:-translate-x-7",
-        additionalClassname
-      )}
-    >
+    <div className={clsx("flex gap-x-3 items-start", additionalClassname)}>
       <input
         type="checkbox"
         name={group}

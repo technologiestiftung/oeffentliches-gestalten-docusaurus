@@ -1,11 +1,18 @@
 ---
 sidebar_label: 'Arbeitsgrundlagen schaffen'
 sidebar_position: 5
-sidebar_class_name: 'step step-4'
+sidebar_class_name: 'stage stage-4'
 ---
 
 import { Hint } from '@site/src/components/Hint';
 import { Checkbox } from '@site/src/components/Checkbox';
+import { MethodCard } from '@site/src/components/MethodCard';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Teamarbeitsroutine from '@site/src/assets/methods/teamarbeitsroutine.md'
+import * as FuenfFingerFeedback from '@site/src/assets/methods/fuenf-finger-feedback.md'
+import * as GewaltfreieKommunikation from '@site/src/assets//methods/gewaltfreie-kommunikation.md'
+import { Link } from '@site/src/components/Link';
 
 # Arbeitsgrundlagen schaffen
 
@@ -28,24 +35,24 @@ Checklist
   <Checkbox id="raum" label={<><b>Raum:</b> einladend, ungestört, sicher</>} />
   <Checkbox id="moebel" label={<><b>Möbel:</b> mobile Tische und Stühle, nicht festgeschraubt, am besten Stellwände und Stehtische</>} />
   <Checkbox id="arbeitsmaterial" label={<><b>Arbeitsmaterial:</b> (wenn möglich recyclebar):</>} />
-  <Checkbox id="flipcharts" label="Flipcharts oder großes Papier (z.B. Rückseite von nicht mehr benötigten Postern)" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="klebeband" label="Klebeband und Pinnwandnadeln" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="post-its" label="Klebezettel (Post-Its) in unterschiedlichen Farben" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="flipcharts" label="Flipchartstifte, Filzstifte, Tintenroller" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="kreativmaterial" label="Kreativmaterial, z.B. Bildmaterial, Pappkartons, Kostümierungen, Knete etc." className="md:-translate-x-0 text-sm" />
-  <Checkbox id="ausdrucke" label="Ausgedruckte Vorlagen, A4 Papier" className="md:-translate-x-0 text-sm" />
+  <Checkbox id="flipcharts" label="Flipcharts oder großes Papier (z.B. Rückseite von nicht mehr benötigten Postern)" className="md:translate-x-7 text-sm" />
+  <Checkbox id="klebeband" label="Klebeband und Pinnwandnadeln" className="md:translate-x-7 text-sm" />
+  <Checkbox id="post-its" label="Klebezettel (Post-Its) in unterschiedlichen Farben" className="md:translate-x-7 text-sm" />
+  <Checkbox id="flipcharts" label="Flipchartstifte, Filzstifte, Tintenroller" className="md:translate-x-7 text-sm" />
+  <Checkbox id="kreativmaterial" label="Kreativmaterial, z.B. Bildmaterial, Pappkartons, Kostümierungen, Knete etc." className="md:translate-x-7 text-sm" />
+  <Checkbox id="ausdrucke" label="Ausgedruckte Vorlagen, A4 Papier" className="md:translate-x-7 text-sm" />
   <Checkbox id="technik" label={<><b>Technik:</b> Beamer, Pointer, Computer, Kurzzeitwecker und ein Plan B</>} />
   <Checkbox id="verpflegung" label={<><b>Verpflegung:</b> Gehirnfutter wie Nüsse, rohe Schokolade, Obst, Gemüse, viel Wasser</>} />
   <Checkbox id="agenda" label={<><b>Agenda</b> mit Zielen, Zwischenergebnissen, Inhalten, Methoden:</>} />
-  <Checkbox id="check-in" label="Check In: Beitragsmöglichkeiten aufzeigen" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="zusammenarbeit" label="Methodengeleitete Zusammenarbeit" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="check-out" label="Check Out: Reflexion" className="md:-translate-x-0 text-sm" />
+  <Checkbox id="check-in" label="Check In: Beitragsmöglichkeiten aufzeigen" className="md:translate-x-7 text-sm" />
+  <Checkbox id="zusammenarbeit" label="Methodengeleitete Zusammenarbeit" className="md:translate-x-7 text-sm" />
+  <Checkbox id="check-out" label="Check Out: Reflexion" className="md:translate-x-7 text-sm" />
   <Checkbox id="kurzpraese" label={<><b>Kurzpräsentation</b> bei Einbindung interner Akteure mit Antworten auf folgende Fragen:</>} />
-  <Checkbox id="beteiligung-wichtig" label="Warum ist Ihre Beteiligung wichtig?" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="beteiligung-warum" label="Woran beteiligen Sie sich?" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="rolle" label="In welcher Rolle?" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="wie-umgehen" label="Wie gehen wir mit dem Input um?" className="md:-translate-x-0 text-sm" />
-  <Checkbox id="entscheidungen" label="Wer trifft weitere Entscheidungen?" className="md:-translate-x-0 text-sm" />
+  <Checkbox id="beteiligung-wichtig" label="Warum ist Ihre Beteiligung wichtig?" className="md:translate-x-7 text-sm" />
+  <Checkbox id="beteiligung-warum" label="Woran beteiligen Sie sich?" className="md:translate-x-7 text-sm" />
+  <Checkbox id="rolle" label="In welcher Rolle?" className="md:translate-x-7 text-sm" />
+  <Checkbox id="wie-umgehen" label="Wie gehen wir mit dem Input um?" className="md:translate-x-7 text-sm" />
+  <Checkbox id="entscheidungen" label="Wer trifft weitere Entscheidungen?" className="md:translate-x-7 text-sm" />
 </div>
 
 ## Zusammenarbeit fördern
@@ -62,7 +69,7 @@ Zeit ist eine wichtige und immer knappe Ressource. Das sogenannte _timeboxing_ �
 
 ### Rotierend dokumentieren
 
-Die nachvollziehbare Dokumentation der einzelnen Schritte ist grundlegend, damit Zwischenergebnisse gemeinsam weiterentwickelt werden können. Diese Wissensbasis ermöglicht es, sich unkompliziert zu informieren, datenbasiert zu diskutieren und lösungsorientiert Entscheidungen vorzubereiten und zu treffen. Dokumentieren ist eine anspruchsvolle Aufgabe, die rotierend durch unterschiedliche Personen übernommen wird. Nutzen Sie zur Zusammenfassung die vorletzte Seite jedes Kapitels, [Resultate dokumentieren](http://linkaufentsprechendenabschnitt.de "TODO: Resultate dokumentieren").
+Die nachvollziehbare Dokumentation der einzelnen Schritte ist grundlegend, damit Zwischenergebnisse gemeinsam weiterentwickelt werden können. Diese Wissensbasis ermöglicht es, sich unkompliziert zu informieren, datenbasiert zu diskutieren und lösungsorientiert Entscheidungen vorzubereiten und zu treffen. Dokumentieren ist eine anspruchsvolle Aufgabe, die rotierend durch unterschiedliche Personen übernommen wird. Nutzen Sie zur Zusammenfassung die vorletzte Seite jedes Kapitels, [Resultate dokumentieren](/buch/vorbereiten/abschluss#resultate-dokumentieren).
 
 ### Teams über Tools
 
@@ -86,41 +93,22 @@ Im Nachfolgenden werden die drei Methoden der Etappe 4 erläutert.
 
 ## Teamarbeitsroutine
 
-<!--linke seitenleiste-->
+<MethodSummary
+  title={Teamarbeitsroutine.frontMatter.title}
+  time={Teamarbeitsroutine.frontMatter.time}
+  attributes={Teamarbeitsroutine.frontMatter.attributes}
+>
+  <Teamarbeitsroutine.default />
+</MethodSummary>
 
-**Zeitrahmen**
-
-30 Minuten – mehrere Stunden
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Alles, was für das Treffen oder den Workshop benötigt wird
-
-**Rollen**
-
-Moderation, Dokumentation, Zeitmanagement
-
-**Anregung**
-
-Im Arbeitsalltag auch reguläre Treffen nach diesem Vorgehen planen und durchführen
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Die **Teamarbeitsroutine** hilft, den Ablauf aller Arbeitstreffen, unter Berücksichtigung der Organisationskultur, zu strukturieren. Als Agenda eröffnet sie innerhalb kürzester Zeit einen Schaffensraum und schließt ihn wieder ergebnisorientiert.
-
-### Mehrwert
-
-Dieses Vorgehen ist nicht nur sinnvoll für die Arbeitstreffen im Team, sondern kann in abgewandelter Form für andere Termine genutzt werden – egal ob diese 30 Minuten oder 4 Stunden dauern. Der Mehrwert besteht darin, die zur Verfügung stehende Zeit bestmöglich für das gemeinsame Erarbeiten von Zwischenergebnissen zu nutzen.
-
-<!--text unten klein-->
-
-_Agilität_ ist auch im öffentlichen Sektor in aller Munde. Mit **Teamarbeitsroutinen** lassen sich Arbeitstreffen selbstorganisiert und nach einer klaren Struktur durchführen. Damit ist der Grundstein für agiles Arbeiten gelegt. Die offene und gleichzeitig disziplinierte Art und Weise der Zusammenarbeit ist notwendig, um komplexe Fragestellungen kooperativ zu bearbeiten.
+<MethodCard
+  title={Teamarbeitsroutine.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[Teamarbeitsroutine.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<Link href={'pathname:///arbeitsblatt/01_teamarbeitsroutine.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
+/>
 
 ## Vorgehen
 
@@ -150,47 +138,25 @@ Mit den folgenden Schritten lässt sich ein zeitlich begrenzter Lernzyklus öffn
 
 <Hint><b>Hinweis:</b> Die zwei wichtigsten Rollen für gelungene Arbeitstreffen sind die Moderator:in und die Zeitmanager:in. Die Moderator:in leitet nicht das Team, sondern unterstützt das <i>Durchlaufen</i> der Arbeitsroutine und hilft der Gruppe, positive Erfahrungen zu machen. Die Moderator:in ist, wie alle, ein:e Teilnehmer:in des Arbeitstreffens und bringt sich mit eigenen Beiträgen ein. Die Zeitmanager:in unterstützt das Arbeiten in Mikrozeiteinheiten und sorgt für das Beibehalten des Fokus während des Arbeitstreffens.</Hint>
 
-<!--pdf teamarbeitsroutine-->
+## Fünf-Finger-Feedback
 
-##  Fünf-Finger-Feedback
+<MethodSummary
+  title={FuenfFingerFeedback.frontMatter.title}
+  time={FuenfFingerFeedback.frontMatter.time}
+  attributes={FuenfFingerFeedback.frontMatter.attributes}
+  footer={FuenfFingerFeedback.frontMatter.note}
+>
+  <FuenfFingerFeedback.default />
+</MethodSummary>
 
-<!--seitenleiste links-->
-
-**Zeitrahmen**
-
-10 – 15 Minuten
-
-**Niveau**
-
-Einfach
-
-**Materialien**
-
-Stifte, Klebezettel
-
-**Rollen**
-
-Anmoderation, Dokumentation, Zeitmanagement
-
-**Anregung**
-
-Im Arbeitsalltag Feedback-Routinen einführen und auch kleine Veränderungen dokumentieren und feiern
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Das **Fünf-Finger-Feedback** unterstützt eine schnelle und strukturierte Reflexion. Die Methode kann nach Workshops, Besprechungen oder am Ende eines gemeinsamen Arbeitstages eingesetzt werden.
-
-### Mehrwert
-
-Diese vielschichtige Rückmeldung ermöglicht es, das Erfahrene als Gelerntes in den weiteren Ablauf zu integrieren. Eine visuelle Dokumentation schafft Transparenz und zeigt, dass jede Meinung im Team wertgeschätzt wird.
-
-<!--text unten klein-->
-
-Der Austausch und Kontakt zwischen Menschen lebt von ständigem Feedback. Der häufig unbewusste Vorgang kann durch den Einsatz unterschiedlicher Methoden benannt und verdeutlicht werden. Mit etwas Übung verbessert das die Selbst- und Fremdwahrnehmung. Feedback ist keine Leistungsbewertung, sondern dient dem eigenen und gegenseitigen Lernen. Methoden des Individualfeedbacks sind in der Evaluation von Lernerfahrungen mittlerweile sehr verbreitet.
-
-Goetz, Reinhardt. 2016. Führung: Feedback auf Augenhöhe
+<MethodCard
+  title={FuenfFingerFeedback.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[FuenfFingerFeedback.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<Link href={'pathname:///arbeitsblatt/01_fuenf_finger_feedback.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
+/>
 
 ## Vorgehen
 
@@ -214,46 +180,24 @@ Goetz, Reinhardt. 2016. Führung: Feedback auf Augenhöhe
 
 <Hint><b>Hinweis:</b> Formulierungen wie „<b>Sie</b> haben / <b>Du</b> hast …“ oder „<b>Ihre / Deine</b> Arbeit ist ...“ sollten für ein konstruktives Feedback vermieden werden.</Hint>
 
-<!--pdf fünf-finger-feedback-->
-
 ## Gewaltfreie Kommunikation
 
-<!--linke seitenspalte-->
+<MethodSummary
+  title={GewaltfreieKommunikation.frontMatter.title}
+  time={GewaltfreieKommunikation.frontMatter.time}
+  attributes={GewaltfreieKommunikation.frontMatter.attributes}
+>
+  <GewaltfreieKommunikation.default />
+</MethodSummary>
 
-**Zeitrahmen**
-
-30 – 45 Minuten
-
-**Niveau**
-
-Einfach – Mittel
-
-**Materialien**
-
-Stifte, Klebezettel
-
-**Anregung**
-
-Im Arbeitsalltag regelmäßig wertschätzend kommunizieren
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Das Vier-Schritt Modell der gewaltfreien Kommunikation unterstützt Menschen in intensiven Arbeitszusammenhängen oder alltäglichen Situationen, Konflikte aufzulösen anstatt sie gewinnen zu wollen.
-Folgende Routinen sind zu vermeiden:
-
-- **Analyse:** Das ist falsch, weil …
-- **Kritik:** Ihr Fehler war, dass ...
-- **Interpretation:** Sie machen das, weil ...
-- **Bewertung:** Sie sind ...
-- **Drohung:** Wenn Sie nicht, dann …
-
-Sie verstärken eine schlechte Atmosphäre, indem die darin verborgenen Wünsche nicht direkt angesprochen werden.
-
-### Mehrwert
-
-Durch diese Art der Kommunikation können Routinen vorwurfsfrei auf den Kopf gestellt werden. Anstatt die Schuld beim Gegenüber abzuladen, übernimmt man selbst konstruktiv und wertschätzend Verantwortung für die Verbesserung der Situation.
+<MethodCard
+  title={GewaltfreieKommunikation.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[GewaltfreieKommunikation.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<Link href={'pathname:///arbeitsblatt/01_gewaltfreie_kommunikation.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
+/>
 
 ## Vorgehen
 
@@ -272,5 +216,3 @@ Die folgenden Schritte für sich selbst durchlaufen:
 <Hint><b>Hinweis:</b> Gewaltfrei zu kommunizieren bedarf ein wenig Übung. Am Anfang hilft es, die wichtigsten Punkte je Schritt zu notieren.</Hint>
 
 6. **Entscheiden,** ob und wann die Essenzen der vier Schritte kommuniziert werden. Erfahrungsgemäß ergeben sich durch das Reflektieren neue Perspektiven auf die Situation. Das kann dazu führen, dass der Konflikt ggf. ohne Gespräch beigelegt werden kann.
-
-<!--pdf gewaltfreie kommunikation-->

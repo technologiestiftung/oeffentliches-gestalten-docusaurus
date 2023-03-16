@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React, { FC, ReactNode } from "react";
 
-interface StepItemProps {
+interface PhaseItemProps {
   surtitle?: string;
   title: string;
   subtitle?: string;
@@ -9,7 +9,7 @@ interface StepItemProps {
   className?: string;
 }
 
-export const StepItem: FC<StepItemProps> = ({
+export const PhaseItem: FC<PhaseItemProps> = ({
   surtitle,
   title,
   subtitle,

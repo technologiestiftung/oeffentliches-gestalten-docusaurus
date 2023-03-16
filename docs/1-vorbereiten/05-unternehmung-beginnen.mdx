@@ -1,8 +1,14 @@
 ---
 sidebar_label: 'Unternehmung beginnen'
 sidebar_position: 6
-sidebar_class_name: 'step step-5'
+sidebar_class_name: 'stage stage-5'
 ---
+
+import { MethodCard } from '@site/src/components/MethodCard';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Entwicklungsplan from '@site/src/assets/methods/entwicklungsplan.md'
+import { Link } from '@site/src/components/Link';
+import EditIcon from '@site/static/img/icons/edit.svg';
 
 # Unternehmung beginnen
 
@@ -19,6 +25,26 @@ Sie kennen Ihre Vorgesetzten am besten. Was wird sie am ehesten überzeugen: ers
 Solide Vorschläge zum Aufwand und zur Teamzusammenstellung sind eine gute Basis, um mit Ihren Vorgesetzten einen Termin zu vereinbaren. Verdeutlichen Sie, warum die Unternehmung Unterstützung und Ressourcen erhalten sollte. Stellen Sie dafür Argumente zusammen, die klar aufzeigen, welchen Mehrwert dies für die Leitungsebene und Ihre Organisation hat.
 
 <!--illustration mit händen s.67-->
+
+## Entwicklungsplan
+
+<MethodSummary
+  title={Entwicklungsplan.frontMatter.title}
+  time={Entwicklungsplan.frontMatter.time}
+  attributes={Entwicklungsplan.frontMatter.attributes}
+  footer={Entwicklungsplan.frontMatter.note}
+>
+  <Entwicklungsplan.default />
+</MethodSummary>
+
+<MethodCard
+  title={Entwicklungsplan.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[Entwicklungsplan.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<Link href={'pathname:///arbeitsblatt/01_entwicklungsplan.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
+/>
 
 ## Vorgehen
 
@@ -37,43 +63,3 @@ Solide Vorschläge zum Aufwand und zur Teamzusammenstellung sind eine gute Basis
 4. Argumente für die Unternehmung durch bestehende Unterlagen untermauern. Gibt es Berichte oder Kalkulationen, auf denen aufgebaut werden kann? Was wird darüber hinaus in der Unternehmung geleistet?
 
 5. Geschichten werden besser erinnert als reine Informationen. Die Storyline der Präsentation ausprobieren und mit Kolleg:innen testen. Je überzeugender Sie auf den Punkt kommen, desto besser kann darauf eingegangen werden.
-
-## Entwicklungsplan
-
-<!--linke seitenleiste-->
-
-**Zeitrahmen**
-
-40 – 60 Minuten
-
-**Niveau**
-
-Mittel – Hoch
-
-**Materialien**
-
-Vorlage, Stifte, Klebezettel
-
-**Rollen**
-
-Präsentierende und Testpersonen für die Präsentation
-
-**Anregung**
-
-Wiederholend nutzbar, regelmäßig ergänzen und weiterentwickeln
-
-<!--text in der mitte-->
-
-### Was und wofür?
-
-Ein Projektplan mit Kurzpräsentation, Zielrichtung, Aufwänden und zu erwartenden Ergebnissen ist gängige Praxis. Der Entwicklungsplan versammelt zusätzlich die wichtigsten Ergebnisse der Vorbereitungsphase wie den [Prozessverlauf](/buch/vorbereiten/prozess-planen#prozessverlauf) oder das [Teamprofil](/buch/vorbereiten/beteiligte-identifizieren-analysieren#teamprofil).
-
-### Mehrwert
-
-Mit überzeugenden Argumenten verdeutlichen, wofür die Unternehmung in der Organisation notwendig ist. Den Kern der Unternehmung so kommunizieren, dass er markant und lebendig auch von anderen Personen in eigenen Worten weitergegeben werden kann.
-
-<!--text unten klein-->
-
-Die Kommunikationsforschung zeigt, dass Menschen weniger auf logische Fakten als vielmehr auf gute Geschichten reagieren. Das können öffentliche Institutionen nutzen, indem Kommunikationsansätze wie der goldene Kreis häufiger zum Einsatz kommen. Nach diesem Schema beginnt die Geschichte mit dem WOFÜR, beschreibt darauf aufbauend das WIE und wird mit dem WAS beendet.
-
-<!--pdf emtwicklungsplan-->

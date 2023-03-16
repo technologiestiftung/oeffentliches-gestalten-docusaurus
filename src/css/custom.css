@@ -138,7 +138,7 @@
   body {
     font-size: 20px;
     line-height: 28px;
-    @apply font-sans text-grey-500;
+    @apply font-sans text-grey-500 antialiased;
   }
 
   h2,
@@ -168,10 +168,18 @@
   .clip-standing-square {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   }
+
+  .hyphens-auto {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-after: 2;
+    hyphenate-limit-before: 3;
+  }
 }
 
 .theme-doc-markdown {
-  @apply prose pl-0 md:pl-3 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
+  @apply prose prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-5 prose-ul:list-large-circle prose-ul:leading-snug prose-ul:pl-5 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -361,9 +369,20 @@ html .theme-doc-toc-mobile > button.clean-btn {
 }
 
 p {
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  hyphenate-limit-after: 2;
-  hyphenate-limit-before: 3;
+  @apply hyphens-auto;
+}
+
+#entwicklungsmatrix,
+#prozessverlauf,
+#mitspielerinnen-kartieren,
+#teamprofil--selbsteinschätzung,
+#teamarbeitsroutine,
+#fünf-finger-feedback,
+#gewaltfreie-kommunikation,
+#entwicklungsplan,
+#resultate-dokumentieren,
+#ich-und-der-prozess {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
 }

@@ -1,15 +1,15 @@
 import clsx from "clsx";
 import React, { FC } from "react";
-import { StepItem } from "./StepItem";
-import { StepVisual, StepVisualProps } from "./StepVisual";
+import { PhaseItem } from "./PhaseItem";
+import { PhaseVisual, PhaseVisualProps } from "./PhaseVisual";
 
-interface StepsContentType {
+interface PhasesContentType {
   title: string;
   subtitle: string;
   area?: "Problembereich" | "Lösungsbereich";
 }
 
-const STEPS: StepsContentType[] = [
+const PHASES: PhasesContentType[] = [
   {
     title: "Vorbereiten",
     subtitle: "Unternehmung beginnen",
@@ -39,8 +39,8 @@ const STEPS: StepsContentType[] = [
 interface AreaIndicatorProps {
   color: "magenta" | "blue";
   label: string;
-  firstStepIndex: number;
-  finalStepIndex: number;
+  firstPhaseIndex: number;
+  finalPhaseIndex: number;
 }
 
 /**
@@ -50,8 +50,8 @@ interface AreaIndicatorProps {
 const AreaIndicator: FC<AreaIndicatorProps> = ({
   color,
   label,
-  firstStepIndex,
-  finalStepIndex,
+  firstPhaseIndex,
+  finalPhaseIndex,
 }) => {
   const COLOR_CLASSES = {
     border: color === "magenta" ? "border-magenta-500" : "border-blue-500",
@@ -61,8 +61,8 @@ const AreaIndicator: FC<AreaIndicatorProps> = ({
     <div
       className={clsx("col-start-2", "border-l-2", COLOR_CLASSES.border)}
       style={{
-        gridRowStart: firstStepIndex,
-        gridRow: `${firstStepIndex} / ${finalStepIndex + 1}`,
+        gridRowStart: firstPhaseIndex,
+        gridRow: `${firstPhaseIndex} / ${finalPhaseIndex + 1}`,
       }}
     >
       <div className="w-full h-full flex items-center justify-center">
@@ -82,9 +82,9 @@ const AreaIndicator: FC<AreaIndicatorProps> = ({
 };
 
 const getStepShape = (
-  stepArea: StepsContentType["area"]
-): StepVisualProps["shape"] => {
-  switch (stepArea) {
+  phaseArea: PhasesContentType["area"]
+): PhaseVisualProps["shape"] => {
+  switch (phaseArea) {
     case "Problembereich":
       return "square";
     case "Lösungsbereich":
@@ -95,9 +95,9 @@ const getStepShape = (
 };
 
 const getStepBgColor = (
-  stepArea: StepsContentType["area"]
-): StepVisualProps["bgColorClass"] => {
-  switch (stepArea) {
+  phaseArea: PhasesContentType["area"]
+): PhaseVisualProps["bgColorClass"] => {
+  switch (phaseArea) {
     case "Problembereich":
       return "bg-magenta-500";
     case "Lösungsbereich":
@@ -107,7 +107,7 @@ const getStepBgColor = (
   }
 };
 
-export const StepsOverview: FC = () => {
+export const PhasesOverview: FC = () => {
   return (
     <div
       className={clsx(
@@ -116,20 +116,20 @@ export const StepsOverview: FC = () => {
         "not-prose"
       )}
     >
-      {STEPS.map((step, idx) => {
-        const STEP_NUMBER = idx + 1;
+      {PHASES.map((phase, idx) => {
+        const PHASE_NUMBER = idx + 1;
 
         return (
-          <StepItem
-            key={step.title}
-            surtitle={`Phase ${STEP_NUMBER}`}
-            title={step.title}
-            subtitle={step.subtitle}
+          <PhaseItem
+            key={phase.title}
+            surtitle={`Phase ${PHASE_NUMBER}`}
+            title={phase.title}
+            subtitle={phase.subtitle}
             visual={
-              <StepVisual
-                shape={getStepShape(step.area)}
-                stepIndex={STEP_NUMBER}
-                bgColorClass={getStepBgColor(step.area)}
+              <PhaseVisual
+                shape={getStepShape(phase.area)}
+                phaseIndex={PHASE_NUMBER}
+                bgColorClass={getStepBgColor(phase.area)}
               />
             }
             className="col-start-1"
@@ -139,14 +139,14 @@ export const StepsOverview: FC = () => {
       <AreaIndicator
         color="magenta"
         label="Problembereich"
-        firstStepIndex={2}
-        finalStepIndex={3}
+        firstPhaseIndex={2}
+        finalPhaseIndex={3}
       />
       <AreaIndicator
         color="blue"
         label="Lösungsbereich"
-        firstStepIndex={4}
-        finalStepIndex={5}
+        firstPhaseIndex={4}
+        finalPhaseIndex={5}
       />
     </div>
   );

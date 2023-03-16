@@ -36,6 +36,96 @@ Note that we define our color scheme in CSS variables in `src/css/custom.css` an
 
 ## Content
 
+### Phases and methods
+
+The book consists of 5 chapters that we call _phases_, an introduction chapter, and some opening and closing content.
+
+Find the main content in `./docs`:
+
+```plain
+docs
+├── 0-einfuehrung
+│   ├── index.mdx
+│   ├── [...]
+├── 1-vorbereiten
+│   ├── 01-ist-zustand-betrachten.mdx
+│   ├── [...]
+```
+
+Note that all methods are centrally stored in another directory:
+
+```plain
+src/assets/methods
+├── entwicklungsmatrix.md
+├── fuenf-finger-feedback.md
+├── gewaltfreie-kommunikation.md
+├── [...]
+```
+
+Each of these `.md` files is the central source of truth for the method contents and is used in the rendered pages (e.g. `docs/1-vorbereiten/01-ist-zustand-betrachten.mdx`) like so:
+
+```mdx
+import { MethodCard } from '@site/src/components/MethodCard';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Entwicklungsmatrix from '@site/src/assets/methods/entwicklungsmatrix.md'
+
+// [...]
+
+<MethodSummary
+  title={Entwicklungsmatrix.frontMatter.title}
+  time={Entwicklungsmatrix.frontMatter.time}
+  attributes={Entwicklungsmatrix.frontMatter.attributes}
+  footer={Entwicklungsmatrix.frontMatter.note}
+>
+  <Entwicklungsmatrix.default />
+</MethodSummary>
+
+<MethodCard
+  title={Entwicklungsmatrix.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[Entwicklungsmatrix.frontMatter.time]}
+  imageUrl={"/img/01_hero.svg"}
+/>
+
+// [...]
+```
+
+#### Updating methods
+
+If you want to change, add, or delete methods, please make the change first in `src/assets/methods`.
+
+Then we have to do something that feels a bit repetitive, but is required for our customized Docusaurus setup.
+
+```mdx
+import * as MyNewMethod from '@site/src/assets/methods/my-new-method.md'
+
+## My method title from MyNewMethod
+
+<MethodSummary
+  title={MyNewMethod.frontMatter.title}
+  time={MyNewMethod.frontMatter.time}
+  attributes={MyNewMethod.frontMatter.attributes}
+  footer={MyNewMethod.frontMatter.note}
+>
+  <MyNewMethod.default />
+</MethodSummary>
+```
+
+Assuming we have created a new method, we import it and render it inside a `MethodSummary`. Unfortunately we also have to add a H2 with the method title right above. This is to make the Docusaurus table of contents work properly. But because we want don't want the headings to be duplicated, we need to hide its ID the heading by adding it in `src/css/custom.css`:
+
+```css
+#entwicklungsmatrix,
+#prozessverlauf
+/* [...] */
+{
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+```
+
+> You can find out the ID by inspecting the generated markup in the browser console.
+
 ### Chapter sidebar
 
 We autogenerate the contents of the sidebar that displays the book chapters (see `./sidebars.js`). This enables us to not having to think too much about keeping the sidebar and the contents in sync.
