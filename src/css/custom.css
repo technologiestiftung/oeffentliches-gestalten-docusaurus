@@ -268,7 +268,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 .breadcrumbs > li:first-of-type > .breadcrumbs__link {
   @apply p-0 w-7 h-7 -ml-1;
-  background: white url('../assets/icons/home.svg') center center no-repeat;
+  background: transparent url('../assets/icons/home.svg') center center no-repeat;
 }
 
 .breadcrumbs > li:first-of-type > .breadcrumbs__link:hover {
@@ -366,6 +366,23 @@ html .theme-doc-toc-mobile {
 
 html .theme-doc-toc-mobile > button.clean-btn {
   @apply p-0 pb-2;
+}
+
+/*
+  I would advise we don't go down that road any further.
+  We are referencing classes/markup here that is not considered stable by Docusaurus:
+  https://docusaurus.io/docs/styling-layout#theme-class-names
+  E.g. ".main-wrapper main" is not in the list.
+  Also we can't guarantee that that docs-doc-id-vorbereiten/index won't be changed in
+  future versions.
+*/
+html[class*="docs-doc-id-vorbereiten/index"] .theme-doc-sidebar-container,
+html[class*="docs-doc-id-vorbereiten/index"] .main-wrapper main {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+html .theme-doc-sidebar-container nav.menu {
+  background-color: white;
 }
 
 p {
