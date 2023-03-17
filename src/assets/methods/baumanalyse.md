@@ -19,5 +19,4 @@ Die **Baumanalyse** unterstützt die Betrachtung des Problemkontexts, indem die 
 
 ### Mehrwert
 
-Das Blickfeld wird problembezogen erweitert.
-Verschiedene Blickwinkel und Bedenken können im Team sachlich gesammelt und effektiv geordnet werden. Dabei werden Muster oder Abhängigkeiten sichtbar und ermöglichen eine systematische Bearbeitung.
+Das Blickfeld wird problembezogen erweitert. Verschiedene Blickwinkel und Bedenken können im Team sachlich gesammelt und effektiv geordnet werden. Dabei werden Muster oder Abhängigkeiten sichtbar und ermöglichen eine systematische Bearbeitung.
