@@ -1,5 +1,5 @@
 ---
-title: "Akteuer kartieren"
+title: "Akteure kartieren"
 time: "30 – 50 Minuten"
 attributes:
   - label: "Niveau"
