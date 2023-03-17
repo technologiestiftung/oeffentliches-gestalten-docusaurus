@@ -158,6 +158,19 @@
     padding: max(1rem,2vw) max(1rem,5vw) max(3rem,10vh) !important;
   }
 
+  blockquote {
+    quotes: "» " " «";
+  }
+
+  blockquote::before {
+    content: open-quote;
+    color: rgb(var(--magenta-500));
+  }
+  blockquote::after {
+    content: close-quote;
+    color: rgb(var(--magenta-500));
+  }
+
 }
 
 @layer utilities {
