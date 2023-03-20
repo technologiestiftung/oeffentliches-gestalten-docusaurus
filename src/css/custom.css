@@ -399,7 +399,16 @@ p {
 #akteure-kartieren,
 #wissensatlas,
 #annahmen-dreieck,
-#lagebericht {
+#lagebericht,
+#gesprächsleitfaden,
+#gesprächsgrundlagen,
+#vorgespräche-führen,
+#gespräch-dokumentieren,
+#individuelle-gesprächsauswertung,
+#bedürfnis-hindernis-filter,
+#denkfehler-kontrolle,
+#potenzialbaukasten,
+#wie-können-wir-fragen {
   visibility: hidden;
   height: 0;
   margin: 0;
