@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Einführung'
+sidebar_label: "Einführung"
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ In der _Vorbereitungsphase_ können grundlegende Fragen geklärt werden. Gehen S
 
 ## Phasenziel & Etappen
 
-In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams. Das Ziel der Vorbereitungsphase ist es, einen eingängigen kommunizierbaren Plan für die gesamte Unternehmung zu erstellen. Dieser Plan dient schließlich als Ausgangspunkt für einen gelungenen Start und bietet im Innovationsprozess Orientierung.
+In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams. Das Ziel der Vorbereitungsphase ist es, einen eingängigen kommunizierbaren Plan für die gesamte Unternehmung zu erstellen. Dieser Plan dient schließlich als Ausgangspunkt für einen gelungenen Start und bietet im Innovationsprozess Orientierung.
 
 ## Methoden
 

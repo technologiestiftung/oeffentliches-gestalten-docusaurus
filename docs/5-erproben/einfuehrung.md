@@ -1,23 +1,23 @@
 ---
-sidebar_label: 'Einführung'
+sidebar_label: "Einführung"
 sidebar_position: 1
 ---
 
-# Gemeinsam loslegen
+# Ein Experiment wagen
 
-Innovationsprozesse verlaufen überraschend. Um sie erfolgreich zu moderieren, sind neben der effizienten Planung zusätzliche Fähigkeiten notwendig. Mit Offenheit, Transparenz und einem gestalterischen Vorgehen können unvorhersehbare Situationen konstruktiv einbezogen werden. Diese Herangehensweise ermöglicht es, sowohl potenzielle Risiken zu erkennen, als auch bislang unbekannte Chancen zu nutzen.
+Unser Innovationsansatz hat die Gestaltung von Lösungen zum Ziel, die im Kontext unserer Schlüsselakteure zu wahrnehmbaren, positiven Veränderungen beitragen. In der Phase des Erprobens geben wir unserer Idee eine erste Form. Indem wir der Lösung eine erlebbare Dimension verleihen, können wir sie testen und schärfen gleichzeitig das Verständnis im Team für die weitere Entwicklung.
 
-Begriffe wie _Projekte_ oder _Vorhaben_ stehen in der öffentlichen Verwaltung häufig mit ganz konkreten bürokratischen und organisatorischen Abläufen in Verbindung. Deshalb wird für das Vorgehen in diesem Buch der Begriff **Unternehmung** gewählt. Das soll verdeutlichen, dass sich Innovationsprozesse nicht mit klassischem Projektmanagement durchführen lassen, sondern ein strukturiertes Untersuchen und wirkungsorientiertes Experimentieren benötigen.
+Mit einem Prototyp lässt sich herausfinden, wie sich das Neue anfühlt und was sich dadurch verbessert oder nicht. Prototypen sind Werkzeuge, um in der Interaktion mit den Betroffenen im frühesten Stadium einer Lösung herauszufinden, was wertvoll ist und was ggf. verändert werden muss. Das Experimentieren in realen Kontexten eröffnet zusätzliche Perspektiven, die bei der Entstehung einer Idee nur bedingt absehbar sind.
 
-Jede **Unternehmung** braucht eine gewisse Vorbereitung, um sich bewusst und neugierig auf den Weg zu machen. Die Planung eines erfolgreichen Innovationsprozesses erfordert Konzentration, Zeit und Geduld. Die eigentliche Leistung besteht schließlich darin, das Alte mit dem Neuen zu verbinden und nicht gegeneinander auszuspielen.
+Die Test-Formate sind vielfältig und können in der öffentlichen Verwaltung unterschiedlichste Elemente und Dimensionen betreffen – von Formularen über digitale Prozesse bis hin zu regulatorischen Experimenten. Für weitreichende Veränderungen sind Modellversuche notwendig, bei denen systemische Folgen beobachtet und Skalierungen datenbasiert modelliert werden können. Dieses Handbuch begleitet uns bis zur Konzeption eines Minimal Verwendbaren Prozesses oder Produktes (MVP). Damit sind wir bestens für weitere Umsetzungsschritte gewappnet.
 
-In der _Vorbereitungsphase_ können grundlegende Fragen geklärt werden. Gehen Sie mit Neugier und Offenheit vor, wenn Sie sich selbst und Ihre Arbeitsumgebung weiterentwickeln. Bleiben Sie mutig und seien Sie gespannt auf einen Prozess, der Ihnen neben Struktur und Halt vor allem neue Perspektiven aufzeigen wird. Innovationsprozesse leben durch Menschen, die bereit sind, mit Unsicherheit gestaltend umzugehen.
-
-**Toll, dass Sie sich mit uns auf den Weg machen!**
+Wir sind gespannt darauf, was in der Realität funktioniert! Um Ergebnisse zu produzieren, die zur Lösung des Problems beitragen, sind wir bereit, unserer Idee Raum zu geben, statt sie festzuhalten.
 
 ## Phasenziel & Etappen
 
-In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessverlauf (S. 32) skizziert. Diese Grundlagen liefern einen ersten Orientierungsrahmen für eine weiterführende Kommunikation und die Zusammenstellung eines geeigneten Teams. Das Ziel der Vorbereitungsphase ist es, einen eingängigen kommunizierbaren Plan für die gesamte Unternehmung zu erstellen. Dieser Plan dient schließlich als Ausgangspunkt für einen gelungenen Start und bietet im Innovationsprozess Orientierung.
+In der Phase des Erproben wird uns der Mehrwert von Testformaten und schnellen Lernzyklen deutlich. Wir entwickeln Prototypen, um unsere Idee in eine Erfahrung zu verwandeln, die mit Schlüsselakteuren gestestet werden kann. **Durch das Testen erhalten wir Inspirationen zur Anpassung und Verfeinerung unserer Idee, auf die wir alleine nicht gekommen wären.** Diese Vorschläge werten wir aus und nutzen die Erkenntnisse der Testerfahrungen als Basis zur Konzeption eines MVP.
+
+<!--illustration s.252-->
 
 ## Methoden
 
