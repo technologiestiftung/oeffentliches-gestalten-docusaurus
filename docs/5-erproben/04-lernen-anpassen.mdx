@@ -4,6 +4,14 @@ sidebar_position: 5
 sidebar_class_name: "stage stage-4"
 ---
 
+import { MethodSummary } from "@site/src/components/MethodSummary";
+import * as TestAuswerten from "@site/src/assets/methods/test-auswerten.md";
+import { MethodCard } from "@site/src/components/MethodCard";
+import { Link } from "@site/src/components/Link";
+import EditIcon from "@site/static/img/icons/edit.svg";
+import { Hint } from "@site/src/components/Hint";
+import { Checkbox } from "@site/src/components/Checkbox";
+
 # Lernen und anpassen
 
 ## Von den Testresultaten lernen
@@ -25,3 +33,42 @@ Neben dem positiven Feedback interessiert uns besonders, was nicht funktioniert 
 ### Kreative Zerstörung
 
 Um diese möglicherweise ernüchternde Aufgabe mit Neugier und Freude zu meistern, werden wir wieder kreativ. Vor oder in der Auswertung können Warm-ups die Stimmung wieder heben. Das Arbeiten im Ja-Und-Modus oder eine Runde [Kreatives Aikido](http://www.citylab-berlin.org/handbuch "Kreatives Aikido") unterstützen spielerisch die Ableitung von Schlussfolgerungen oder den nächsten Schritten.
+
+## Test ausweten
+
+<MethodSummary
+  title={TestAuswerten.frontMatter.title}
+  time={TestAuswerten.frontMatter.time}
+  attributes={TestAuswerten.frontMatter.attributes}
+  footer={TestAuswerten.frontMatter.note}
+>
+  <TestAuswerten.default />
+</MethodSummary>
+
+<MethodCard
+  title={TestAuswerten.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[TestAuswerten.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      href={"pathname:///arbeitsblatt/05_test_auswerten.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF-Vorlage
+    </Link>
+  }
+/>
+
+## Vorgehen
+
+1. Vorlage groß übertragen und Material bereit legen. Situation des Tests erneut vergegenwärtigen. Dafür Dokumentationen vom Testlauf nutzen.
+
+2. <b>WAS?</b> Impulsfragen im Feld A nutzen, um in Stillarbeit den Test zu reflektieren. Wichtigste Aspekte auf Klebezettel schreiben (2 min). Jede Person stellt das Aufgeschriebene vor und hängt die Zettel in den entsprechenden Abschnitt in Feld A (1 min pro Person). Gemeinsam nach Ähnlichkeiten suchen und Klebezettel in Feld A entsprechend zusammenhängen (5 min).
+
+3. <b>WAS DANN?</b> Muster anschauen und allein überlegen, was sich daraus ableiten lässt. Impulsfragen im Feld B nutzen und sich ggf. von liebgewonnen Aspekten herzlich verabschieden. Wichtigste Aspekte auf Klebezettel schreiben (2 min). Jede Person stellt das Aufgeschriebene vor und hängt die Zettel in den entsprechenden Bereich der Matrix in Feld B (2 min pro Person). Sobald alle Zettel hängen, ähnliche Aspekte in den inneren Teil der Felder gruppieren.
+
+4. <b>WAS JETZT?</b> Muster anschauen und allein überlegen, was das für die weitere Entwicklung bedeutet. Impulsfragen in Feld C nutzen. Jede Person stellt das Aufgeschriebene vor und hängt die Zettel in den entsprechenden Abschnitt in Feld C (2 min pro Person).
+
+5. Alle Ergebnisse dokumentieren und für die weitere Bearbeitung im [MVP-Canvas](http://www.citylab-berlin.org/handbuch "MVP-Canvas") aufbewahren.
