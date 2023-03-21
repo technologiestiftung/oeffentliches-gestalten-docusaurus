@@ -5,8 +5,8 @@ sidebar_class_name: "stage stage-2"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as VorgespaecheFuehren from "@site/src/assets/methods/vorgespraeche-fuehren.md";
-import * as GespraechDokumentieren from "@site/src/assets/methods/gespraech-dokumentieren.md";
+import * as PersonaProfil from "@site/src/assets/methods/persona-profil.md";
+import * as KonzeptPrototypen from "@site/src/assets/methods/konzept-prototypen.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -60,3 +60,115 @@ Ausgestattet mit einer Menge Wissen, erstellen wir einen [Konzept-Prototyp](http
     "Meist reichen Stift, Schere und Papier, um einen Prototyp anzu­fertigen, wobei der Fantasie keine Grenzen gesetzt sind."
   }
 />
+
+### Versionen erstellen:
+
+<Checkbox
+  id="wenige-minuten"
+  label={
+    "Es dauert oft nur wenige Minuten, um verschiedene Varianten einer Lösung zu bauen. Ohne viele Worte mit den Händen denken. Sich überraschen lassen was dabei entsteht."
+  }
+/>
+
+<Checkbox
+  id="ideen-verwerfen"
+  label={
+    "Je weniger Zeit in die Anfertigung gesteckt wird, desto eher lassen sich Ideen wieder verwerfen. Testpersonen kritisieren Skizzen ehrlicher als ausgefeilte Entwürfe."
+  }
+/>
+
+<Checkbox id="formate" label={"Unterschiedliche Formate ausprobieren."} />
+
+### Kooperation stärken & Spaß haben:
+
+<Checkbox
+  id="erstellen"
+  label={
+    "Das Erstellen von Konzept-Prototypen sollte Freude bereiten und alle Mitwirkenden aktiv einbeziehen."
+  }
+/>
+
+## Persona-Profil
+
+<MethodSummary
+  title={PersonaProfil.frontMatter.title}
+  time={PersonaProfil.frontMatter.time}
+  attributes={PersonaProfil.frontMatter.attributes}
+  footer={PersonaProfil.frontMatter.note}
+>
+  <PersonaProfil.default />
+</MethodSummary>
+
+<MethodCard
+  title={PersonaProfil.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[PersonaProfil.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      href={"pathname:///arbeitsblatt/05_persona_profil.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF-Vorlage
+    </Link>
+  }
+/>
+
+### Vorgehen
+
+1. Akteursgruppen in Organisation und Gesellschaft definieren, die mit Personas veranschaulicht werden sollen. Mindestens drei markante Schlüssel- bzw. Randgruppen auswählen.
+
+2. Entsprechend der Auswahl Untersuchungsdaten bereit legen. Artefakte, Schlüsselbilder, Zitate, Screenshots gut sichtbar für alle zugänglich machen. Pro Akteursgruppe Vorlage groß übertragen, z.B. auf zwei Flipcharts. Für die Entwicklung der **Persona-Profile** ggf. parallel in Kleingruppen arbeiten.
+
+3. Mit der Beantwortung der Frage _„Wie bin ich?“_ beginnen. Vorsortierte Daten aus der Felduntersuchung als Inspiration nutzen. Antworten auf Klebezetteln notieren und pro Frage zu markanten Aussagen verdichten. Darauf aufbauend die Fragen im Bereich _„Wer bin ich?“_ beantworten. Den Daten ein Gesicht geben und die Entwicklung mit einer Zeichnung oder Collage abrunden.
+
+4. Überprüfen, ob das Profil realistisch ist oder ob es sich zu konstruiert anfühlt. Die häufigste Falle bei dem Erstellen von **Persona-Profilen** besteht darin, Idealisierungen zu schaffen, die nicht in der Realität zu finden sind. Kolleg:innen um einen Abgleich bitten, die reale Kontakte zu den jeweiligen Gruppen haben. **Persona-Profile** entsprechend anpassen.
+
+5. Ergebnisse dokumentieren. Wegen ihren Hintergrundgeschichten und markanten Verhaltensmustern sind Personas sehr einprägsam. Deshalb ist es empfehlenswert, sie nicht nur für den [Konzept-Prototyp](http://www.citylab-berlin.org/handbuch "Konzept-Prototyp") zu nutzen, sondern auch physisch oder digital in der Organisation zu kommunizieren.
+
+## Konzept Prototypen
+
+<MethodSummary
+  title={KonzeptPrototypen.frontMatter.title}
+  time={KonzeptPrototypen.frontMatter.time}
+  attributes={KonzeptPrototypen.frontMatter.attributes}
+  footer={KonzeptPrototypen.frontMatter.note}
+>
+  <KonzeptPrototypen.default />
+</MethodSummary>
+
+<MethodCard
+  title={KonzeptPrototypen.frontMatter.title}
+  surtitle="Arbeitsblatt"
+  attributes={[KonzeptPrototypen.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      href={"pathname:///arbeitsblatt/05_konzept_prototypen.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF-Vorlage
+    </Link>
+  }
+/>
+
+<!--@dennis: hier muss noch ein 2tes pdf rein-->
+<!--@dennis: wie mit 1.a. umgehen vs 1.?-->
+
+### Vorgehen
+
+1. Testbasis gemeinsam sichten. Wirkungsweise und Wert des Ideenkerns sollen vermittelt werden. Welche **Konzept-Prototypen** bzw. Kombinationen sind dafür sinnvoll? Ein oder mehrere Formate auswählen:
+
+1.a. **Storyboard** – _Visualisierung in Szenen:_ Abbildung und Kurzbeschreibung der wichtigsten Ereignisse im Zusammenhang mit der angedachten Lösung.
+
+1.b. **Erlebniskette** – _Prozessbeschreibung mit Berührungspunkten:_ Einzelne Schritte vor, zur, während und nach der Interaktion mit der Lösung werden aus der Perspektive der Persona detailliert erfasst.
+
+1.c. **Papier-Prototyp** – _Skizze eines zur Lösung gehörenden Objektes:_ einfach hergestelltes Objekt, das die neue Interaktion erlebbar macht.
+
+2. **Persona-Profile** bereitlegen. In welcher Situation würden sie auf die Lösung treffen? Wie wäre ihre Reaktion? Storyboard und/oder Erlebniskette erstellen, um Kontext und Nutzung zu beschreiben. Ggf. enthält die Beschreibung im Zusammenhang mit der Lösung ein Medium oder Objekt, das als Papier-Prototyp angefertigt werden kann.
+
+3. Material bereitlegen. Wie kann dieses Medium oder Objekt aus den vorhandenen Materialien greifbar und erlebbar nachgestellt werden? Papier-Prototyp bauen. Bsp.: Eine illustrierte Software-Oberfläche als Klick-Dummy. Diverse Varianten fertigen. Auswählen, was am besten für die Interaktion im Test geeignet ist.
+
+4. **Konzept-Prototypen** auf Konsistenz prüfen. Wird das Erlebnis mit der Lösung und ihr Wert klar verdeutlicht? Ggf. Schritt **02** und **03** wiederholen.
