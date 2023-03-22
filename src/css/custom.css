@@ -410,7 +410,14 @@ p {
 #potenzialbaukasten,
 #wie-können-wir-fragen,
 #potenzial-steckbrief,
-#themengeleitetes-netzwerken {
+#themengeleitetes-netzwerken,
+#testbasis-zusammenstellen,
+#persona-profil,
+#konzept-prototypen,
+#testverlauf-planen,
+#test-dokumentieren,
+#test-auswerten,
+#mvp-canvas {
   visibility: hidden;
   height: 0;
   margin: 0;
