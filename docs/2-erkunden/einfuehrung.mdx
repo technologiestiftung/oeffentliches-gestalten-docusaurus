@@ -1,7 +1,9 @@
 ---
-sidebar_label: 'Einführung'
+sidebar_label: "Einführung"
 sidebar_position: 1
 ---
+
+import { StagesToc } from "@site/src/components/StagesToc";
 
 # Den Ursachen auf den Grund gehen
 
@@ -17,8 +19,74 @@ Ein positives Menschenbild, das unterschiedliche Perspektiven als wertvoll anerk
 
 In der _Erkundungsphase_ wird ein umfassendes Problemverständnis erarbeitet und die mit dem Problem in Verbindung stehende Akteurslandschaft erkundet. Es werden die Erkenntnisse und Quellen aus der Recherche zum Thema zusammengetragen und zu untersuchende Annahmen herausgearbeitet. **Das Ziel dieser Phase ist, den genauen Rahmen für die Untersuchung abzustecken und in einem Lagebericht zu erfassen.**
 
-<img src="/img/02_illustration.svg" className="w-full mx-auto h-auto" aria-hidden />
+<img
+  src="/img/02_illustration.svg"
+  className="w-full mx-auto h-auto"
+  aria-hidden
+/>
 
 ## Methoden
 
-...
+<StagesToc
+  stages={[
+    {
+      title: "Problemverständnis schärfen",
+      description: "Ursachen und Effekte erkunden.",
+      methods: [
+        {
+          title: "Baumanalyse",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Systeme & Akteure verbinden",
+      description:
+        "Betroffene und verantwortliche Akteure benennen und Abhängigkeiten erkennen.",
+      methods: [
+        {
+          title: "Akteure kartieren",
+          href: "#",
+        },
+        {
+          title: "Akteursbeziehungen",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Blinde Flecken aufdecken",
+      description: "Internes und externes Wissen recherchieren.",
+      methods: [
+        {
+          title: "Themengeleitetes Netzwerken",
+          href: "#",
+        },
+        {
+          title: "Wissensatlas",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Annahmen hinterfragen",
+      description: "Vermutungen sichtbar machen",
+      methods: [
+        {
+          title: "Annahmen-Dreieck",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Untersuchungsfokus setzen",
+      description: "Erkenntnisse zusammenfassen.",
+      methods: [
+        {
+          title: "Lagebericht",
+          href: "#",
+        },
+      ],
+    },
+  ]}
+/>

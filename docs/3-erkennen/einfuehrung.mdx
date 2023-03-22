@@ -1,7 +1,9 @@
 ---
-sidebar_label: 'Einführung'
+sidebar_label: "Einführung"
 sidebar_position: 1
 ---
+
+import { StagesToc } from "@site/src/components/StagesToc";
 
 # In neue Sichtweisen einfühlen
 
@@ -17,8 +19,93 @@ Ein gelungener Erkenntnisprozess basiert auf einer Kombination aus quantitativen
 
 Wir verlassen das eigene Umfeld und tauchen in die Welt unserer Schlüsselakteure ein. Durch Gespräche und Beobachtungen vor Ort, treffen wir auf Perspektiven, die von unserem Schreibtisch aus nicht sichtbar sind. **Diese unterschiedlichen Perspektiven werden im Team ausgewertet,um darin Bedürfnisse und Hindernisse zu erkennen. Darin stecken Potenziale für unsere Schlüsselakteure, die wir herausarbeiten und in Hinblick auf Chancen und Risiken bewerten.**
 
-<img src="/img/03_illustration.svg" className="w-full mx-auto h-auto" aria-hidden />
+<img
+  src="/img/03_illustration.svg"
+  className="w-full mx-auto h-auto"
+  aria-hidden
+/>
 
 ## Methoden
 
-...
+<StagesToc
+  stages={[
+    {
+      title: "Gesprächsbasis erstellen",
+      description: "Gespräche gründlich vorbereiten und testen.",
+      methods: [
+        {
+          title: "Gesprächsleitfaden",
+          href: "#",
+        },
+        {
+          title: "Gesprächsgrundlagen",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Rausgehen & Menschen treffen",
+      description:
+        "Gesprächskandidat:innen rekrutieren, Gespräch durchführen und dokumentieren.",
+      methods: [
+        {
+          title: "Vorgespräche führen",
+          href: "#",
+        },
+        {
+          title: "Einverständniserklärung",
+          href: "#",
+        },
+        {
+          title: "Gespräch dokumentieren",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Erkenntnisse formulieren",
+      description:
+        "Gespräche einzeln auswerten und relevante Bedürfnisse und Hindernisse aus den Auswertungen extrahieren.",
+      methods: [
+        {
+          title: "Individuelle Gesprächsauswertung",
+          href: "#",
+        },
+        {
+          title: "Bedürfnis-Hindernis-Filter",
+          href: "#",
+        },
+        {
+          title: "Denkfehler-Kontrolle",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Potenziale eingrenzen",
+      description:
+        "Potenziale hinter Bedürfnissen und Hindernissen aufdecken und damit den Rahmen für die Lösung setzen.",
+      methods: [
+        {
+          title: "Potenzialbaukasten",
+          href: "#",
+        },
+        {
+          title: "„Wie können wir ...“-Fragen",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Potenzialfelder identifizieren",
+      description:
+        "Chancen und Risiken ermitteln, Empfehlungen aussprechen und Maßnahmen besprechen.",
+      methods: [
+        {
+          title: "Potenzialfeld-Steckbrief",
+          href: "#",
+        },
+      ],
+    },
+  ]}
+/>

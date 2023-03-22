@@ -1,7 +1,9 @@
 ---
-sidebar_label: 'Einführung'
+sidebar_label: "Einführung"
 sidebar_position: 1
 ---
+
+import { StagesToc } from "@site/src/components/StagesToc";
 
 # Gemeinsam loslegen
 
@@ -21,4 +23,72 @@ In der Vorbereitungsphase wird ein bestehendes Problem und ein grober Prozessver
 
 ## Methoden
 
-...
+<StagesToc
+  stages={[
+    {
+      title: "Test vorbereiten",
+      description: "Grundlagen für den Test des Lösungsansatzes schaffen.",
+      methods: [
+        {
+          title: "Grundlagen des Prototyping",
+          href: "#",
+        },
+        {
+          title: "Testbasis zusammenstellen",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Prototypen erstellen",
+      description:
+        "Auf Schlüsselakteure fokussieren und einen ersten Prototyp erstellen.",
+      methods: [
+        {
+          title: "Persona-Profil",
+          href: "#",
+        },
+        {
+          title: "Konzept-Prototypen",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Ausprobieren lassen",
+      description: "Den Prototyp von Schlüssel­akteuren testen lassen.",
+      methods: [
+        {
+          title: "Testverlauf planen",
+          href: "#",
+        },
+        {
+          title: "Test dokumentieren",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Lernen und anpassen",
+      description:
+        "Verstehen, was gut funktioniert und was angepasst oder erneuert werden muss.",
+      methods: [
+        {
+          title: "Test auswerten",
+          href: "#",
+        },
+      ],
+    },
+    {
+      title: "Nutzen validieren",
+      description:
+        "Produkt oder Prozess mit Basisfunktionen konzipieren, um Mehrwert nachweisen zu können.",
+      methods: [
+        {
+          title: "MVP-Canvas",
+          href: "#",
+        },
+      ],
+    },
+  ]}
+/>
