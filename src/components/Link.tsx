@@ -5,7 +5,7 @@ import clsx from "clsx";
 export const Link: FC<{
   href: string;
   ariaLabel?: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   className?: string;
   children?: ReactNode;
 }> = ({
