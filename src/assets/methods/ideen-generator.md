@@ -19,4 +19,4 @@ Im **Ideen-Generator** wird ein Problem oder eine Fragestellung aus verschiedene
 
 ### Mehrwert
 
-Der **Ideen-Generator** dehnt das Denken um ein Konzept herum in verschiedene Richtungen aus. Dadurch entstehen Grundlagen für anregende Diskussionen, die den Lösungsansatz stärken. Um das Werkzeug effektiv zu nutzen, sollte der Ausgangspunkt (Konzeptidee aus dem [Kreativen Radschlag](http://www.citylab-berlin.org/handbuch "Kreativen Radschlag"), Problem oder Vorschlag) übersichtlich dargestellt werden.
+Der **Ideen-Generator** dehnt das Denken um ein Konzept herum in verschiedene Richtungen aus. Dadurch entstehen Grundlagen für anregende Diskussionen, die den Lösungsansatz stärken. Um das Werkzeug effektiv zu nutzen, sollte der Ausgangspunkt (Konzeptidee aus dem [Kreativen Radschlag](/buch/entwerfen/viele-ideen-entwickeln#kreativer-radschlag), Problem oder Vorschlag) übersichtlich dargestellt werden.
