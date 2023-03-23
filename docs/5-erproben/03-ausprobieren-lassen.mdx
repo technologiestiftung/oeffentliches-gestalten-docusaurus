@@ -21,15 +21,15 @@ import { Checkbox } from "@site/src/components/Checkbox";
 
 ### Beteiligung sorgfältig vorbereiten
 
-Die Organisation der Testsituation beinhaltet TODO: LINK [Vorgespräche](http://www.citylab-berlin.org/handbuch "Vorgespräche"), die Auswahl der Tester:innen, eine freundliche Erinnerung vorab und das Unterzeichnen der TODO: LINK [Einverständniserklärung](http://www.citylab-berlin.org/handbuch "Einverständniserklärung") – falls Audio- oder Videoaufnahmen geplant sind. Um die damit verbundenen Daten nachvollziehbar aufzunehmen und auszuwerten, ist es ratsam, wieder anonyme Kürzel zu vergeben.
+Die Organisation der Testsituation beinhaltet [Vorgespräche](/buch/erkennen/rausgehen-menschen-treffen#vorgespräche-führen), die Auswahl der Tester:innen, eine freundliche Erinnerung vorab und das Unterzeichnen der [Einverständniserklärung](/arbeitsblatt/03_einverstaendniserklaerung.pdf) – falls Audio- oder Videoaufnahmen geplant sind. Um die damit verbundenen Daten nachvollziehbar aufzunehmen und auszuwerten, ist es ratsam, wieder anonyme Kürzel zu vergeben.
 
 ### Als Team arbeiten
 
-Der Test wird durch mindestens zwei Personen geleitet. Eine Person moderiert, die andere dokumentiert. Pro Durchlauf sollten ein bis drei Tester:innen eingeladen werden. Ideal ist, die gleiche Anzahl Beobachter:innen aus dem Team einzubinden, die pro Testperson den TODO: LINK [Test dokumentieren](http://www.citylab-berlin.org/handbuch "Test dokumentieren").
+Der Test wird durch mindestens zwei Personen geleitet. Eine Person moderiert, die andere dokumentiert. Pro Durchlauf sollten ein bis drei Tester:innen eingeladen werden. Ideal ist, die gleiche Anzahl Beobachter:innen aus dem Team einzubinden, die pro Testperson den [Test dokumentieren](/buch/erproben/ausprobieren-lassen#test-dokumentieren).
 
 ### Logistik klären
 
-Der Vorbereitungsaufwand variiert je nach Prototypen- und Testformat. Für das Testen eines TODO: LINK [Konzept-Prototyps](http://www.citylab-berlin.org/handbuch "Konzept-Prototyps") sollte der Aufwand gering gehalten werden, um in diesem frühen Stadium die Erwartungen der Beteiligten gut zu managen.
+Der Vorbereitungsaufwand variiert je nach Prototypen- und Testformat. Für das Testen eines [Konzept-Prototyps](/buch/erproben/prototypen-erstellen#konzept-prototypen) sollte der Aufwand gering gehalten werden, um in diesem frühen Stadium die Erwartungen der Beteiligten gut zu managen.
 
 ## Checkliste: Prototyp testen
 
@@ -64,7 +64,17 @@ Der Vorbereitungsaufwand variiert je nach Prototypen- und Testformat. Für das T
 <Checkbox
   id="vorlagen"
   label={
-    "Vorlagen von Einverständniserklärung (TODO: LINK) und Test dokumentieren (LINK) ausdrucken oder kopieren."
+    <>
+      Vorlagen von{" "}
+      <a href="pathname:///arbeitsblatt/03_einverstaendniserklaerung.pdf">
+        Einverständniserklärung
+      </a>{" "}
+      und{" "}
+      <a href="/buch/erproben/ausprobieren-lassen#test-dokumentieren">
+        Test dokumentieren
+      </a>{" "}
+      ausdrucken oder kopieren.
+    </>
   }
 />
 
@@ -78,7 +88,15 @@ Der Vorbereitungsaufwand variiert je nach Prototypen- und Testformat. Für das T
 <Checkbox
   id="testverlauf"
   label={
-    "Sich darauf einlassen, zu lernen. Feedback als Geschenk annehmen, vertiefende Fragen stellen, nichts rechtfertigen oder umfassend erklären, darüber hinaus Gesprächsgrundlagen (LINK) als Inspiration für die Interaktion mit den Testpersonen nutzen."
+    <>
+      Sich darauf einlassen, zu lernen. Feedback als Geschenk annehmen,
+      vertiefende Fragen stellen, nichts rechtfertigen oder umfassend erklären,
+      darüber hinaus{" "}
+      <a href="/buch/erkennen/gespraechsbasis-erstellen#gesprächsgrundlagen">
+        Gesprächsgrundlagen
+      </a>{" "}
+      als Inspiration für die Interaktion mit den Testpersonen nutzen.
+    </>
   }
 />
 
@@ -88,7 +106,12 @@ Der Vorbereitungsaufwand variiert je nach Prototypen- und Testformat. Für das T
 
 ### Nach dem Test:
 
-<Checkbox id="auswerten" label={"Test auswerten (LINK)."} />
+<Checkbox
+  id="auswerten"
+  label={
+    <a href="/buch/erproben/lernen-anpassen#test-auswerten">Test auswerten.</a>
+  }
+/>
 
 <Checkbox
   id="nachgang"
