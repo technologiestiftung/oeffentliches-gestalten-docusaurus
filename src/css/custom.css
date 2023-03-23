@@ -417,7 +417,17 @@ p {
 #testverlauf-planen,
 #test-dokumentieren,
 #test-auswerten,
-#mvp-canvas {
+#mvp-canvas,
+#relevanztrichter,
+#inspirationsdatenbank,
+#innovationsreise,
+#werteturm,
+#kreativitätsmuskel-aufwärmen,
+#kreativer-radschlag,
+#ideen-generator,
+#visuelle-abstimmung,
+#mehrwert-aufwand-matrix,
+#zukunftstheater {
   visibility: hidden;
   height: 0;
   margin: 0;
