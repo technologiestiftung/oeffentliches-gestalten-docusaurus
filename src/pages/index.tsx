@@ -29,7 +29,7 @@ export default function LandingPage() {
               "mt-5",
               "w-max",
               "px-4 py-1.5",
-              "transition-colors bg-blue-500 hover:bg-white text-white hover:text-blue-500 !font-bold hover:!no-underline"
+              "transition-colors bg-magenta-500 hover:bg-white text-white hover:text-blue-500 !font-bold hover:!no-underline"
             )}
           >
             Zum Handbuch
