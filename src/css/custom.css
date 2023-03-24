@@ -171,9 +171,6 @@
     color: rgb(var(--magenta-500));
   }
 
-  .theme-doc-markdown {
-    @apply prose max-w-none prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-5 prose-ul:list-large-circle prose-ul:leading-snug prose-ul:pl-5 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100;
-  }
 }
 
 @layer utilities {
@@ -192,6 +189,10 @@
     hyphenate-limit-after: 2;
     hyphenate-limit-before: 3;
   }
+}
+
+.theme-doc-markdown {
+  @apply prose max-w-none prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-5 prose-ul:list-large-circle prose-ul:leading-snug prose-ul:pl-5 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
