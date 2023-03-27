@@ -107,13 +107,16 @@ const getStepBgColor = (
   }
 };
 
-export const PhasesOverview: FC = () => {
+export const PhasesOverview: FC<{ className?: string }> = ({
+  className: additionalClassNames = "",
+}) => {
   return (
     <div
       className={clsx(
         "grid gap-5 lg:gap-8 grid-cols-[1fr,40px] grid-rows-5",
         "mb-10",
-        "not-prose"
+        "not-prose",
+        additionalClassNames
       )}
     >
       {PHASES.map((phase, idx) => {
