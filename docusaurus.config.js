@@ -6,15 +6,10 @@ const config = {
   title: "Öffentliches Gestalten",
   tagline: "Handbuch für innovatives Arbeiten in der Verwaltung",
   baseUrl: "/",
-  url: "https://oeffentliches-gestalten.org",
+  url: "https://oeffentliches-gestalten-docusaurus.vercel.app",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "CityLAB Berlin", // Usually your GitHub org/user name.
-  projectName: "oeffentliches-gestalten", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -64,6 +59,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/social-default",
       docs: {
         sidebar: {
           hideable: true,
@@ -75,19 +71,6 @@ const config = {
           alt: "Icon zum Handbuch Öffentliches Gestalten",
           src: "img/logo.svg",
         },
-        items: [
-          {
-            type: "doc",
-            docId: "einfuehrung/vorwort",
-            position: "left",
-            label: "Handbuch",
-          },
-          { to: "/blog", label: "Methodenbox", position: "left" },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-        ],
       },
       footer: {
         style: "light",
@@ -95,6 +78,10 @@ const config = {
           {
             label: "Kontakt",
             href: "https://citylab-berlin.org/de/projects/handbuch/",
+          },
+          {
+            label: "Literaturverzeichnis",
+            href: "/literaturverzeichnis",
           },
           {
             label: "Quellcode",
