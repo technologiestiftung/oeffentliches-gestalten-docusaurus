@@ -75,19 +75,6 @@ const config = {
           alt: "Icon zum Handbuch Öffentliches Gestalten",
           src: "img/logo.svg",
         },
-        items: [
-          {
-            type: "doc",
-            docId: "einfuehrung/vorwort",
-            position: "left",
-            label: "Handbuch",
-          },
-          { to: "/blog", label: "Methodenbox", position: "left" },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-        ],
       },
       footer: {
         style: "light",
