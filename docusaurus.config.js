@@ -97,6 +97,10 @@ const config = {
             href: "https://citylab-berlin.org/de/projects/handbuch/",
           },
           {
+            label: "Literaturverzeichnis",
+            href: "/literaturverzeichnis",
+          },
+          {
             label: "Quellcode",
             href: "https://github.com/technologiestiftung/oeffentliches-gestalten-docusaurus",
           },
