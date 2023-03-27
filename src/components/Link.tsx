@@ -24,7 +24,6 @@ export const Link: FC<{
       to={href}
       aria-label={ariaLabel}
       className={clsx(
-        "!font-normal",
         icon && "flex items-center gap-x-1.5",
         additionalClassNames
       )}

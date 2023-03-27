@@ -78,7 +78,7 @@ export const MethodCard: FC<MethodCardType> = ({
             </div>
           )}
         </div>
-        {footer && <footer className="self-end">{footer}</footer>}
+        {footer && <footer className="self-end not-prose">{footer}</footer>}
       </div>
     </div>
   );
