@@ -6,7 +6,7 @@ const config = {
   title: "Öffentliches Gestalten",
   tagline: "Handbuch für innovatives Arbeiten in der Verwaltung",
   baseUrl: "/",
-  url: "https://oeffentliches-gestalten-docusaurus.vercel.app",
+  url: "https://www.oeffentliches-gestalten.de",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
