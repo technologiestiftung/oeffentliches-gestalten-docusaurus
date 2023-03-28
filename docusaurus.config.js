@@ -140,6 +140,7 @@ const config = {
       linkedin: "https://www.linkedin.com/company/technologiestiftung/",
     },
   },
+  scripts: ["/js/matomo.js"],
 };
 
 module.exports = config;
