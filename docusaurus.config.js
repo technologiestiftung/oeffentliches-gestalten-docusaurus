@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,6 +29,17 @@ const config = {
           postcssOptions.plugins.push(require("tailwindcss"));
           postcssOptions.plugins.push(require("autoprefixer"));
           return postcssOptions;
+        },
+      };
+    },
+    async function MatomoPlugin() {
+      const isProd = process.env.NODE_ENV === "production";
+      return {
+        name: "matomo-plugin",
+        getClientModules() {
+          return isProd
+            ? [path.resolve(__dirname, "./lib/matomoPlugin.js")]
+            : [];
         },
       };
     },
@@ -140,7 +152,6 @@ const config = {
       linkedin: "https://www.linkedin.com/company/technologiestiftung/",
     },
   },
-  scripts: ["/js/matomo.js"],
 };
 
 module.exports = config;
