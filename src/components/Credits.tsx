@@ -19,7 +19,12 @@ export interface CreditsProps {
 
 const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
   return (
-    <div className={clsx("pr-6", "col-span-6 md:col-span-3 lg:col-span-2")}>
+    <div
+      className={clsx(
+        "pr-6",
+        "first-of-type:lg:col-start-2 col-span-6 md:col-span-3 lg:col-span-2"
+      )}
+    >
       <h4 className={clsx("mb-2", "font-bold text-base text-grey-500")}>
         {title}
       </h4>

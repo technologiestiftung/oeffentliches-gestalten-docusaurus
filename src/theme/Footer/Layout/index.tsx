@@ -16,7 +16,13 @@ export default function FooterLayout({
   copyright,
 }: FooterLayoutProps): JSX.Element {
   return (
-    <footer className={clsx("bg-blue-50", "border-t border-blue-200", "relative z-10")}>
+    <footer
+      className={clsx(
+        "bg-blue-50",
+        "border-t border-blue-200",
+        "relative z-10"
+      )}
+    >
       <div className={clsx("px-6 py-12", "grid gap-y-14 grid-cols-12")}>
         <div className="lg:col-start-2 col-span-12 md:col-span-6 lg:col-span-4">
           <p className="mb-4 text-sm">
@@ -67,8 +73,9 @@ export default function FooterLayout({
             "text-grey-500"
           )}
         >
+          {credits}
           {copyright && (
-            <div className="lg:col-start-2 col-span-6 md:col-span-3 lg:col-span-2 pr-6 text-sm">
+            <div className="lg:col-start-2 col-span-6 md:col-span-8 lg:col-span-10 pr-6 text-sm">
               <h4 className={clsx("mb-2", "font-bold text-base text-grey-500")}>
                 Copyright
               </h4>
@@ -76,7 +83,6 @@ export default function FooterLayout({
               <CopyrightIcons className="mt-2" />
             </div>
           )}
-          {credits}
         </div>
         {links}
       </div>

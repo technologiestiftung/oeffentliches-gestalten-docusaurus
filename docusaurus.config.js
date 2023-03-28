@@ -125,6 +125,10 @@ const config = {
         title: "Redaktion",
         people: ["Joshua Pacheco", "Benjamin Seibel"],
       },
+      design: {
+        title: "Gestaltung",
+        people: [{ name: "Andrej Balaz", url: "www.balaz.de" }],
+      },
       illustration: {
         title: "Illustration",
         people: [{ name: "Andrea Ramírez Sabat", url: "www.andrea-rmz.com" }],
