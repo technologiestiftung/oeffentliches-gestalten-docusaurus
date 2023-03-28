@@ -59,7 +59,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/social-default",
+      image: "img/social-default.png",
+      metadata: [
+        {
+          name: "description",
+          content: "Handbuch für innovatives Arbeiten in der Verwaltung",
+        },
+      ],
       docs: {
         sidebar: {
           hideable: true,
