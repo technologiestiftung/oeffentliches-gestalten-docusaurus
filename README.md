@@ -2,22 +2,24 @@
 
 CityLAB Berlin's [handbook](https://citylab-berlin.org/en/projects/handbuch/) for working innovatively in public administration as a documentation-style website.
 
+The handbook documents a large collection of methods and contextual information on how to start innovation processes in public administrations.
+
 > We use [Docusaurus](https://docusaurus.io/), a modern static website generator, as our content engine.
 
 ---
 
-> **This website is currently a work-in-progress.**
-
 ## Installation
 
+Make sure you have [Node.js](https://nodejs.org/en) installed and you're using the Node version as defined in `.nvmrc`. Then install the necessary dependencies.
+
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -135,23 +137,11 @@ We autogenerate the contents of the sidebar that displays the book chapters (see
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This project is deployed to [Vercel](https://vercel.com/). Updates to the `main` branch will automatically trigger a new deploy.
