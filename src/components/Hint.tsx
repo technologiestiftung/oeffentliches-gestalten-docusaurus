@@ -9,7 +9,7 @@ interface HintProps {
 export const Hint: FC<HintProps> = ({ children }) => {
   return (
     <p className="flex gap-x-3 items-start md:-translate-x-2">
-      <WarningIcon className="shrink-0 w-6 h-auto overflow-visible translate-y-0.5" />
+      <WarningIcon className="shrink-0 w-6 aspect-square overflow-visible translate-y-0.5" />
       <span>{children}</span>
     </p>
   );
