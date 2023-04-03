@@ -36,6 +36,10 @@ Whenever we really need to swizzle a component or we create a custom component w
 
 Note that we define our color scheme in CSS variables in `src/css/custom.css` and reference them in our `tailwind.config.js` in order to avoid duplicating our theme contents.
 
+### Search locally
+
+If you want to use the search feature ([Algolia DocSearch](https://docsearch.algolia.com/)) locally, create a file `.env` and fill it according to the `.env.example`. If you don't have access to the required values, please ask a repository mainatiner for help.
+
 ## Content
 
 ### Phases and methods
@@ -145,3 +149,7 @@ This command generates static content into the `build` directory and can be serv
 ## Deployment
 
 This project is deployed to [Vercel](https://vercel.com/). Updates to the `main` branch will automatically trigger a new deploy.
+
+### Search
+
+The project is configured with [Algolia DocSearch](https://docsearch.algolia.com/). DocSearch provides us with a search index that makes all text content of the handbook accessible via a search field. In order to make the search work, Vercel is configure with the necessary environment variables as specified in `.env.example`.

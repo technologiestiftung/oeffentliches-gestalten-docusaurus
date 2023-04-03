@@ -6,6 +6,7 @@ import { PhaseVisual, PhaseVisualProps } from "./PhaseVisual";
 interface PhasesContentType {
   title: string;
   subtitle: string;
+  href: string;
   area?: "Problembereich" | "Lösungsbereich";
 }
 
@@ -13,25 +14,30 @@ const PHASES: PhasesContentType[] = [
   {
     title: "Vorbereiten",
     subtitle: "Unternehmung beginnen",
+    href: "/buch/vorbereiten/",
   },
   {
     title: "Erkunden",
     subtitle: "Untersuchungsfokus setzen",
+    href: "/buch/erkunden/",
     area: "Problembereich",
   },
   {
     title: "Erkennen",
     subtitle: "Potenzialfelder identifizieren",
+    href: "/buch/erkennen/",
     area: "Problembereich",
   },
   {
     title: "Entwerfen",
     subtitle: "Lösungsansatz definieren",
+    href: "/buch/entwerfen/",
     area: "Lösungsbereich",
   },
   {
     title: "Erproben",
     subtitle: "Nutzen validieren",
+    href: "/buch/erproben/",
     area: "Lösungsbereich",
   },
 ];
@@ -113,7 +119,7 @@ export const PhasesOverview: FC<{ className?: string }> = ({
   return (
     <div
       className={clsx(
-        "grid gap-5 lg:gap-8 grid-cols-[1fr,40px] grid-rows-5",
+        "grid gap-1 lg:gap-3 grid-cols-[1fr,40px] grid-rows-5",
         "mb-10",
         "not-prose",
         additionalClassNames
@@ -135,6 +141,7 @@ export const PhasesOverview: FC<{ className?: string }> = ({
                 bgColorClass={getStepBgColor(phase.area)}
               />
             }
+            href={phase.href}
             className="col-start-1"
           />
         );

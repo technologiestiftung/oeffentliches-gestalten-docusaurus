@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 const path = require("path");
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -89,6 +90,12 @@ const config = {
           alt: "Icon zum Handbuch Öffentliches Gestalten",
           src: "img/logo.svg",
         },
+        items: [
+          {
+            type: "search",
+            position: "right",
+          },
+        ],
       },
       footer: {
         style: "light",
@@ -121,6 +128,11 @@ const config = {
         defaultMode: "light",
         disableSwitch: true,
         respectPrefersColorScheme: false,
+      },
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID || "123",
+        apiKey: process.env.ALGOLIA_API_KEY || "123",
+        indexName: process.env.ALGOLIA_SEARCH_INDEX || "index",
       },
     }),
   customFields: {
