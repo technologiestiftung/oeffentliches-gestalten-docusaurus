@@ -153,3 +153,7 @@ This project is deployed to [Vercel](https://vercel.com/). Updates to the `main`
 ### Search
 
 The project is configured with [Algolia DocSearch](https://docsearch.algolia.com/). DocSearch provides us with a search index that makes all text content of the handbook accessible via a search field. In order to make the search work, Vercel is configure with the necessary environment variables as specified in `.env.example`.
+
+## License
+
+The source code is licensed as defined in `LICENSE`. The book contents are licensed under [Creative Commons Attribution-NonCommercial ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
