@@ -1,11 +1,13 @@
 import clsx from "clsx";
 import React, { FC, ReactNode } from "react";
+import DocusaurusLink from "@docusaurus/Link";
 
 interface PhaseItemProps {
   surtitle?: string;
   title: string;
   subtitle?: string;
   visual?: ReactNode;
+  href: string;
   className?: string;
 }
 
@@ -14,14 +16,18 @@ export const PhaseItem: FC<PhaseItemProps> = ({
   title,
   subtitle,
   visual,
+  href,
   className,
 }) => {
   return (
-    <div
+    <DocusaurusLink
+      to={href}
       className={clsx(
         "flex gap-x-3 lg:gap-x-4 items-center",
-        className,
-        "not-prose"
+        "px-1 py-2 rounded-md",
+        "transition-colors hover:bg-grey-50 hover:bg-opacity-25",
+        "hover:no-underline",
+        className
       )}
     >
       {visual}
@@ -59,6 +65,6 @@ export const PhaseItem: FC<PhaseItemProps> = ({
           </p>
         )}
       </div>
-    </div>
+    </DocusaurusLink>
   );
 };
