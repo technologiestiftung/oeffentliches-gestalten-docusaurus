@@ -385,6 +385,10 @@ p {
   @apply hyphens-auto;
 }
 
+.navbar__toggle {
+  @apply hidden;
+}
+
 #entwicklungsmatrix,
 #prozessverlauf,
 #mitspielerinnen-kartieren,
