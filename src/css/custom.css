@@ -386,7 +386,7 @@ p {
 }
 
 .navbar__toggle {
-  @apply hidden;
+  @apply !hidden;
 }
 
 #entwicklungsmatrix,
