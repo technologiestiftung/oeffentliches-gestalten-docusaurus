@@ -13,8 +13,8 @@ note: "Innovationsprozesse sind von einer parallelen Kommunikation und Koordinat
 
 ### Was und wofür?
 
-Die **Entwicklungsmatrix** wird der IST-Zustand verdeutlicht und notwendige Entwicklungen werden erfasst. Das Thema wird aus der _Vogelperspektive_ betrachtet, um zu entscheiden, ob eine Neuerung oder das Loslassen einer nicht mehr benötigten Routine die gewünschte Entwicklung einleitet.
+Der **Prozessverlauf** ermöglicht allen Beteiligten den zeitlichen Rahmen des Vorhabens auf einen Blick zu erfassen: Was ist in welcher Phase der Unternehmung zu tun? Dabei geht es weniger um die punktgenaue Planung, sondern vielmehr um eine Skizze.
 
 ### Mehrwert
 
-Diese Matrix ist universell einsetzbar. Sie zeigt gleichzeitig in unterschiedlichen Dimensionen auf, mit welchen Aktivitäten wirkungsvolle Veränderungen angestoßen werden können. Die erstellten Unterlagen werden zu lebenden Dokumenten, die im **Prozessverlauf** die notwendige Orientierung und Evaluationsgrundlage liefert.
+In einer schematischen Übersicht wird verdeutlicht, wie viel Umfang die unterschiedlichen Phasen im Gesamtprozess einnehmen. Neben den Beteiligungsformaten werden die dahinter liegenden Aufwände dargestellt. Die Übersicht kann in der Kommunikation mit Führungskräften genutzt werden, um entsprechende Unterstützung zu erhalten. Zusätzlich dient sie zur Gestaltung der Zusammenarbeit mit Teammitgliedern und weiteren internen und externen Beteiligten. Der **Prozessverlauf** wird zum lebenden Dokument, der im Verlauf der Unternehmung Orientierung und Evaluationsgrundlagen liefert.
