@@ -385,7 +385,7 @@ p {
   @apply hyphens-auto;
 }
 
-.navbar__toggle {
+html:not(.docs-doc-page) .navbar__toggle {
   @apply !hidden;
 }
 
