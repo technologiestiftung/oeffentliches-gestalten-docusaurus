@@ -20,7 +20,7 @@ export const MethodSummary: FC<MethodSummaryType> = ({
 }) => {
   const sidebarItems: MethodSummaryType["attributes"] = [
     time && {
-      label: "Zeitrahmen",
+      label: "Zeitrahmen",  // @todo translate
       content: time,
     },
     ...attributes,
