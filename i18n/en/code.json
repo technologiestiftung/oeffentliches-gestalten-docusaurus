@@ -1,15 +1,39 @@
 {
-  "Öffentliches Gestalten": {
+  "indexH1": {
     "message": "Public Service Design"
   },
-  "Handbuch für innovatives Arbeiten in der Verwaltung": {
-    "message": "Handbuch für innovatives Arbeiten in der Verwaltung"
+  "indexH2": {
+    "message": "Handbook for innovative work in administration"
   },
-  "Für alle, die sich mutig für eine kreative und gemeinwohlorientierte Transformation der öffentlichen Verwaltung einsetzen.": {
-    "message": "Für alle, die sich mutig für eine kreative und gemeinwohlorientierte Transformation der öffentlichen Verwaltung einsetzen."
+  "indexQuote": {
+    "message": "For all those who are courageously committed to a creative and community-oriented transformation of public administration."
   },
-  "Entstanden durch die Zusammenarbeit von": {
-    "message": "Entstanden durch die Zusammenarbeit von"
+  "indexOpenBookLink": {
+    "message": "Open the handbook"
+  },
+  "creditsCol1": {
+    "message": "Concept"
+  },
+  "creditsCol2": {
+    "message": "Authors"
+  },
+  "creditsCol3": {
+    "message": "Editorial"
+  },
+  "creditsCol4": {
+    "message": "Design"
+  },
+  "creditsCol5": {
+    "message": "Illustration"
+  },
+  "collaborationOf": {
+    "message": "This handbook was created with the collaboration of"
+  },
+  "projectBy": {
+    "message": "A project by"
+  },
+  "sponsoredBy": {
+    "message": "Sponsored by"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
@@ -54,46 +78,6 @@
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Scroll back to top",
     "description": "The ARIA label for the back to top button"
-  },
-  "theme.blog.archive.title": {
-    "message": "Archive",
-    "description": "The page & hero title of the blog archive page"
-  },
-  "theme.blog.archive.description": {
-    "message": "Archive",
-    "description": "The page & hero description of the blog archive page"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
-    "description": "The ARIA label for the blog pagination"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
-    "description": "The label used to navigate to the older blog posts page (next page)"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
-    "description": "The ARIA label for the blog posts pagination"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
-    "description": "The blog post button label to navigate to the newer/previous post"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
-    "description": "The blog post button label to navigate to the older/next post"
-  },
-  "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
     "message": "View All Tags",

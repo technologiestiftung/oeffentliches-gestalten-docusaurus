@@ -4,31 +4,31 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Einführung": {
-    "message": "Einführung",
+    "message": "Introduction",
     "description": "The label for category Einführung in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 1: Vorbereiten": {
-    "message": "Phase 1: Vorbereiten",
+    "message": "Phase 1: Prepare",
     "description": "The label for category Phase 1: Vorbereiten in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 2: Erkunden": {
-    "message": "Phase 2: Erkunden",
+    "message": "Phase 2: Explore",
     "description": "The label for category Phase 2: Erkunden in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 3: Erkennen": {
-    "message": "Phase 3: Erkennen",
+    "message": "Phase 3: Recognize",
     "description": "The label for category Phase 3: Erkennen in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 4: Entwerfen": {
-    "message": "Phase 4: Entwerfen",
+    "message": "Phase 4: Design",
     "description": "The label for category Phase 4: Entwerfen in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 5: Erproben": {
-    "message": "Phase 5: Erproben",
+    "message": "Phase 5: Testing",
     "description": "The label for category Phase 5: Erproben in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ausblick": {
-    "message": "Ausblick",
+    "message": "Outlook",
     "description": "The label for category Ausblick in sidebar tutorialSidebar"
   }
 }
