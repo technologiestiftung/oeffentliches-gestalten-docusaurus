@@ -195,35 +195,35 @@
 }
 
 /* -––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Steps hacks */
+/* Stages hacks */
 :global(.menu__link) {
   @apply relative;
 }
 
-:global(.menu__list-item.step .menu__link) {
+:global(.menu__list-item.stage .menu__link) {
   @apply pt-6 my-1;
 }
 
-:global(.menu__list-item.step .menu__link:before) {
+:global(.menu__list-item.stage .menu__link:before) {
   @apply absolute text-grey-300 italic top-1 left-3 bg-transparent font-normal;
 }
 
-:global([lang="en"] .menu__list-item.step-1 .menu__link:before) { content: 'Step 1'; }
-:global([lang="en"] .menu__list-item.step-2 .menu__link:before) { content: 'Step 2'; }
-:global([lang="en"] .menu__list-item.step-3 .menu__link:before) { content: 'Step 3'; }
-:global([lang="en"] .menu__list-item.step-4 .menu__link:before) { content: 'Step 4'; }
-:global([lang="en"] .menu__list-item.step-5 .menu__link:before) { content: 'Step 5'; }
-:global([lang="en"] .menu__list-item.step-6 .menu__link:before) { content: 'Step 6'; }
-:global([lang="en"] .menu__list-item.step-7 .menu__link:before) { content: 'Step 7'; }
-:global([lang="en"] .menu__list-item.step-8 .menu__link:before) { content: 'Step 8'; }
-:global([lang="en"] .menu__list-item.step-9 .menu__link:before) { content: 'Step 9'; }
+:global([lang="en"] .menu__list-item.stage-1 .menu__link:before) { content: 'Stage 1'; }
+:global([lang="en"] .menu__list-item.stage-2 .menu__link:before) { content: 'Stage 2'; }
+:global([lang="en"] .menu__list-item.stage-3 .menu__link:before) { content: 'Stage 3'; }
+:global([lang="en"] .menu__list-item.stage-4 .menu__link:before) { content: 'Stage 4'; }
+:global([lang="en"] .menu__list-item.stage-5 .menu__link:before) { content: 'Stage 5'; }
+:global([lang="en"] .menu__list-item.stage-6 .menu__link:before) { content: 'Stage 6'; }
+:global([lang="en"] .menu__list-item.stage-7 .menu__link:before) { content: 'Stage 7'; }
+:global([lang="en"] .menu__list-item.stage-8 .menu__link:before) { content: 'Stage 8'; }
+:global([lang="en"] .menu__list-item.stage-9 .menu__link:before) { content: 'Stage 9'; }
 
-:global([lang="de"] .menu__list-item.step-1 .menu__link:before) { content: 'Etappe 1'; }
-:global([lang="de"] .menu__list-item.step-2 .menu__link:before) { content: 'Etappe 2'; }
-:global([lang="de"] .menu__list-item.step-3 .menu__link:before) { content: 'Etappe 3'; }
-:global([lang="de"] .menu__list-item.step-4 .menu__link:before) { content: 'Etappe 4'; }
-:global([lang="de"] .menu__list-item.step-5 .menu__link:before) { content: 'Etappe 5'; }
-:global([lang="de"] .menu__list-item.step-6 .menu__link:before) { content: 'Etappe 6'; }
-:global([lang="de"] .menu__list-item.step-7 .menu__link:before) { content: 'Etappe 7'; }
-:global([lang="de"] .menu__list-item.step-8 .menu__link:before) { content: 'Etappe 8'; }
-:global([lang="de"] .menu__list-item.step-9 .menu__link:before) { content: 'Etappe 9'; }
+:global([lang="de"] .menu__list-item.stage-1 .menu__link:before) { content: 'Etappe 1'; }
+:global([lang="de"] .menu__list-item.stage-2 .menu__link:before) { content: 'Etappe 2'; }
+:global([lang="de"] .menu__list-item.stage-3 .menu__link:before) { content: 'Etappe 3'; }
+:global([lang="de"] .menu__list-item.stage-4 .menu__link:before) { content: 'Etappe 4'; }
+:global([lang="de"] .menu__list-item.stage-5 .menu__link:before) { content: 'Etappe 5'; }
+:global([lang="de"] .menu__list-item.stage-6 .menu__link:before) { content: 'Etappe 6'; }
+:global([lang="de"] .menu__list-item.stage-7 .menu__link:before) { content: 'Etappe 7'; }
+:global([lang="de"] .menu__list-item.stage-8 .menu__link:before) { content: 'Etappe 8'; }
+:global([lang="de"] .menu__list-item.stage-9 .menu__link:before) { content: 'Etappe 9'; }

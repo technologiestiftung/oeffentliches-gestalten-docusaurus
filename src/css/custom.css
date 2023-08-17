@@ -39,7 +39,7 @@
       url(../assets/fonts/NationalWeb-ExtraboldItalic.woff) format("woff");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "IBM Plex Mono";
     font-style: normal;
@@ -125,7 +125,7 @@
 
     --ifm-font-color-secondary: var(--ifm-color-content-secondary);
 
-    --ifm-heading-color: var(--ifm-color-primary);
+    --ifm-heading-color: var(--ifm-color-gray-500);
     --ifm-font-family-base: "National", sans-serif;
 
     --ifm-navbar-height: 3.5rem;
@@ -138,7 +138,7 @@
   body {
     font-size: 20px;
     line-height: 28px;
-    @apply font-sans text-grey-500;
+    @apply font-sans text-grey-500 antialiased;
   }
 
   h2,
@@ -158,6 +158,19 @@
     padding: max(1rem,2vw) max(1rem,5vw) max(3rem,10vh) !important;
   }
 
+  blockquote {
+    quotes: "» " "«";
+  }
+
+  blockquote::before {
+    content: open-quote;
+    color: rgb(var(--magenta-500));
+  }
+  blockquote::after {
+    content: close-quote;
+    color: rgb(var(--magenta-500));
+  }
+
 }
 
 @layer utilities {
@@ -168,10 +181,18 @@
   .clip-standing-square {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   }
+
+  .hyphens-auto {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-after: 2;
+    hyphenate-limit-before: 3;
+  }
 }
 
 .theme-doc-markdown {
-  @apply prose md:px-6 lg:px-0 prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h1:lg:text-6xl prose-h1:xl:text-7xl prose-h2:text-3xl prose-h2:md:text-4xl prose-h2:lg:text-5xl prose-h3:text-2xl prose-h3:md:text-3xl prose-h4:text-xl prose-h4:md:text-2xl prose-h5:text-lg prose-h5:md:text-xl prose-h6:text-lg prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-4 prose-ol:md:pl-0 prose-ol:md:-translate-x-2 prose-ul:list-large-circle prose-ul:pl-4 prose-ul:md:pl-0 prose-ul:md:-translate-x-2 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100  prose-blockquote:pl-3 prose-blockquote:md:-translate-x-5;
+  @apply prose max-w-none prose-p:text-grey-500 prose-p:leading-snug prose-headings:text-grey-500 prose-headings:font-extrabold prose-h1:text-4xl prose-h1:md:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-h4:text-lg prose-h4:md:text-xl prose-h5:text-base prose-h5:md:text-lg prose-h6:text-base prose-a:text-magenta-500 prose-a:underline prose-a:font-extrabold prose-strong:text-grey-500 prose-ol:list-decimal-leading-zero-no-dot prose-ol:pl-5 prose-ul:list-large-circle prose-ul:leading-snug prose-ul:pl-5 prose-li:pl-2 prose-li:marker:text-magenta-500 prose-blockquote:border-l-grey-100;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -315,9 +336,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 /* Table of Contents */
 html .theme-doc-toc-desktop {
-  @apply fixed right-0;
   top: var(--ifm-navbar-height);
-  width: 20vw;
   max-height: calc(100vh - var(--ifm-navbar-height));
 }
 
@@ -335,11 +354,11 @@ html[lang="de"] .table-of-contents:before {
 }
 
 .table-of-contents li {
-  @apply m-0 text-base;
+  @apply m-0 text-xs;
 }
 
 .table-of-contents__link {
-  @apply px-1.5 py-0.5 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
+  @apply px-1.5 py-1 transition-colors text-grey-500 hover:text-blue-500 hover:bg-grey-50 rounded;
 }
 
 div[class*="tocCollapsibleContent_"] ul.table-of-contents > li {
@@ -360,4 +379,61 @@ html .theme-doc-toc-mobile {
 
 html .theme-doc-toc-mobile > button.clean-btn {
   @apply p-0 pb-2;
+}
+
+p {
+  @apply hyphens-auto;
+}
+
+html:not(.docs-doc-page) .navbar__toggle {
+  @apply !hidden;
+}
+
+#entwicklungsmatrix,
+#prozessverlauf,
+#mitspielerinnen-kartieren,
+#teamprofil--selbsteinschätzung,
+#teamarbeitsroutine,
+#fünf-finger-feedback,
+#gewaltfreie-kommunikation,
+#entwicklungsplan,
+#resultate-dokumentieren,
+#ich-und-der-prozess,
+#baumanalyse,
+#akteure-kartieren,
+#wissensatlas,
+#annahmen-dreieck,
+#lagebericht,
+#gesprächsleitfaden,
+#gesprächsgrundlagen,
+#vorgespräche-führen,
+#gespräch-dokumentieren,
+#individuelle-gesprächsauswertung,
+#bedürfnis-hindernis-filter,
+#denkfehler-kontrolle,
+#potenzialbaukasten,
+#wie-können-wir-fragen,
+#potenzial-steckbrief,
+#themengeleitetes-netzwerken,
+#testbasis-zusammenstellen,
+#persona-profil,
+#konzept-prototypen,
+#testverlauf-planen,
+#test-dokumentieren,
+#test-auswerten,
+#mvp-canvas,
+#relevanztrichter,
+#inspirationsdatenbank,
+#innovationsreise,
+#werteturm,
+#kreativitätsmuskel-aufwärmen,
+#kreativer-radschlag,
+#ideen-generator,
+#visuelle-abstimmung,
+#mehrwert-aufwand-matrix,
+#zukunftstheater,
+#ideenserviette {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
 }

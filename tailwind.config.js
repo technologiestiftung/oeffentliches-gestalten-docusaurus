@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}", "./docs/**/*.{md,mdx,js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,md,mdx}",
+    "./docs/**/*.{md,mdx,js,ts,jsx,tsx}",
+  ],
   theme: {
     colors: {
       blue: {
@@ -42,6 +45,10 @@ module.exports = {
       white: "#fff",
       transparent: "transparent",
       currentColor: "currentColor",
+      inherit: "inherit",
+    },
+    boxShadow: {
+      DEFAULT: "0 4px 0 0 rgb(var(--grey-100))",
     },
     extend: {
       fontFamily: {

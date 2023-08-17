@@ -19,14 +19,19 @@ export interface CreditsProps {
 
 const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
   return (
-    <div className={clsx("pr-6", "col-span-6 md:col-span-3 lg:col-span-2")}>
+    <div
+      className={clsx(
+        "pr-6",
+        "first-of-type:lg:col-start-2 col-span-6 md:col-span-3 lg:col-span-2"
+      )}
+    >
       <h4 className={clsx("mb-2", "font-bold text-base text-grey-500")}>
         {title}
       </h4>
       <ul className="list-none p-0">
         {people.map((person) => {
           return (
-            <li className="text-sm">
+            <li className="text-sm" key={person.toString()}>
               {typeof person === "string" && `${person}`}
               {typeof person === "object" && (
                 <>
@@ -54,7 +59,7 @@ export const Credits: FC<CreditsProps> = ({ credits }) => {
   return (
     <>
       {Object.entries(credits).map(([key, { title, people }]) => {
-        return <CreditsSection key={key} title={title} people={people} />;
+        return <CreditsSection key={title} title={title} people={people} />;
       })}
     </>
   );

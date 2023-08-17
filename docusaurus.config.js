@@ -1,20 +1,17 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const path = require("path");
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Öffentliches Gestalten",
   tagline: "Handbuch für innovatives Arbeiten in der Verwaltung",
   baseUrl: "/",
-  url: "https://oeffentliches-gestalten.org",
+  url: "https://www.oeffentliches-gestalten.de",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "CityLAB Berlin", // Usually your GitHub org/user name.
-  projectName: "oeffentliches-gestalten", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,19 +33,27 @@ const config = {
         },
       };
     },
+    async function MatomoPlugin() {
+      const isProd = process.env.NODE_ENV === "production";
+      return {
+        name: "matomo-plugin",
+        getClientModules() {
+          return isProd
+            ? [path.resolve(__dirname, "./lib/matomoPlugin.js")]
+            : [];
+        },
+      };
+    },
   ],
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          routeBasePath: "/buch",
         },
         blog: {
           showReadingTime: true,
@@ -67,10 +72,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/social-default.png",
+      metadata: [
+        {
+          name: "description",
+          content: "Handbuch für innovatives Arbeiten in der Verwaltung",
+        },
+      ],
       docs: {
         sidebar: {
           hideable: true,
-        }
+        },
       },
       navbar: {
         title: "Öffentliches Gestalten",
@@ -80,14 +92,7 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "einfuehrung/vorwort",
-            position: "left",
-            label: "Handbuch",
-          },
-          { to: "/blog", label: "Methodenbox", position: "left" },
-          {
-            type: "localeDropdown",
+            type: "search",
             position: "right",
           },
         ],
@@ -98,6 +103,10 @@ const config = {
           {
             label: "Kontakt",
             href: "https://citylab-berlin.org/de/projects/handbuch/",
+          },
+          {
+            label: "Literaturverzeichnis",
+            href: "/literaturverzeichnis",
           },
           {
             label: "Quellcode",
@@ -120,6 +129,11 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID || "123",
+        apiKey: process.env.ALGOLIA_API_KEY || "123",
+        indexName: process.env.ALGOLIA_SEARCH_INDEX || "index",
+      },
     }),
   customFields: {
     credits: {
@@ -134,6 +148,10 @@ const config = {
       editing: {
         title: "Redaktion",
         people: ["Joshua Pacheco", "Benjamin Seibel"],
+      },
+      design: {
+        title: "Gestaltung",
+        people: [{ name: "Andrej Balaz", url: "www.balaz.de" }],
       },
       illustration: {
         title: "Illustration",

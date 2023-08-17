@@ -1,15 +1,21 @@
 import clsx from "clsx";
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface CheckboxProps {
   id: string;
   group?: string;
-  label: string;
+  label: string | ReactNode;
+  className?: string;
 }
 
-export const Checkbox: FC<CheckboxProps> = ({ id, group, label }) => {
+export const Checkbox: FC<CheckboxProps> = ({
+  id,
+  group,
+  label,
+  className: additionalClassname = "",
+}) => {
   return (
-    <div className="flex gap-x-3 items-start md:-translate-x-7">
+    <div className={clsx("flex gap-x-3 items-start", additionalClassname)}>
       <input
         type="checkbox"
         name={group}
