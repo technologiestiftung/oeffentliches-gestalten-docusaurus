@@ -16,7 +16,7 @@
     "description": "The label for category Phase 2: Erkunden in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 3: Erkennen": {
-    "message": "Phase 3: Recognize",
+    "message": "Phase 3: Discover",
     "description": "The label for category Phase 3: Erkennen in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 4: Entwerfen": {
@@ -24,7 +24,7 @@
     "description": "The label for category Phase 4: Entwerfen in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Phase 5: Erproben": {
-    "message": "Phase 5: Testing",
+    "message": "Phase 5: Test",
     "description": "The label for category Phase 5: Erproben in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ausblick": {

@@ -442,5 +442,8 @@
   },
   "stages.toc.label": {
     "message": "Stage {stage}"
+  },
+  "methodSummary.surtitle": {
+    "message": "Method"
   }
 }
