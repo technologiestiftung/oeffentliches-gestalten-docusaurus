@@ -445,5 +445,8 @@
   },
   "methodSummary.surtitle": {
     "message": "Method"
+  },
+  "timeframe": {
+    "message": "Time frame"
   }
 }

@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React, { FC, ReactNode } from "react";
-import Translate from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 
 interface MethodSummaryType {
   title: string;
@@ -21,7 +21,7 @@ export const MethodSummary: FC<MethodSummaryType> = ({
 }) => {
   const sidebarItems: MethodSummaryType["attributes"] = [
     time && {
-      label: "Zeitrahmen", // @todo translate
+      label: translate({ message: "Zeitrahmen", id: "timeframe" }),
       content: time,
     },
     ...attributes,
