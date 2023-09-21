@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React, { FC } from "react";
 import { PhaseItem } from "./PhaseItem";
 import { PhaseVisual, PhaseVisualProps } from "./PhaseVisual";
+import { translate } from "@docusaurus/Translate";
 
 interface PhasesContentType {
   title: string;
@@ -12,32 +13,62 @@ interface PhasesContentType {
 
 const PHASES: PhasesContentType[] = [
   {
-    title: "Vorbereiten",
-    subtitle: "Unternehmung beginnen",
-    href: "/buch/vorbereiten/",
+    title: translate({ message: "Vorbereiten", id: "phases.1.title" }),
+    subtitle: translate({
+      message: "Unternehmung beginnen",
+      id: "phases.1.subtitle",
+    }),
+    href: translate({
+      message: "/buch/vorbereiten/",
+      id: "phases.1.link",
+    }),
   },
   {
-    title: "Erkunden",
-    subtitle: "Untersuchungsfokus setzen",
-    href: "/buch/erkunden/",
+    title: translate({ message: "Erkunden", id: "phases.2.title" }),
+    subtitle: translate({
+      message: "Untersuchungsfokus setzen",
+      id: "phases.2.subtitle",
+    }),
+    href: translate({
+      message: "/buch/erkunden/",
+      id: "phases.2.link",
+    }),
     area: "Problembereich",
   },
   {
-    title: "Erkennen",
-    subtitle: "Potenzialfelder identifizieren",
-    href: "/buch/erkennen/",
+    title: translate({ message: "Erkennen", id: "phases.3.title" }),
+    subtitle: translate({
+      message: "Potenzialfelder identifizieren",
+      id: "phases.3.subtitle",
+    }),
+    href: translate({
+      message: "/buch/erkennen/",
+      id: "phases.3.link",
+    }),
     area: "Problembereich",
   },
   {
-    title: "Entwerfen",
-    subtitle: "Lösungsansatz definieren",
-    href: "/buch/entwerfen/",
+    title: translate({ message: "Entwerfen", id: "phases.4.title" }),
+    subtitle: translate({
+      message: "Lösungsansatz definieren",
+      id: "phases.4.subtitle",
+    }),
+    href: translate({
+      message: "/buch/entwerfen/",
+      id: "phases.4.link",
+    }),
     area: "Lösungsbereich",
   },
   {
-    title: "Erproben",
-    subtitle: "Nutzen validieren",
-    href: "/buch/erproben/",
+    title: translate({ message: "Erproben", id: "phases.5.title" }),
+    subtitle: translate({
+      message: "Nutzen validieren",
+      id: "phases.5.subtitle",
+    }),
+    href: translate({
+      message: "/buch/erproben/",
+      id: "phases.5.link",
+    }),
     area: "Lösungsbereich",
   },
 ];
@@ -148,13 +179,19 @@ export const PhasesOverview: FC<{ className?: string }> = ({
       })}
       <AreaIndicator
         color="magenta"
-        label="Problembereich"
+        label={`${translate({
+          message: "Problembereich",
+          id: "phases.spaces.problem",
+        })}`}
         firstPhaseIndex={2}
         finalPhaseIndex={3}
       />
       <AreaIndicator
         color="blue"
-        label="Lösungsbereich"
+        label={`${translate({
+          message: "Lösungsbereich",
+          id: "phases.spaces.solution",
+        })}`}
         firstPhaseIndex={4}
         finalPhaseIndex={5}
       />
