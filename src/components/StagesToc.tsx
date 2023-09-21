@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "./Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
+import Translate from "@docusaurus/Translate";
 
 interface StageType {
   title: string;
@@ -24,7 +25,14 @@ export const StagesToc: FC<StagesTocType> = ({ stages }) => {
             >
               <div className="md:col-span-2 w-full flex flex-nowrap gap-x-2 items-center">
                 <div className="shrink-0 text-grey-300 italic">
-                  Etappe {idx + 1}:
+                  <Translate
+                    id="stages.toc.label"
+                    values={{
+                      stage: idx + 1,
+                    }}
+                  >
+                    {"Etappe {stage}"}
+                  </Translate>
                 </div>
                 <hr className="h-px bg-grey-100 w-full !my-0 !border-0 shrink translate-y-0.5" />
               </div>

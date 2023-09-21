@@ -388,5 +388,44 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "phases.spaces.problem": {
+    "message": "Problem area"
+  },
+  "phases.spaces.solution": {
+    "message": "Solution area"
+  },
+  "phases.1.title": {
+    "message": "Prepare"
+  },
+  "phases.1.subtitle": {
+    "message": "Start the venture"
+  },
+  "phases.2.title": {
+    "message": "Explore"
+  },
+  "phases.2.subtitle": {
+    "message": "Set the exploration focus"
+  },
+  "phases.3.title": {
+    "message": "Discover"
+  },
+  "phases.3.subtitle": {
+    "message": "Identify areas of potential"
+  },
+  "phases.4.title": {
+    "message": "Design"
+  },
+  "phases.4.subtitle": {
+    "message": "Define the envisaged solution"
+  },
+  "phases.5.title": {
+    "message": "Test"
+  },
+  "phases.5.subtitle": {
+    "message": "Validate the benefits"
+  },
+  "stages.toc.label": {
+    "message": "Stage {stage}"
   }
 }
