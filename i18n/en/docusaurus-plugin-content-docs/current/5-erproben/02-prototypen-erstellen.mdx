@@ -1,36 +1,51 @@
 ---
-sidebar_label: "Prototypen erstellen"
+sidebar_label: "Create prototypes"
 sidebar_position: 3
 sidebar_class_name: "stage stage-2"
 image: "/img/social-test.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as PersonaProfil from "@site/src/assets/methods/persona-profil.md";
-import * as KonzeptPrototypen from "@site/src/assets/methods/konzept-prototypen.md";
+import * as PersonaProfile from "@site/src/assets/methods/en/persona-profile.md";
+import * as ConceptPrototypes from "@site/src/assets/methods/en/concept-prototypes.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
-import { Hint } from "@site/src/components/Hint";
 import { Checkbox } from "@site/src/components/Checkbox";
 
-# Prototypen erstellen
+# Create prototypes
 
-## Strukturiert experimentieren
+## Structured experimentation
 
-Öffentliche Innovation entsteht durch das Ausprobieren und Lernen von Prototypen. Nur so können wir innerhalb unseres Teams ein gemeinsames Verständnis für das entwickelte Konzept bekommen.
+Public innovation comes from trying out and learning from prototypes. This is the only way to arrive at a common understanding of the developed concept within our team.
 
-### Verschiedene Lebensrealitäten einbeziehen
+### Incorporate different living situations
 
-Damit die Schlüsselakteure weiterhin im Zentrum unseres Innovationsprozesses stehen, erstellen wir [Persona-Profile](#persona-profil), die uns eindrücklich an spezielle Verhaltensweisen, Interessen und Erwartungen von bestimmten Personengruppen erinnern. Zusätzlich bedenken wir bei der Entwicklung der **Persona-Profile** auch Randgruppen mit speziellen Bedürfnissen. Durch das Testen mit Extremgruppen kann schließlich ein ganzheitlicher Prototyp entwickelt werden.
+In order to ensure the key actors stay at the center of our innovation process, we create [Persona Profiles](#persona-profile) that effectively remind us of the specific behaviors, interests, and expectations of specific groups of people. We also consider marginalized groups with special needs when developing **Persona Profiles**. Finally, by carrying out tests with extreme groups, it is possible to develop a holistic prototype.
 
-### Kritische Rückmeldungen einfordern
+### Invite critical feedback
 
-Ausgestattet mit einer Menge Wissen, erstellen wir einen [Konzept-Prototyp](#konzept-prototypen). Die einfache Fertigung dieses Prototyps, verleiht unseren Gedanken eine Form, mit der die Schlüsselakteure interagieren können. Anhand der erhobenen Test-Daten kann gemessen werden, ob die Richtung noch dem Ziel entspricht oder der Prototyp bzw. unser Lösungsansatz angepasst werden muss. Kritisches Feedback ist hierbei besonders wertvoll. Es beschleunigt den Lernprozess und trägt maßgeblich zur effizienten Entwicklung einer wirkungsorientierten öffentlichen Leistung bei.
+Equipped with a lot of knowledge, we set about creating a [concept prototype](#concept-prototypes). The simple construction of this prototype puts ideas into a concrete form that key actors can interact with. The test data collected can be used to measure whether the direction is still on target or whether the prototype or our solution needs to be adapted. Critical feedback is particularly valuable here. It accelerates the learning process and contributes significantly to the efficient development of an impact-oriented public benefit.
 
-## Checkliste: Konzept-Prototyp bauen
+## Build Concept Prototype
 
-### Ziel definieren:
+### Define goal:
+
+<Checkbox
+  id="decide-jointly"
+  label={
+    "Decide jointly what the prototype aims to achieve. Is a solution to be tested, or are we going to start with a specific interaction?"
+  }
+/>
+
+### Narrow down the choice of materials and resources:
+
+<Checkbox
+  id="never-finished"
+  label={
+    "Concept prototypes are effective but never finished - this can and should be visible."
+  }
+/>
 
 <Checkbox
   id="gemeinsam-entscheiden"
@@ -39,137 +54,125 @@ Ausgestattet mit einer Menge Wissen, erstellen wir einen [Konzept-Prototyp](#kon
   }
 />
 
-### Materialwahl & Ressourcen eingrenzen:
+<Checkbox
+  id="pen-paper-scissors"
+  label={
+    "Usually a pen, paper and scissors are enough to make a prototype – and there are no limits to the imagination."
+  }
+/>
+
+### Create versions:
 
 <Checkbox
-  id="niemals-fertig"
+  id="few-minutes"
   label={
-    "Konzept-Prototypen sind zweckmäßig und niemals fertig – das darf und soll den Entwürfen angesehen werden."
+    "It often takes only a few minutes to build different variants of a solution. Think with your hands without saying much. Surprise yourself as you see what emerges."
   }
 />
 
 <Checkbox
-  id="gemeinsam-entscheiden"
+  id="discard-ideas"
   label={
-    "Gemeinsam entscheiden, was mit dem Prototyp erreicht werden soll. Soll ein Lösungsansatz oder zunächst eine spezielle Interaktion getestet werden?"
+    "The less time spent on production, the easier it is to discard ideas. Test subjects critique rough drafts more honestly than they do polished designs."
   }
 />
+
+<Checkbox id="formats" label={"Try out different formats."} />
+
+### Have fun strengthening the team’s collaborative spirit:
 
 <Checkbox
-  id="meist-reichen"
+  id="creating"
   label={
-    "Meist reichen Stift, Schere und Papier, um einen Prototyp anzu­fertigen, wobei der Fantasie keine Grenzen gesetzt sind."
+    "Creating concept prototypes should be enjoyable and actively involve all contributors."
   }
 />
 
-### Versionen erstellen:
-
-<Checkbox
-  id="wenige-minuten"
-  label={
-    "Es dauert oft nur wenige Minuten, um verschiedene Varianten einer Lösung zu bauen. Ohne viele Worte mit den Händen denken. Sich überraschen lassen was dabei entsteht."
-  }
-/>
-
-<Checkbox
-  id="ideen-verwerfen"
-  label={
-    "Je weniger Zeit in die Anfertigung gesteckt wird, desto eher lassen sich Ideen wieder verwerfen. Testpersonen kritisieren Skizzen ehrlicher als ausgefeilte Entwürfe."
-  }
-/>
-
-<Checkbox id="formate" label={"Unterschiedliche Formate ausprobieren."} />
-
-### Kooperation stärken & Spaß haben:
-
-<Checkbox
-  id="erstellen"
-  label={
-    "Das Erstellen von Konzept-Prototypen sollte Freude bereiten und alle Mitwirkenden aktiv einbeziehen."
-  }
-/>
-
-## Persona-Profil
+## Persona Profile
 
 <MethodSummary
-  title={PersonaProfil.frontMatter.title}
-  time={PersonaProfil.frontMatter.time}
-  attributes={PersonaProfil.frontMatter.attributes}
-  footer={PersonaProfil.frontMatter.note}
+  title={PersonaProfile.frontMatter.title}
+  time={PersonaProfile.frontMatter.time}
+  attributes={PersonaProfile.frontMatter.attributes}
+  footer={PersonaProfile.frontMatter.note}
   className="!mt-7"
 >
-  <PersonaProfil.default />
+  <PersonaProfile.default />
 </MethodSummary>
 
 <MethodCard
-  title={PersonaProfil.frontMatter.title}
-  surtitle="Arbeitsblatt"
-  attributes={[PersonaProfil.frontMatter.time]}
+  title={PersonaProfile.frontMatter.title}
+  surtitle="Worksheet"
+  attributes={[PersonaProfile.frontMatter.time]}
   imageUrl={"/img/05_hero.svg"}
   className="mt-5"
   footer={
     <Link
       className="text-magenta-500 underline"
-      href={"pathname:///arbeitsblatt/05_persona_profil.pdf"}
+      href={"pathname:///arbeitsblatt/05_persona-profile.pdf"}
       icon={<EditIcon className="w-3 h-3 text-inherit" />}
     >
-      PDF-Vorlage
+      PDF template
     </Link>
   }
 />
 
-### Vorgehen
+### Procedure
 
-1. Akteursgruppen in Organisation und Gesellschaft definieren, die mit Personas veranschaulicht werden sollen. Mindestens drei markante Schlüssel- bzw. Randgruppen auswählen.
+1. Define groups of actors in the organization and in society to be illustrated based on personas. Select at least three distinctive key or marginal groups.
 
-2. Entsprechend der Auswahl Untersuchungsdaten bereit legen. Artefakte, Schlüsselbilder, Zitate, Screenshots gut sichtbar für alle zugänglich machen. Pro Akteursgruppe Vorlage groß übertragen, z.B. auf zwei Flipcharts. Für die Entwicklung der **Persona-Profile** ggf. parallel in Kleingruppen arbeiten.
+2. Have investigation data ready according to the selection.
+Make artifacts, key images, quotes, screenshots easily accessible to everyone. Transfer template into a large format for each actor group, e.g. on two flipcharts. When developing the **Persona Profiles**, work in parallel in small groups if necessary.
 
-3. Mit der Beantwortung der Frage _„Wie bin ich?“_ beginnen. Vorsortierte Daten aus der Felduntersuchung als Inspiration nutzen. Antworten auf Klebezetteln notieren und pro Frage zu markanten Aussagen verdichten. Darauf aufbauend die Fragen im Bereich _„Wer bin ich?“_ beantworten. Den Daten ein Gesicht geben und die Entwicklung mit einer Zeichnung oder Collage abrunden.
+3. Start by answering the question _“What am I like?”_. Use presorted data from the field investigation for inspiration. Write down answers on sticky notes and condense them into striking statements for each question. Based on this, answer the questions in the area _“Who am I?”_. Put a face to the data: round off the process with a drawing or collage.
 
-4. Überprüfen, ob das Profil realistisch ist oder ob es sich zu konstruiert anfühlt. Die häufigste Falle bei dem Erstellen von **Persona-Profilen** besteht darin, Idealisierungen zu schaffen, die nicht in der Realität zu finden sind. Kolleg:innen um einen Abgleich bitten, die reale Kontakte zu den jeweiligen Gruppen haben. **Persona-Profile** entsprechend anpassen.
+4. Check whether the profile is realistic or feels too contrived. The most common pitfall in creating **Persona Profiles** is making idealizations that don’t reflect reality. Ask colleagues who have real-life contact with the groups in question to see what they think. Adapt **Persona Profiles** accordingly.
 
-5. Ergebnisse dokumentieren. Wegen ihren Hintergrundgeschichten und markanten Verhaltensmustern sind Personas sehr einprägsam. Deshalb ist es empfehlenswert, sie nicht nur für den _Konzept-Prototyp_ zu nutzen, sondern auch physisch oder digital in der Organisation zu kommunizieren.
+5. Document outcomes. Personas are highly memorable because of their background stories and distinctive behavioral patterns. For this reason, the recommendation is to use them not just for the **concept prototype** (LINK) but to communicate them physically or digitally within the organization, too.
 
-## Konzept-Prototypen
+## Concept Prototypes
 
 <MethodSummary
-  title={KonzeptPrototypen.frontMatter.title}
-  time={KonzeptPrototypen.frontMatter.time}
-  attributes={KonzeptPrototypen.frontMatter.attributes}
-  footer={KonzeptPrototypen.frontMatter.note}
+  title={ConceptPrototypes.frontMatter.title}
+  time={ConceptPrototypes.frontMatter.time}
+  attributes={ConceptPrototypes.frontMatter.attributes}
+  footer={ConceptPrototypes.frontMatter.note}
 >
-  <KonzeptPrototypen.default />
+  <ConceptPrototypes.default />
 </MethodSummary>
 
 <MethodCard
-  title={KonzeptPrototypen.frontMatter.title}
-  surtitle="Arbeitsblatt"
-  attributes={[KonzeptPrototypen.frontMatter.time]}
+  title={ConceptPrototypes.frontMatter.title}
+  surtitle="Worksheet"
+  attributes={[ConceptPrototypes.frontMatter.time]}
   imageUrl={"/img/05_hero.svg"}
   className="mt-5"
   footer={
     <Link
       className="text-magenta-500 underline"
-      href={"pathname:///arbeitsblatt/05_konzept_prototypen.pdf"}
+      href={"pathname:///arbeitsblatt/05_concept-prototypes.pdf"}
       icon={<EditIcon className="w-3 h-3 text-inherit" />}
     >
-      PDF-Vorlage
+      PDF template
     </Link>
   }
 />
 
-### Vorgehen
+### Procedure
 
-1. Testbasis gemeinsam sichten. Wirkungsweise und Wert des Ideenkerns sollen vermittelt werden. Welche **Konzept-Prototypen** bzw. Kombinationen sind dafür sinnvoll? Ein oder mehrere Formate auswählen:
+1. Sift test base together. The aim is to convey the mechanism and value at the core of the idea. Which concept prototypes or combinations are best suited to achieving this? Select one or more formats:
 
-- **Storyboard** – _Visualisierung in Szenen:_ Abbildung und Kurzbeschreibung der wichtigsten Ereignisse im Zusammenhang mit der angedachten Lösung.
+- **Storyboard** – _Visualization in scenes_: illustration and brief description of the main events relating to the envisaged solution.
 
-- **Erlebniskette** – _Prozessbeschreibung mit Berührungspunkten:_ Einzelne Schritte vor, zur, während und nach der Interaktion mit der Lösung werden aus der Perspektive der Persona detailliert erfasst.
+- **Chain of experience** – _Process description with touch points_: individual steps before, during and after the interaction with the solution are captured in detail from the persona’s perspective.
 
-- **Papier-Prototyp** – _Skizze eines zur Lösung gehörenden Objektes:_ einfach hergestelltes Objekt, das die neue Interaktion erlebbar macht.
+- **Paper prototype** – _Sketch of an object that belongs to the solution_: simply constructed object that brings the new interaction to life.
 
-2. **Persona-Profile** bereitlegen. In welcher Situation würden sie auf die Lösung treffen? Wie wäre ihre Reaktion? Storyboard und/oder Erlebniskette erstellen, um Kontext und Nutzung zu beschreiben. Ggf. enthält die Beschreibung im Zusammenhang mit der Lösung ein Medium oder Objekt, das als Papier-Prototyp angefertigt werden kann.
+2. Have **Persona Profiles** ready. In what situation would they encounter the solution? What would their reaction be? Create storyboard and/or chain of experience to describe context and usage. If applicable, the description of the solution should include a medium or object that can be made as a paper prototype.
 
-3. Material bereitlegen. Wie kann dieses Medium oder Objekt aus den vorhandenen Materialien greifbar und erlebbar nachgestellt werden? Papier-Prototyp bauen. Bsp.: Eine illustrierte Software-Oberfläche als Klick-Dummy. Diverse Varianten fertigen. Auswählen, was am besten für die Interaktion im Test geeignet ist.
+3. Have material ready. How can this medium or object be recreated from the materials at hand so as to enable a first-hand experience? Make paper prototype. Example: An illustrated software interface as a click dummy. Make different variants. Select the best one for interaction in the test.
 
-4. **Konzept-Prototypen** auf Konsistenz prüfen. Wird das Erlebnis mit der Lösung und ihr Wert klar verdeutlicht? Ggf. Schritt **02** und **03** wiederholen.
+4. Check **concept prototypes** for consistency. Does this clearly convey the experience with the solution, including the value it offers?
+
+   If necessary, repeat Steps **2** and **3**.
+
