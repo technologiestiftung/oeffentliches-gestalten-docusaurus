@@ -430,10 +430,6 @@ p {
   @apply hyphens-auto;
 }
 
-html:not(.docs-doc-page) .navbar__toggle {
-  @apply !hidden;
-}
-
 #entwicklungsmatrix,
 #development-matrix,
 #prozessverlauf,
