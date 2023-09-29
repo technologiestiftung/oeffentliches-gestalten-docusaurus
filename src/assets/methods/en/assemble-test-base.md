@@ -5,7 +5,7 @@ attributes:
   - label: "Level"
     content: "Simple – Medium"
   - label: "Materials"
-    content: "Interim outcomes from the **Ideas Napkin** (LINK),sticky notes, pens"
+    content: "Interim outcomes from the Ideas Napkin, sticky notes, pens"
   - label: "Roles"
     content: "Facilitation, documentation, time management"
 note: "The mistake is often made of designing a solution that is based too much on the project team’s assumptions. Ultimately, however, the deciding factor will be what is important to future users. So before we design the prototype, we start by defining who the test subjects will be."

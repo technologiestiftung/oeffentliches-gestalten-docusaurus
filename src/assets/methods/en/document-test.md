@@ -20,4 +20,4 @@ The test situation and application of the prototype is documented using a simple
 Documentation is based on specific observation points and original quotes. It should be carried out in a focused manner for each test subject throughout the entire course of the test.
 
 ### Added value
-After the test, the documentation is jointly reviewed by a team. In addition to the test questions, users’ body language and interactions can also provide relevant insights into the functionality of the solution. The insights are condensed in the template [**Analyze Test**](http://www.citylab-berlin.org/handbuch "Test auswerten").
+After the test, the documentation is jointly reviewed by a team. In addition to the test questions, users’ body language and interactions can also provide relevant insights into the functionality of the solution. The insights are condensed in the template [Analyze Test](/en/buch/erproben/lernen-anpassen#analyze-test).

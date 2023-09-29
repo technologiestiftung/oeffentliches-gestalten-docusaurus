@@ -10,7 +10,7 @@ attributes:
     content: "Facilitation, documentation, time management"
   - label: "Suggestion"
     content: "Use the test structure and questions to gather feedback in your day-to-day work."
-note: "The structure of the test situation is based on _participatory observations_. The advantage of this method is that it creates an investigation situation that is close to the day-to-day life of the user. Truly authentic insights can be gained by uncovering routine patterns of behavior that often occur unconsciously."
+note: "The structure of the test situation is based on participatory observations. The advantage of this method is that it creates an investigation situation that is close to the day-to-day life of the user. Truly authentic insights can be gained by uncovering routine patterns of behavior that often occur unconsciously."
 ---
 
 ### What is it and what purpose does it serve?
