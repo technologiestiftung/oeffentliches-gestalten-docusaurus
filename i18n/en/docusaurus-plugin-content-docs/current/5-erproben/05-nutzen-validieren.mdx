@@ -1,0 +1,80 @@
+---
+sidebar_label: "Validate the benefits"
+sidebar_position: 6
+sidebar_class_name: "stage stage-5"
+image: "/img/social-test.png"
+---
+
+import { MethodSummary } from "@site/src/components/MethodSummary";
+import * as MvpCanvas from "@site/src/assets/methods/en/mvp-canvas.md";
+import { MethodCard } from "@site/src/components/MethodCard";
+import { Link } from "@site/src/components/Link";
+import EditIcon from "@site/static/img/icons/edit.svg";
+
+# Validate the benefits
+
+## Follow the innovation trail
+
+We finish off the test phase with valuable outcomes. Drawing on the results of the prototype test, we can incorporate what we learned into a working prototype and then test this again.
+
+### Responsible development
+
+The tests showed that we were wrong in some of our suppositions.
+
+Based on a tested prototype, it would be irresponsible to assume that our solution can now be implemented in the system with all its reciprocal effects. In order to be able to examine risks and critical assumptions at the lowest possible cost, we still need real-life experience with real-life people.
+
+### Consolidate what has been learned
+
+We're interested in a solution that leads to direct improvements as quickly as possible. The evidence gained through the [Concept Prototype](/en/buch/erproben/prototypen-erstellen#concept-prototypes) forms the basis for extension to operational capability and functionality. The core value remains in focus. When designing imitative or functional prototypes, details are omitted, as are almost all capability features.
+
+So now we’re looking for the basic functionality that will allow our solution to be used in the real world at the lowest level. This so-called _Minimal Viable Product/Process (MVP)_ is a functional prototype.
+
+### Design as much as necessary, as little as possible
+
+When developing new products or processes, the challenge is to find a feature set that both solves a real problem and can be created using very little time and resources.
+
+### Use value as a basis
+
+There are lots of definitions and implementations for MVPs. People agree that a value basis is needed to make the functions fit precisely. For this reason, our MVP is based on desirable and effective features that are already rudimentary in the **concept prototype** and gratifying to our key actors. In the **MVP Canvas** we collect the main insights for the design of a functional prototype. This creates an overview that provides a sound basis for discussing the next steps with managers. MVPs are basic tools in the development of digital-social applications that are directly linked to agile, collaborative approaches. These cultural aspects should be considered at an early stage.
+
+## MVP Canvas
+
+<MethodSummary
+  title={MvpCanvas.frontMatter.title}
+  time={MvpCanvas.frontMatter.time}
+  attributes={MvpCanvas.frontMatter.attributes}
+  footer={MvpCanvas.frontMatter.note}
+>
+  <MvpCanvas.default />
+</MethodSummary>
+
+<MethodCard
+  title={MvpCanvas.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[MvpCanvas.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_mvp-canvas-en.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Document the interim outcomes obtained so far from [Document Test](/en/buch/erproben/ausprobieren-lassen#document-test) and have [Analyze Test](/en/buch/erproben/lernen-anpassen#analyze-test) ready. Transfer template to a larger piece of paper or use as a structure for creating presentation slides.
+
+2. Using the stimulus questions under the triangle, consider what should go into developing the MVP concept. Work methodically and let each person have their say. Note down initial suggestions (15 min).
+
+3. Focus on the right-hand side of the template, briefly presenting all headings. Split up into small groups of 2-3 people and collect the most important aspects of each heading, with the groups working at the same time. Use stimulus questions (20 min).
+
+4. Present interim outcomes and discuss them to capture the essence (15 min).
+
+5. Clarify any outstanding questions and decide on who will elaborate individual aspects, e.g. a cost projection, and by when.
+
+6. Prepare presentation of results and further actions.

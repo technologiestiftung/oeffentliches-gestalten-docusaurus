@@ -1,0 +1,67 @@
+---
+sidebar_label: 'Consider the current situation'
+sidebar_position: 2
+sidebar_class_name: 'stage stage-1'
+image: "/img/social-prepare.png"
+---
+
+import { Hint } from '@site/src/components/Hint';
+import { MethodCard } from '@site/src/components/MethodCard';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Entwicklungsmatrix from '@site/src/assets/methods/en/development-matrix.md'
+import { Link } from '@site/src/components/Link';
+
+# Consider the current situation
+
+## Define the work area
+
+A lot of innovation projects begin with the realization that there is a desire to do things differently from before. Those who are willing to try a new approach usually have a sense of what hasn’t worked so well to date. Often there may also be some initial ideas about what needs to be changed or how things might be handled better.
+
+### The current situation as the starting point
+
+This is exactly where the structured design process begins. The creation of a so-called [Development Matrix](#development-matrix) shifts the focus onto the actual challenge at hand. The issue is examined and interpreted from different angles. There are no restrictions in terms of data collection. All facts, assumptions, ideas and experiences relating to the issue are gathered and assessed from four different perspectives: what needs to be improved, continued, redeveloped and consciously prevented?
+
+<img src="/img/01_ist_zustand_betrachten.svg" className="w-64 mx-auto aspect-square" aria-hidden />
+
+### Getting a fresh perspective on a familiar situation
+
+Filling in the blanks of the [Development Matrix](#development-matrix) creates a mental framework without committing to a goal. Unlike the well-worn process of project management, which involves steering goals and strategies, the aim at this point is to broaden the view and look at the issue holistically. This lays the foundation for communicating the project and its elaboration.
+
+## Development Matrix
+
+<MethodSummary
+  title={Entwicklungsmatrix.frontMatter.title}
+  time={Entwicklungsmatrix.frontMatter.time}
+  attributes={Entwicklungsmatrix.frontMatter.attributes}
+  footer={Entwicklungsmatrix.frontMatter.note}
+>
+  <Entwicklungsmatrix.default />
+</MethodSummary>
+
+<MethodCard
+  title="Development Matrix"
+  surtitle="Work sheet"
+  attributes={["15 - 20 minutes"]}
+  imageUrl={"/img/01_hero.svg"}
+  className="mt-5"
+  footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/01_development-matrix.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF template</Link>}
+/>
+
+### Procedure
+
+1. If possible, get together in a group of 2-4 people who are familiar with the topic.
+
+2. Copy template or transfer it to a larger working format in landscape format, e.g. a flipchart sheet.
+
+3. Enter the topic in the center. This is the starting point for creating the [Development Matrix](#development-matrix).
+
+4. Everyone has their own pen and sticky notes. Each person individually (approx. 5 min): Jot down initial ideas, assumptions, information, thoughts, and experiences relating to the four fields. One aspect per sticky note. Each person successively (approx. 2 min per person): Read out the aspects you have written down to the others and place them in the relevant fields. Identical or similar aspects can be placed directly alongside each other.
+
+5. Prioritize as a group: What causes particular problems and ought to be addressed in the context of the venture? Underline or mark the most important points.
+
+6. Document the focus areas and insights for each field.
+
+<Hint><b>Note:</b> Other important issues will often arise in the follow-up. Add them at the appropriate point in the matrix, repeating Step 05 and 06.</Hint>
+
+

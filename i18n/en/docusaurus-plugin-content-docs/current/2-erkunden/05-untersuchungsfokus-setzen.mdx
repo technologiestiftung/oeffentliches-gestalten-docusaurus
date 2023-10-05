@@ -1,0 +1,68 @@
+---
+sidebar_label: 'Set the exploration focus'
+sidebar_position: 6
+sidebar_class_name: "stage stage-5"
+image: "/img/social-explore.png"
+---
+
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Lagebericht from '@site/src/assets/methods/en/situation-report.md'
+import { MethodCard } from '@site/src/components/MethodCard';
+import { Link } from '@site/src/components/Link';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { Hint } from '@site/src/components/Hint';
+
+# Set the exploration focus
+
+## Summarize insights
+
+As a team, we’ve gone through a knowledge-building process that is difficult for outsiders to comprehend. Now is a good time to communicate an interim status to our superiors. The wording we use for this will also help us when it comes to recruiting interview partners.
+
+### Interlink the insights gained to date
+
+With the results of the tools [Tree Analysis](/en/buch/erkunden/problemverstaendnis-schaerfen#tree-analysis) and [Map Out Actors](/en/buch/erkunden/system-akteure-verbinden#map-out-actors), the foundations are in place for us to be able to formulate the exact focus of the investigation in Phase 3. Based on the state of knowledge to date and the assumptions identified, we will now determine together what else needs to be found out.
+
+This summary of the full extent of our knowledge facilitates
+internal and external communication. Reporting creates a reliable basis for communication between core team and management. The communication format can be agreed on with the decision-makers.
+
+The only requirement for the preparation of the [Situation Report](#situation-report) is that all aspects are to be described without prescribing a particular solution. This point must be observed – regardless of whether the venture is self-initiated or has been commissioned by management.
+
+<img src="/img/02_erkenntnisse_zusammenfassen.svg" className="w-64 mx-auto aspect-square" aria-hidden />
+
+## Situation Report
+
+<MethodSummary
+  title={Lagebericht.frontMatter.title}
+  time={Lagebericht.frontMatter.time}
+  attributes={Lagebericht.frontMatter.attributes}
+  footer={Lagebericht.frontMatter.note}
+>
+  <Lagebericht.default />
+</MethodSummary>
+
+<MethodCard
+  title={Lagebericht.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[Lagebericht.frontMatter.time]}
+  imageUrl={"/img/02_hero.svg"}
+  className="mt-5"
+  footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/02_situation-report.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF template</Link>}
+/>
+
+### Procedure
+
+The **Situation Report** summarizes the interim outcomes of the exploration phase to date. In this way, all documentation is made accessible and put into context. When drawing up the documentation, follow the **STORY** from the [Development Plan](/en/buch/vorbereiten/unternehmung-beginnen#development-plan), possibly using the same presentation format and working visually.
+
+1. Recall the essential points from the knowledge work done to date.
+
+2. First of all answer the first question of the investigation focus verbally, speaking it out loud. Take care to use clear, precise language. As a team, repeat, refine, write down and rewrite the answers over and over to get to the point.
+
+3. Repeat the procedure from Step **2** for all further questions pursued in the investigation focus.
+
+4. Complete the **Situation Report**. To do this, embed text modules from the investigation focus in the Situation Report.
+
+5. Use this material to create a successful presentation that resonates.
+
+<Hint>
+  <b>Note:</b> If any resistance or concerns arise during the process, these can be incorporated afterwards.
+</Hint>

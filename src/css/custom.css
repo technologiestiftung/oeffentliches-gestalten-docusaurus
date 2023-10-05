@@ -129,8 +129,8 @@
     --ifm-font-family-base: "National", sans-serif;
 
     --ifm-navbar-height: 3.5rem;
-    
-    --doc-sidebar-width: max(20vw,380px) !important;
+
+    --doc-sidebar-width: max(20vw, 380px) !important;
     --doc-sidebar-hidden-width: 60px !important;
   }
 
@@ -155,7 +155,7 @@
   }
 
   main > .container {
-    padding: max(1rem,2vw) max(1rem,5vw) max(3rem,10vh) !important;
+    padding: max(1rem, 2vw) max(1rem, 5vw) max(3rem, 10vh) !important;
   }
 
   blockquote {
@@ -170,7 +170,6 @@
     content: close-quote;
     color: rgb(var(--magenta-500));
   }
-
 }
 
 @layer utilities {
@@ -236,56 +235,95 @@
   @apply text-base leading-tight pt-0.5;
 }
 
-html[class*="docs-doc-id-erkunden/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link,
-html[class*="docs-doc-id-erkennen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link {
+html[class*="docs-doc-id-erkunden/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link,
+html[class*="docs-doc-id-erkennen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link {
   @apply text-magenta-500;
 }
 
-html[class*="docs-doc-id-entwerfen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link,
-html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link {
+html[class*="docs-doc-id-entwerfen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link,
+html[class*="docs-doc-id-erproben/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link {
   @apply text-blue-500;
 }
-
 
 .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link {
   @apply relative pl-7;
 }
 
 .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before {
-  content: '';
+  content: "";
   @apply absolute w-3.5 aspect-square rounded-full bg-grey-500 left-2 top-1/2 -translate-y-1/2;
 }
 
-html[class*="docs-doc-id-erkunden/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before,
-html[class*="docs-doc-id-erkennen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before,
-html[class*="docs-doc-id-entwerfen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before,
-html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before {
+html[class*="docs-doc-id-erkunden/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before,
+html[class*="docs-doc-id-erkennen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before,
+html[class*="docs-doc-id-entwerfen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before,
+html[class*="docs-doc-id-erproben/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before {
   @apply rounded-none rotate-45 w-3 h-3;
 }
 
-html[class*="docs-doc-id-einfuehrung/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before {
+html[class*="docs-doc-id-einfuehrung/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before {
   @apply bg-grey-300 bg-no-repeat w-4 h-4 left-1.5;
-  background-image: url('../assets/icons/flag.svg');
+  background-image: url("../assets/icons/flag.svg");
   background-position: center 4px;
 }
 
-html[class*="docs-doc-id-erkunden/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before,
-html[class*="docs-doc-id-erkennen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before {
+html[class*="docs-doc-id-erkunden/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before,
+html[class*="docs-doc-id-erkennen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before {
   @apply bg-magenta-500;
 }
 
-html[class*="docs-doc-id-entwerfen/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before,
-html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcrumbs__link:before {
+html[class*="docs-doc-id-entwerfen/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before,
+html[class*="docs-doc-id-erproben/"]
+  .breadcrumbs
+  > li:nth-of-type(2)
+  > .breadcrumbs__link:before {
   @apply bg-blue-500;
 }
 
 .breadcrumbs > li:first-of-type > .breadcrumbs__link {
   @apply p-0 w-7 h-7 -ml-1;
-  background: white url('../assets/icons/home.svg') center center no-repeat;
+  background: white url("../assets/icons/home.svg") center center no-repeat;
 }
 
 .breadcrumbs > li:first-of-type > .breadcrumbs__link:hover {
-  background: rgb(var(--grey-50)) url('../assets/icons/home.svg') center center no-repeat;
+  background: rgb(var(--grey-50)) url("../assets/icons/home.svg") center center
+    no-repeat;
 }
 
 .breadcrumbs > li:first-of-type svg {
@@ -318,7 +356,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 .pagination-nav__link--next .pagination-nav__label::after {
   content: " ";
   @apply w-4 h-4 absolute top-[4px] left-0 -translate-x-1 lg:-translate-x-6;
-  background: url('../assets/icons/chevron-left.svg') center center no-repeat;
+  background: url("../assets/icons/chevron-left.svg") center center no-repeat;
 }
 
 .pagination-nav__link--prev .pagination-nav__label {
@@ -331,7 +369,7 @@ html[class*="docs-doc-id-erproben/"] .breadcrumbs > li:nth-of-type(2) > .breadcr
 
 .pagination-nav__link--next .pagination-nav__label::after {
   @apply left-auto right-0 translate-x-1 lg:translate-x-6;
-  background-image: url('../assets/icons/chevron-right.svg');
+  background-image: url("../assets/icons/chevron-right.svg");
 }
 
 /* Table of Contents */
@@ -344,9 +382,16 @@ html .theme-doc-toc-desktop {
   @apply p-0 py-[max(2vw,1rem)] lg:opacity-60 transition-opacity hover:opacity-100 !border-t-grey-50;
 }
 
+.table-of-contents:before {
+  @apply hidden lg:block text-base pb-2 mb-2 border-b border-grey-50 font-bold mt-[1px];
+}
+
 html[lang="de"] .table-of-contents:before {
   content: "Auf dieser Seite:";
-  @apply hidden lg:block text-base pb-2 mb-2 border-b border-grey-50 font-bold mt-[1px];
+}
+
+html[lang="en"] .table-of-contents:before {
+  content: "On this page:";
 }
 
 .table-of-contents__left-border {
@@ -385,54 +430,92 @@ p {
   @apply hyphens-auto;
 }
 
-html:not(.docs-doc-page) .navbar__toggle {
-  @apply !hidden;
-}
-
 #entwicklungsmatrix,
+#development-matrix,
 #prozessverlauf,
+#process-flow,
 #mitspielerinnen-kartieren,
+#map-out-players,
 #teamprofil--selbsteinschätzung,
+#team-profile--self-assessment,
 #teamarbeitsroutine,
+#teamwork-routine,
 #fünf-finger-feedback,
+#five-finger-feedback,
 #gewaltfreie-kommunikation,
+#nonviolent-communication,
 #entwicklungsplan,
+#development-plan,
 #resultate-dokumentieren,
+#document-outcomes,
 #ich-und-der-prozess,
+#myself-and-the-process,
 #baumanalyse,
+#tree-analysis,
 #akteure-kartieren,
+#map-out-actors,
 #wissensatlas,
+#knowledge-atlas,
 #annahmen-dreieck,
+#assumptions-triangle,
 #lagebericht,
+#situation-report,
 #gesprächsleitfaden,
+#interview-guide,
 #gesprächsgrundlagen,
+#interview-basics,
 #vorgespräche-führen,
+#conduct-preliminary-talks,
 #gespräch-dokumentieren,
+#interview-documentation,
 #individuelle-gesprächsauswertung,
+#individual-interview-analysis,
 #bedürfnis-hindernis-filter,
+#need-obstacle-filter,
 #denkfehler-kontrolle,
+#misconception-check,
 #potenzialbaukasten,
+#potential-construction-kit,
 #wie-können-wir-fragen,
+#how-can-we--questions,
 #potenzial-steckbrief,
+#potential-profile,
 #themengeleitetes-netzwerken,
 #testbasis-zusammenstellen,
+#assemble-test-base,
 #persona-profil,
+#persona-profile,
 #konzept-prototypen,
+#concept-prototypes,
 #testverlauf-planen,
+#plan-test-procedure,
 #test-dokumentieren,
+#document-test,
 #test-auswerten,
+#analyze-test,
 #mvp-canvas,
 #relevanztrichter,
+#relevance-funnel,
 #inspirationsdatenbank,
+#inspiration-database,
 #innovationsreise,
+#innovation-journey,
 #werteturm,
+#value-tower,
 #kreativitätsmuskel-aufwärmen,
+#creativity-muscle-warm-up,
 #kreativer-radschlag,
+#creative-cartwheel,
 #ideen-generator,
+#ideas-generator,
 #visuelle-abstimmung,
+#visual-vote,
 #mehrwert-aufwand-matrix,
+#value-added-effort-matrix,
 #zukunftstheater,
-#ideenserviette {
+#future-theater,
+#ideenserviette,
+#ideas-napkin {
   visibility: hidden;
   height: 0;
   margin: 0;

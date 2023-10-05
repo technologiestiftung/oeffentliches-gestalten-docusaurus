@@ -1,0 +1,171 @@
+---
+sidebar_label: "Create prototypes"
+sidebar_position: 3
+sidebar_class_name: "stage stage-2"
+image: "/img/social-test.png"
+---
+
+import { MethodSummary } from "@site/src/components/MethodSummary";
+import * as PersonaProfile from "@site/src/assets/methods/en/persona-profile.md";
+import * as ConceptPrototypes from "@site/src/assets/methods/en/concept-prototypes.md";
+import { MethodCard } from "@site/src/components/MethodCard";
+import { Link } from "@site/src/components/Link";
+import EditIcon from "@site/static/img/icons/edit.svg";
+import { Checkbox } from "@site/src/components/Checkbox";
+
+# Create prototypes
+
+## Structured experimentation
+
+Public innovation comes from trying out and learning from prototypes. This is the only way to arrive at a common understanding of the developed concept within our team.
+
+### Incorporate different living situations
+
+In order to ensure the key actors stay at the center of our innovation process, we create [Persona Profiles](#persona-profile) that effectively remind us of the specific behaviors, interests, and expectations of specific groups of people. We also consider marginalized groups with special needs when developing **Persona Profiles**. Finally, by carrying out tests with extreme groups, it is possible to develop a holistic prototype.
+
+### Invite critical feedback
+
+Equipped with a lot of knowledge, we set about creating a [concept prototype](#concept-prototypes). The simple construction of this prototype puts ideas into a concrete form that key actors can interact with. The test data collected can be used to measure whether the direction is still on target or whether the prototype or our solution needs to be adapted. Critical feedback is particularly valuable here. It accelerates the learning process and contributes significantly to the efficient development of an impact-oriented public benefit.
+
+## Build Concept Prototype
+
+### Define goal:
+
+<Checkbox
+  id="decide-jointly"
+  label={
+    "Decide jointly what the prototype aims to achieve. Is a solution to be tested, or are we going to start with a specific interaction?"
+  }
+/>
+
+### Narrow down the choice of materials and resources:
+
+<Checkbox
+  id="never-finished"
+  label={
+    "Concept prototypes are effective but never finished - this can and should be visible."
+  }
+/>
+
+<Checkbox
+  id="pen-paper-scissors"
+  label={
+    "Usually a pen, paper and scissors are enough to make a prototype – and there are no limits to the imagination."
+  }
+/>
+
+### Create versions:
+
+<Checkbox
+  id="few-minutes"
+  label={
+    "It often takes only a few minutes to build different variants of a solution. Think with your hands without saying much. Surprise yourself as you see what emerges."
+  }
+/>
+
+<Checkbox
+  id="discard-ideas"
+  label={
+    "The less time spent on production, the easier it is to discard ideas. Test subjects critique rough drafts more honestly than they do polished designs."
+  }
+/>
+
+<Checkbox id="formats" label={"Try out different formats."} />
+
+### Have fun strengthening the team’s collaborative spirit:
+
+<Checkbox
+  id="creating"
+  label={
+    "Creating concept prototypes should be enjoyable and actively involve all contributors."
+  }
+/>
+
+## Persona Profile
+
+<MethodSummary
+  title={PersonaProfile.frontMatter.title}
+  time={PersonaProfile.frontMatter.time}
+  attributes={PersonaProfile.frontMatter.attributes}
+  footer={PersonaProfile.frontMatter.note}
+  className="!mt-7"
+>
+  <PersonaProfile.default />
+</MethodSummary>
+
+<MethodCard
+  title={PersonaProfile.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[PersonaProfile.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_persona-profile.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Define groups of actors in the organization and in society to be illustrated based on personas. Select at least three distinctive key or marginal groups.
+
+2. Have investigation data ready according to the selection.
+Make artifacts, key images, quotes, screenshots easily accessible to everyone. Transfer template into a large format for each actor group, e.g. on two flipcharts. When developing the **Persona Profiles**, work in parallel in small groups if necessary.
+
+3. Start by answering the question _“What am I like?”_. Use presorted data from the field investigation for inspiration. Write down answers on sticky notes and condense them into striking statements for each question. Based on this, answer the questions in the area _“Who am I?”_. Put a face to the data: round off the process with a drawing or collage.
+
+4. Check whether the profile is realistic or feels too contrived. The most common pitfall in creating **Persona Profiles** is making idealizations that don’t reflect reality. Ask colleagues who have real-life contact with the groups in question to see what they think. Adapt **Persona Profiles** accordingly.
+
+5. Document outcomes. Personas are highly memorable because of their background stories and distinctive behavioral patterns. For this reason, the recommendation is to use them not just for the **concept prototype**  but to communicate them physically or digitally within the organization, too.
+
+## Concept Prototypes
+
+<MethodSummary
+  title={ConceptPrototypes.frontMatter.title}
+  time={ConceptPrototypes.frontMatter.time}
+  attributes={ConceptPrototypes.frontMatter.attributes}
+  footer={ConceptPrototypes.frontMatter.note}
+>
+  <ConceptPrototypes.default />
+</MethodSummary>
+
+<MethodCard
+  title={ConceptPrototypes.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[ConceptPrototypes.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_concept-prototypes.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Sift test base together. The aim is to convey the mechanism and value at the core of the idea. Which concept prototypes or combinations are best suited to achieving this? Select one or more formats:
+
+- **Storyboard** – _Visualization in scenes_: illustration and brief description of the main events relating to the envisaged solution.
+
+- **Chain of experience** – _Process description with touch points_: individual steps before, during and after the interaction with the solution are captured in detail from the persona’s perspective.
+
+- **Paper prototype** – _Sketch of an object that belongs to the solution_: simply constructed object that brings the new interaction to life.
+
+2. Have **Persona Profiles** ready. In what situation would they encounter the solution? What would their reaction be? Create storyboard and/or chain of experience to describe context and usage. If applicable, the description of the solution should include a medium or object that can be made as a paper prototype.
+
+3. Have material ready. How can this medium or object be recreated from the materials at hand so as to enable a first-hand experience? Make paper prototype. Example: An illustrated software interface as a click dummy. Make different variants. Select the best one for interaction in the test.
+
+4. Check **concept prototypes** for consistency. Does this clearly convey the experience with the solution, including the value it offers?
+
+   If necessary, repeat Steps **2** and **3**.
+

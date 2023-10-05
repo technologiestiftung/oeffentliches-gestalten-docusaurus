@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import { Link } from "../components/Link";
 import Cube from "@site/static/img/citylab_cube.svg";
+import Translate from "@docusaurus/Translate";
 
 export default function LandingPage() {
   return (
@@ -18,10 +19,10 @@ export default function LandingPage() {
       >
         <div className="lg:col-start-2 lg:col-span-7 z-10 flex flex-col justify-center -translate-y-7">
           <h1 className="text-white text-5xl lg:text-6xl xl:text-7xl font-bold leading-none">
-            Öffentliches Gestalten
+            <Translate id="indexH1">Öffentliches Gestalten</Translate>
           </h1>
           <h2 className="mt-4 w-1/2 md:w-full text-white text-base sm:text-lg lg:text-xl xl:text-2xl leading-tight">
-            Handbuch für innovatives Arbeiten in der Verwaltung
+            <Translate id="indexH2">Handbuch für innovatives Arbeiten in der Verwaltung</Translate>
           </h2>
           <Link
             href="/buch/einfuehrung/"
@@ -32,12 +33,14 @@ export default function LandingPage() {
               "transition-colors bg-magenta-500 hover:bg-white text-white hover:text-blue-500 !font-bold hover:!no-underline"
             )}
           >
-            Zum Handbuch
+            <Translate id="indexOpenBookLink">Zum Handbuch</Translate>
           </Link>
         </div>
         <p className="h-min lg:col-span-7 lg:col-start-6 text-white text-xs italic 2xl:text-right z-10">
-          Für alle, die sich mutig für eine kreative und gemeinwohlorientierte
-          Transformation der öffentlichen Verwaltung einsetzen.
+          <Translate id="indexQuote">
+            Für alle, die sich mutig für eine kreative und gemeinwohlorientierte
+            Transformation der öffentlichen Verwaltung einsetzen.
+          </Translate>
         </p>
 
         <Cube

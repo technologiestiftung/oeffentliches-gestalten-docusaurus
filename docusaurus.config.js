@@ -18,7 +18,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "de",
-    locales: ["de"],
+    locales: ["de", "en"],
   },
 
   plugins: [
@@ -95,6 +95,10 @@ const config = {
             type: "search",
             position: "right",
           },
+          {
+            type: "localeDropdown",
+            position: "left",
+          },
         ],
       },
       footer: {
@@ -136,28 +140,6 @@ const config = {
       },
     }),
   customFields: {
-    credits: {
-      concept: {
-        title: "Konzept",
-        people: ["Caroline Paulick-Thiel", "Benjamin Seibel", "Joshua Pacheco"],
-      },
-      authors: {
-        title: "Autorinnen",
-        people: ["Caroline Paulick-Thiel", "Henrike Arlt", "Bettina Köbler"],
-      },
-      editing: {
-        title: "Redaktion",
-        people: ["Joshua Pacheco", "Benjamin Seibel"],
-      },
-      design: {
-        title: "Gestaltung",
-        people: [{ name: "Andrej Balaz", url: "www.balaz.de" }],
-      },
-      illustration: {
-        title: "Illustration",
-        people: [{ name: "Andrea Ramírez Sabat", url: "www.andrea-rmz.com" }],
-      },
-    },
     socials: {
       twitter: "https://twitter.com/citylabberlin",
       instagram: "https://www.instagram.com/citylabbln/",
