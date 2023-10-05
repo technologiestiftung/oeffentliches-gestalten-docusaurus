@@ -1,0 +1,226 @@
+---
+sidebar_label: "Run test"
+sidebar_position: 4
+sidebar_class_name: "stage stage-3"
+image: "/img/social-test.png"
+---
+
+import { MethodSummary } from "@site/src/components/MethodSummary";
+import * as PlanTestProcedure from "@site/src/assets/methods/en/plan-test-procedure.md";
+import * as DocumentTest from "@site/src/assets/methods/en/document-test.md";
+import { MethodCard } from "@site/src/components/MethodCard";
+import { Link } from "@site/src/components/Link";
+import EditIcon from "@site/static/img/icons/edit.svg";
+import { Checkbox } from "@site/src/components/Checkbox";
+
+# Run test
+
+## Learn through interaction
+
+Similar to the interview situation in Phase 3, the test situation needs to be well prepared in order to enable maximum learning from interaction with key actors or users.
+
+### Prepare participation carefully
+
+Organization of the test situation includes [preliminary talks](/buch/erkennen/rausgehen-menschen-treffen#conduct-preliminary-talks), selection of test subjects, a friendly reminder in advance and the signing of the [Consent Form](/arbeitsblatt/03_consent-form.pdf) - if audio or video recordings are planned. In order to be able to verifiably record and analyze the data generated, it is advisable to assign anonymous abbreviations again.
+
+### Work as a team
+
+The test is conducted by at least two people. One person facilitates, the other takes care of the documentation. One to three test subjects should be invited per test run. Ideally, the same number of observers from the team should be involved to [document the test](/en/buch/erproben/ausprobieren-lassen#document-test) for each test subject.
+
+### Clarify logistics
+
+The preparation effort will vary depending on the prototype and test format. When it comes to testing a [concept prototype](/en/buch/erproben/prototypen-erstellen#concept-prototypes), the effort should be kept low so as to be able to effectively manage the expectations of those involved at this early stage.
+
+## Test Prototype
+
+### The day before the test:
+
+<Checkbox
+  id="reminder"
+  label={"Send test subjects a reminder with details of time and venue."}
+/>
+
+<Checkbox
+  id="materials"
+  label={"Prepare required materials and prototype."}
+/>
+
+<Checkbox
+  id="testverlauf"
+  label={<a href="#plan-test-procedure"> Plan test procedure </a>}
+/>
+
+<Checkbox
+  id="documentation"
+  label={
+    "Assign roles. Who will carry out the test, who will take care of the documentation? If necessary, run through the process with colleagues."
+  }
+/>
+
+### On the day of the test:
+
+<Checkbox
+  id="templates"
+  label={
+    <>
+      Print or copy templates of{" "}
+      <a href="pathname:///arbeitsblatt/03_consent-form.pdf">
+        Consent Form
+      </a>{" "}
+      and{" "}
+      <a href="/en/buch/erproben/ausprobieren-lassen#document-test">
+        Document Test
+      </a>.
+    </>
+  }
+/>
+
+<Checkbox
+  id="test-result"
+  label={
+    "Make sure you’re able to describe in a few minutes what the test subjects are to expect – without distorting the test result by providing too many details."
+  }
+/>
+
+<Checkbox
+  id="testverlauf"
+  label={
+    <>
+      Engage in the learning process. Accept feedback as a gift, ask in-depth questions,
+      don’t justify or explain anything in great detail, and use{" "}
+      <a href="/en/buch/erkennen/gespraechsbasis-erstellen#interview-basics">
+        Interview Basics
+      </a>{" "}
+      as a source of inspiration for interactions with test subjects.
+    </>
+  }
+/>
+
+<Checkbox id="welcome" label={"Welcome test subjects."} />
+
+<Checkbox id="test" label={"Carry out the test!"} />
+
+### After the test:
+
+<Checkbox
+  id="analyze"
+  label={
+    <a href="/buch/erproben/lernen-anpassen#analyze-test">Analyze Test</a>
+  }
+/>
+
+<Checkbox
+  id="afterwards"
+  label={
+    "Send out a brief thank-you note to the test subjects or an invitation to a presentation of the results."
+  }
+/>
+
+## Plan Test Procedure
+
+<MethodSummary
+  title={PlanTestProcedure.frontMatter.title}
+  time={PlanTestProcedure.frontMatter.time}
+  attributes={PlanTestProcedure.frontMatter.attributes}
+  footer={PlanTestProcedure.frontMatter.note}
+  className="!mt-7"
+>
+  <PlanTestProcedure.default />
+</MethodSummary>
+
+<MethodCard
+  title={PlanTestProcedure.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[PlanTestProcedure.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_plan-test-procedure.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Transfer template to a larger piece of paper.
+
+2. Using the bullet points along the route, consider the following:
+
+  **Interaction:** Who will be deployed and when? What form of interaction is appropriate at which points?
+
+  **Roles:** Assign roles. Who will carry out the test, who will take care of the documentation? If necessary, run through the process with colleagues.
+
+  **Time frame:** How long should testing take?
+
+  **Materials:** What is needed in terms of material in order to:
+
+  - set up the room?
+
+  - redesign the path to the room if necessary?
+
+  - carry out the test?
+
+  **Information:** What information is needed in order to:
+
+  communicate the test?
+
+  prepare the test subjects?
+
+  **Questions:** What questions are to be answered? See hypotheses under [Assemble Test Base](/en/buch/erproben/test-vorbereiten#assemble-test-base). Use stimulus questions from the template and adapt if necessary. Think of a **conclusion**. For example, ask for a personal summary of the most important aspects, express gratitude and possibly offer further involvement.
+
+3. Draw up a brief description for testing in the context of the venture. Write cover letters to contact test subjects.
+
+4. Assemble working materials for the test persons, e.g. clipboard with paper, pen, sticky notes.
+
+## Document Test
+
+<MethodSummary
+  title={DocumentTest.frontMatter.title}
+  time={DocumentTest.frontMatter.time}
+  attributes={DocumentTest.frontMatter.attributes}
+  footer={DocumentTest.frontMatter.note}
+>
+  <DocumentTest.default />
+</MethodSummary>
+
+<MethodCard
+  title={DocumentTest.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[DocumentTest.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_document-test.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Work as a team before, during and after the test. Assign roles. In case of multiple test subjects, determine one observer for each test subject, each using a separate documentation template.
+
+2.  Facilitator guides everyone through the test run using [Plan Test Procedure](/en/buch/erproben/ausprobieren-lassen#plan-test-procedure): Welcome test subjects (1), explain the background to the test (2) and prepare participants for their role as test subjects (3). If necessary, answer questions about the procedure or any comprehension questions that might arise about the test situation. Remember the [Consent Form](/arbeitsblatt/03_consent-form.pdf) and the recording; point out to test subjects that all data will be anonymized. Establish an open atmosphere.
+
+3. Introduce and start the test situation (4). Have the test subjects interact with the prototype. Documenters observe, noting down interaction and behavior (5). Pay attention to body language, facial expressions, tone of voice, and choice of words. Use the template to record observations:
+
+  - What works?
+
+  - Where do questions arise?
+
+  - What new ideas emerge?
+
+  - What doesn’t work?
+
+4. Facilitate honest feedback (6), ask core questions about the prototype (7) and the concept (8) so as to understand test subjects’ underlying thoughts. Documenters make further notes in Fields A,B,C and D. Original quotes are of particular interest.
+
+5. Bring the test situation to a close (9). Complete notes and conclude by formulating a key phrase or observation.

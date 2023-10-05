@@ -4,7 +4,8 @@ import React, { FC } from "react";
 type CreditsPersonType = string | { name: string; url: string };
 
 interface CreditsSectionType {
-  title: string;
+  id: string;
+  title: JSX.Element;
   people: CreditsPersonType[];
 }
 
@@ -17,7 +18,9 @@ export interface CreditsProps {
   };
 }
 
-const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
+type CreditsSectionPropType = Pick<CreditsSectionType, "title" | "people">;
+
+const CreditsSection: FC<CreditsSectionPropType> = ({ title, people }) => {
   return (
     <div
       className={clsx(
@@ -58,8 +61,8 @@ const CreditsSection: FC<CreditsSectionType> = ({ title, people }) => {
 export const Credits: FC<CreditsProps> = ({ credits }) => {
   return (
     <>
-      {Object.entries(credits).map(([key, { title, people }]) => {
-        return <CreditsSection key={title} title={title} people={people} />;
+      {Object.entries(credits).map(([,{ id, title, people }]) => {
+        return <CreditsSection key={id} title={title} people={people} />;
       })}
     </>
   );

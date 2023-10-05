@@ -7,6 +7,7 @@ import P4tLogo from "@site/static/img/logo_p4t.svg";
 import TsbLogo from "@site/static/img/logo_tsb.svg";
 import SenatskanzleiLogo from "@site/static/img/logo_senatskanzlei.svg";
 import { VisualLink } from "@site/src/components/VisualLink";
+import Translate from "@docusaurus/Translate";
 
 export type FooterLayoutProps = Props & { credits: ReactNode };
 
@@ -26,7 +27,7 @@ export default function FooterLayout({
       <div className={clsx("px-6 py-12", "grid gap-y-14 grid-cols-12")}>
         <div className="lg:col-start-2 col-span-12 md:col-span-6 lg:col-span-4">
           <p className="mb-4 text-sm">
-            Entstanden durch die Zusammenarbeit von
+            <Translate id="collaborationOf">Entstanden durch die Zusammenarbeit von</Translate>
           </p>
           <div className="flex gap-x-3 gap-y-6 flex-wrap">
             <VisualLink
@@ -48,7 +49,9 @@ export default function FooterLayout({
           )}
         >
           <div>
-            <p className="mb-4 text-sm">Ein Projekt der</p>
+            <p className="mb-4 text-sm">
+              <Translate id="projectBy">Ein Projekt der</Translate>
+            </p>
             <VisualLink
               url="https://www.technologiestiftung-berlin.de/"
               title="Technologiestiftung Berlin"
@@ -56,7 +59,9 @@ export default function FooterLayout({
             />
           </div>
           <div>
-            <p className="mb-4 text-sm">Gefördert durch</p>
+            <p className="mb-4 text-sm">
+              <Translate id="sponsoredBy">Gefördert durch</Translate>
+            </p>
             <VisualLink
               url="https://www.berlin.de/rbmskzl/"
               title="Die Regierende Bürgermeisterin von Berlin - Senatskanzlei"

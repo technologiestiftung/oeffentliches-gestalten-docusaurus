@@ -52,7 +52,6 @@ export const PhaseHero: FC<{
 
         <img
           src={imageUrl}
-          alt="sdfsdfsd"
           className={clsx(
             "w-24 sm:w-40 md:w-42 lg:w-48 xl:w-64 h-auto",
             "lg:scale-150",

@@ -1,0 +1,26 @@
+{
+  "link.item.label.Kontakt": {
+    "message": "Contact",
+    "description": "The label of footer link with label=Kontakt linking to https://citylab-berlin.org/de/projects/handbuch/"
+  },
+  "link.item.label.Literaturverzeichnis": {
+    "message": "Bibliography",
+    "description": "The label of footer link with label=Literaturverzeichnis linking to /literaturverzeichnis"
+  },
+  "link.item.label.Quellcode": {
+    "message": "Source code",
+    "description": "The label of footer link with label=Quellcode linking to https://github.com/technologiestiftung/oeffentliches-gestalten-docusaurus"
+  },
+  "link.item.label.Datenschutz": {
+    "message": "Privacy",
+    "description": "The label of footer link with label=Datenschutz linking to https://www.technologiestiftung-berlin.de/datenschutz"
+  },
+  "link.item.label.Impressum": {
+    "message": "Legal",
+    "description": "The label of footer link with label=Impressum linking to https://www.technologiestiftung-berlin.de/impressum"
+  },
+  "copyright": {
+    "message": "This work is licensed under the Creative Commons Attribution-NonCommercial ShareAlike 4.0 International (CC BY-NC-SA 4.0).",
+    "description": "The footer copyright"
+  }
+}

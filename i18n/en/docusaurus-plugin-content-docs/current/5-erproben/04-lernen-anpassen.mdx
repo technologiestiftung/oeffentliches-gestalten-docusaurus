@@ -1,0 +1,77 @@
+---
+sidebar_label: "Learn and adapt"
+sidebar_position: 5
+sidebar_class_name: "stage stage-4"
+image: "/img/social-test.png"
+---
+
+import { MethodSummary } from "@site/src/components/MethodSummary";
+import * as AnalyzeTest from "@site/src/assets/methods/en/analyze-test.md";
+import { MethodCard } from "@site/src/components/MethodCard";
+import { Link } from "@site/src/components/Link";
+import EditIcon from "@site/static/img/icons/edit.svg";
+
+# Learn and adapt
+
+## Learn from the test results
+
+The test situation threw up a wide range of different impressions. We documented the tests in full. This means that sufficient data is available: this now needs to be analyzed so as to incorporate the findings into advancing the core of our solution.
+
+### Reflect on the test
+
+Similar to the interview analysis, the analysis of our test subjects’ feedback requires a mental framework. By sorting and condensing the observations and original quotes, patterns emerge that allow us to better understand what minor adjustments or major changes our solution needs.
+
+### Take the solution to the next level
+
+The analysis of test results is a collective thought process undertaken by everyone on our team. This is not about defending the prototype as developed but about drawing systematic conclusions. From these it will be possible to derive the next steps and concrete measures to improve the solution. The [Analyze Test](#analyze-test) template makes it easy to structure test outcomes.
+
+Once we have identified what the test subjects liked most about our idea, we make sure this knowledge is prioritized and reinforced in the further development of our solution.
+
+### Failure is part and parcel of success
+
+In addition to positive feedback, we’re particularly interested to know what didn’t work or what met with resistance. We questioned these aspects in the test situation to gain a better understanding of why someone didn’t like something. In conversation with the test subjects, we discovered what improvements they would like to see and how they would approach further development. We take these suggestions on board with a sense of curiosity and make sure they’re integrated in the next development stage so as to help us improve the prototype in this way.
+
+### Creative destruction
+
+We get our creative juices flowing again so as to be able to master this potentially sobering task with a sense of curiosity and joy. Before or during the analysis, warm-ups are a great way of lifting our mood. Working in Yes-And mode or a round of [Creative Aikido](/en/buch/entwerfen/viele-ideen-entwickeln#creative-cartwheel) are ways of providing more light-hearted support as we come to draw conclusions or plan the next steps.
+
+## Analyze Test
+
+<MethodSummary
+  title={AnalyzeTest.frontMatter.title}
+  time={AnalyzeTest.frontMatter.time}
+  attributes={AnalyzeTest.frontMatter.attributes}
+  footer={AnalyzeTest.frontMatter.note}
+>
+  <AnalyzeTest.default />
+</MethodSummary>
+
+<MethodCard
+  title={AnalyzeTest.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[AnalyzeTest.frontMatter.time]}
+  imageUrl={"/img/05_hero.svg"}
+  className="mt-5"
+  footer={
+    <Link
+      className="text-magenta-500 underline"
+      href={"pathname:///arbeitsblatt/05_analyze-test.pdf"}
+      icon={<EditIcon className="w-3 h-3 text-inherit" />}
+    >
+      PDF template
+    </Link>
+  }
+/>
+
+### Procedure
+
+1. Transfer template into a large format and have material ready. Envision test situation once again. Use documentation from the test run for this purpose.
+
+2. <b>WHAT?</b> Working in silence, use stimulus questions in Field A to reflect on the test. Note down the main aspects on sticky notes (2 min). Each person presents what they wrote down and places the slips in the relevant section in Field A (1 min per person). Working together, look for similarities and place sticky notes in Field A accordingly (5 min).
+
+3. <b>SO WHAT?</b> Look at patterns and consider for yourself what might be derived from these. Use stimulus questions in Field B; this might involve taking leave of aspects you’d grown to like. Note down the main aspects on sticky notes (2 min). Each person presents what they wrote down and places the slips of paper in the appropriate area
+of the matrix in Field B (2 min per person). Once all the slips are in place, group similar aspects in the inner part of the fields.
+
+4. <b>NOW WHAT?</b> Look at the patterns and consider for yourself what this means moving forward. Use stimulus questions in Field C. Each person presents what they wrote down and places the slips in the appropriate section in Field C (2 min per person).
+
+5. Document all the outcomes and keep them in the [MVP Canvas](/buch/erproben/nutzen-validieren#mvp-canvas) for further processing.

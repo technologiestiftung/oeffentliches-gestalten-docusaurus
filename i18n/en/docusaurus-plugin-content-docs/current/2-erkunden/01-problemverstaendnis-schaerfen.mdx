@@ -1,0 +1,59 @@
+---
+sidebar_label: "Refine how the problem is understood"
+sidebar_position: 2
+sidebar_class_name: "stage stage-1"
+image: "/img/social-explore.png"
+---
+
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as Baumanalyse from '@site/src/assets/methods/en/tree-analysis.md'
+import { MethodCard } from '@site/src/components/MethodCard';
+import { Link } from '@site/src/components/Link';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { Hint } from '@site/src/components/Hint';
+
+# Refine how the problem is understood
+
+## Consider the milieu
+
+When problems are dealt with, the consequences are not necessarily always positive. Friction often arises whenever organizational routines are altered. In order to identify such patterns early on, the exploration phase begins with an attempt to gain a better understanding of the challenge to be addressed. The basis for this is the [Development Plan](/en/buch/vorbereiten/unternehmung-beginnen#development-plan) from the previous chapter. Here, the general situation was provisionally recorded and described, with details of which problems are to be remedied, who might benefit from a solution and which resources are necessary in addressing the situation as a team.
+
+These initial descriptions initially contain no more than what is obvious. It’s like when we first look at a tree: we rarely focus immediately on the new leaves high up in the canopy or the roots underground that are so essential. Using the [Tree Analysis](#tree-analysis) method, we look at the challenge in a similar way so as to identify the causes and effects of the problem we want to solve.
+
+<img src="/img/02_das_umfeld_betrachten.svg" className="w-64 mx-auto aspect-square" aria-hidden />
+
+## Tree Analysis
+
+<MethodSummary
+  title={Baumanalyse.frontMatter.title}
+  time={Baumanalyse.frontMatter.time}
+  attributes={Baumanalyse.frontMatter.attributes}
+  footer={Baumanalyse.frontMatter.note}
+>
+  <Baumanalyse.default />
+</MethodSummary>
+
+<MethodCard
+  title={Baumanalyse.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[Baumanalyse.frontMatter.time]}
+  imageUrl={"/img/02_hero.svg"}
+  className="mt-5"
+  footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/02_tree-analysis.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF template</Link>}
+/>
+
+### Procedure
+
+1. Transfer tree scheme onto a large sheet of paper. All team members have sticky notes and markers to hand.
+
+2. Enter **central problem** in the middle. The center represents the trunk, which is the starting point from which to explore the problem.
+
+3. In order to determine **causes** of the problem, ask several times: “What is the deeper cause of a cause?”. Write down all aspects and, in dialog with each other, place them in logical order below the central problem. This is where the causes of the problem are collected.
+
+4. In order to determine the **effects** of the problem, ask several times: “Which effect triggers which other effect?”. Write down all aspects and place them up above the central problem in logical order. This is where the symptoms of the problem are collected.
+
+5. Consider all aspects in the root system or tree canopy as a whole. What is relevant to tackling the problem? What causes or effects are to be specifically addressed? Highlight the most important points.
+
+6. Clearly document the focus areas that have emerged. Take a detailed look at the area with the most highlighting.
+
+<Hint><b>Note:</b> Other important issues will often arise in the follow-up. Additions are useful.</Hint>

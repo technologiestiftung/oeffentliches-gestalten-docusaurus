@@ -1,0 +1,67 @@
+---
+sidebar_label: 'Question assumptions'
+sidebar_position: 5
+sidebar_class_name: "stage stage-4"
+image: "/img/social-explore.png"
+---
+
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as AnnahmenDreieck from '@site/src/assets/methods/en/assumptions-triangle.md'
+import { MethodCard } from '@site/src/components/MethodCard';
+import { Link } from '@site/src/components/Link';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { Hint } from '@site/src/components/Hint';
+
+# Question assumptions
+
+## Question your own assumptions
+
+Looking into existing knowledge sources or involving experts can sometimes be a sobering experience. We will often ask ourselves: with so much knowledge available, what else can our venture contribute? The answer is: quite a lot! After all, this is not just about acquiring knowledge: the real point of the exercise is to use this knowledge to design solutions that improve people’s lives.
+
+### Challenge bias
+
+In doing so and to avoid creating a solution that only reflects our own ideas and aspirations rather than those of the people who are actually impacted, we need to understand and challenge our own assumptions.
+
+To this end, we’ll soon be in contact with the key actors. Meanwhile, in preparation for the next step, we’re now going to differentiate our most important insights one last time. For this purpose we’ll use the following [Assumptions Triangle](#assumptions-triangle) to distinguish actual facts from our personal inclinations and suppositions.
+
+This subdivision clearly demonstrates the perspectives from which we view the world. The precise formulation of our assumptions allows us to test the underlying hypotheses based on talking to or observing others.
+
+<img src="/img/02_eigene_annahmen_in_frage_stellen.svg" className="w-64 mx-auto aspect-square" aria-hidden />
+
+## Assumptions Triangle
+
+<MethodSummary
+  title={AnnahmenDreieck.frontMatter.title}
+  time={AnnahmenDreieck.frontMatter.time}
+  attributes={AnnahmenDreieck.frontMatter.attributes}
+  footer={AnnahmenDreieck.frontMatter.note}
+>
+  <AnnahmenDreieck.default />
+</MethodSummary>
+
+<MethodCard
+  title={AnnahmenDreieck.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[AnnahmenDreieck.frontMatter.time]}
+  imageUrl={"/img/02_hero.svg"}
+  className="mt-5"
+  footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/02_assumptions-triangle.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF template</Link>}
+/>
+
+### Procedure
+
+1. Transfer triangle to a large sheet of paper or movable wall panel.
+
+2. Enter topic/problem in the middle. What are the sub-areas of the problem under consideration? Use material from the [Development Plan](/en/buch/vorbereiten/unternehmung-beginnen#development-plan), the [Tree Analysis](/en/buch/erkunden/problemverstaendnis-schaerfen#tree-analysis) and the [Knowledge Atlas](/en/buch/erkunden/blinde-flecken-aufdecken#knowledge-atlas).
+
+3. Place existing facts on the left-hand side of the triangle and organize them thematically as appropriate. Use **Field A of the Knowledge Atlas** for inspiration.
+
+4. Discuss bias. This might include anecdotal evidence, individual beliefs, or anchor information that has shaped the development of all further thinking on the topic. Write down one aspect per sticky note and place it on the right-hand side of the triangle. Use **Field B of the Knowledge Atlas** for inspiration.
+
+5. Identify assumptions. Use **Field C** and **D of the Knowledge Atlas** as a starting point and focus on the sub-areas of the problem. Discuss ideas, write them down, then thematically organize and condense them. Focus on three relevant assumptions to be explored in dialog with key actors.
+
+6. Document the interim outcomes that have emerged. Formulate the most important assumptions in concrete terms as complete sentences. The [Interview Guide](/en/buch/erkennen/gespraechsbasis-erstellen#interview-guide) will be created in _Phase 3_.
+
+<Hint>
+  <b>Note:</b> Other important issues will often arise in the follow-up. Additions are useful.
+</Hint>

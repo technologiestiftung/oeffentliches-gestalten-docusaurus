@@ -1,0 +1,68 @@
+---
+sidebar_label: 'Connect systems and actors'
+sidebar_position: 3
+sidebar_class_name: "stage stage-2"
+image: "/img/social-explore.png"
+---
+
+import { MethodSummary } from '@site/src/components/MethodSummary';
+import * as AkteureKartieren from '@site/src/assets/methods/en/map-out-actors.md'
+import { MethodCard } from '@site/src/components/MethodCard';
+import { Link } from '@site/src/components/Link';
+import EditIcon from '@site/static/img/icons/edit.svg';
+import { Hint } from '@site/src/components/Hint';
+
+# Connect systems and actors
+
+## Identify key actors
+
+Based on a better understanding of the causes and effects of our challenge, we have set a focus for further development by means of the [Tree Analysis](/en/buch/erkunden/problemverstaendnis-schaerfen#tree-analysis). This can mean that our attention is no longer focused on the original problem: it may now shift toward the roots, for example, as we take a closer look at deeper causes.
+
+### Bring together what belongs together
+
+Why are things the way they are? What can we do to make them different? The links between tangible events and the individuals actively involved in them are very important – even in the age of the digital transformation. For this reason, our next focus is on the people who are linked to the effects and causes we have identified. At this point, we make an initial distinction between two groups of actors:
+
+- those **impacted** by the effects
+- those **responsible** for the causes
+
+Depending on the problem at hand, these two groups can be referred to as users, citizens, employees or service providers, for example – but they don’t have to be.
+
+We can use the insights gained from the **Tree Analysis** to identify initial actors (see figure). The players mapped out in the preparation phase can be used here, too. 
+
+<img src="/img/02_tree_diagram_en.svg" className="w-full mx-auto aspect-square" aria-hidden />
+
+Which of the individuals mentioned in the latter belong to one of the two groups of actors? After making a note of initial people (or groups), we condense our understanding of these actors and the relationships between them using the _Map Out Actors_ method.
+
+## Map Out Actors
+
+<MethodSummary
+  title={AkteureKartieren.frontMatter.title}
+  time={AkteureKartieren.frontMatter.time}
+  attributes={AkteureKartieren.frontMatter.attributes}
+  footer={AkteureKartieren.frontMatter.note}
+>
+  <AkteureKartieren.default />
+</MethodSummary>
+
+<MethodCard
+  title={AkteureKartieren.frontMatter.title}
+  surtitle="Work sheet"
+  attributes={[AkteureKartieren.frontMatter.time]}
+  imageUrl={"/img/02_hero.svg"}
+  className="mt-5"
+  footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/02_map-out-actors.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF template</Link>}
+/>
+
+### Procedure
+
+1. Assign actors or groups of actors to the causes and effects shown in the [Tree Analysis](/en/buch/erkunden/problemverstaendnis-schaerfen#tree-analysis). Who is impacted by each individual effect? Who is responsible for the causes? Inspiration here can also come from the [Map Out Players](/en/buch/vorbereiten/beteiligte-identifizieren-analysieren#map-out-players) activity in _Phase 1_.
+
+2. Transfer the scheme of this template to a large sheet of paper. Enter the central problem above. Include notes from Step **1** in the following steps.
+
+3. Identify the impacted stakeholders in the organization or society. Which people or target groups are impacted by the problem inside and outside the organization? Write down one actor or group per sticky note. The more relevant the problem and its impact on the actor, the closer the sticky note moves to the center.
+
+4. Locate responsible actors in the organization and society. Which persons or units inside and outside the organization are responsible for eliminating the problem or are responsible for its causes?
+
+5. Key actors are collected at the center. Consider which of these individuals should be contacted representing each actor group to be interviewed about the topic in Phase 3.
+
+6. Finally, describe the relationship between the key actors at the center in more detail. To do this, use the [Actor Relationships](/arbeitsblatt/02_actor-relationships.pdf) template.
