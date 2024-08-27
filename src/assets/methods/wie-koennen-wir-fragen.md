@@ -10,7 +10,7 @@ attributes:
     content: "Moderation, Dokumentation, Zeitmanagement"
   - label: "Hinweis"
     content: "Nachvollziehbarkeit herstellen, indem aufgezeigt wird, auf welchen Originaldaten die Fragen basieren."
-note: "„Wie können wir…“-Fragen können als lösungsorientierte Denkhaltung verstanden werden. Dieser Satzanfang ermöglicht es, Herausforderungen konstruktiv zu benennen und mit dem Fokus auf die Sache zu bearbeiten. Sie werden meist für die Formulierung einer richtungsweisenden Problemhypothese angewandt. Sie können jedoch an unterschiedlichen Stellen im Innovationsprozess zum Einsatz kommen. Beispielsweise als Leitfrage, bevor Kontakt mit Schlüsselakteuren besteht oder auch als Provokation, um besonders verrückte Ideen zu entwickeln."
+note: "**WKW-Fragen** zu stellen heißt, eine lösungsorientierte Denkhaltung anzunehmen. Diese Frageform ermöglicht es, Herausforderungen konstruktiv zu benennen und fokussiert zu bearbeiten. Sie werden meist für die Formulierung einer richtungsweisenden Problemhypothese angewandt. Sie können jedoch an unterschiedlichsten Stellen zum Einsatz kommen, etwa als Leitfrage für ein Meeting, als inspirierende Frage in der Kontaktaufnahme mit anderen Akteuren oder auch als Provokation, um besonders außergewöhnliche Ideen zu entwickeln."
 ---
 
 ### Was und wofür?
@@ -19,4 +19,4 @@ _„Wie können wir ...“-Fragen_ bündeln gewonnene Erkenntnisse, indem erstre
 
 ### Mehrwert
 
-**WKW-Fragen** stärken die individuelle und kollektive Problemlösungskompetenz. Ihr herausfordernder Charakter regt die Entwicklung von vielzähligen Ideen an, die ein gemeinsames Ziel anvisieren und weniger offensichtlich sind.
+**WKW-Fragen** ermöglichen einen gedanklichen Zugang für Veränderungspotenziale und stärken die individuelle und kollektive Problemlösungskompetenz. Ihr herausfordernder Charakter regt die Entwicklung von weniger offensichtlichen Ideen an, die ein gemein- sames Ziel anvisieren.

@@ -1,6 +1,6 @@
 ---
 title: "Gesprächsleitfaden"
-time: "30 – 90 Minuten"
+time: "30 – 45 Minuten"
 attributes:
   - label: "Niveau"
     content: "Mittel - Hoch"
@@ -9,7 +9,8 @@ attributes:
   - label: "Rollen"
     content: "Moderation, Dokumentation, Zeitmanagement"
   - label: "Anregung"
-    content: "Der Leitfaden unterstützt ein erkundendes Vorgehen, das auch im Arbeitsalltag ausprobiert oder für virtuelle Gespräche genutzt werden kann"
+    content: "Empathie - andere Perspektiven sehen und einnehmen wollen
+    Kreativität gewohnte Umgebungen verlassen und sich neugierig auf die Suche nach Unbekanntem begeben."
 note: "Die Qualität der Beziehung, die vor und im Gespräch aufgebaut wird, bestimmt die Tiefe der Gesprächsdaten maßgeblich. Das unterstützt der Gesprächsleitfaden, indem er neben der Erhebung von Daten, vor allem die Interaktion mit den Gesprächspartner:innen vorbereitet."
 ---
 
