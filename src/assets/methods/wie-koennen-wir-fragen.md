@@ -10,8 +10,7 @@ attributes:
     content: "Moderation, Dokumentation, Zeitmanagement"
   - label: "Hinweis"
     content: "Nachvollziehbarkeit herstellen, indem aufgezeigt wird, auf welchen Originaldaten die Fragen basieren."
-note: WKW-Fragen "zu stellen heißt, eine lösungsorientierte Denkhaltung anzunehmen. Diese Frageform ermöglicht es, Herausforderungen konstruktiv zu benennen und fokussiert zu bearbeiten. Sie werden meist für die Formulierung einer richtungsweisenden Problemhypothese angewandt. Sie können jedoch an unterschiedlichsten Stellen zum Einsatz kommen, etwa als Leitfrage für ein Meeting, als inspirierende Frage
-in der Kontaktaufnahme mit anderen Akteuren oder auch als Provokation, um besonders außergewöhnliche Ideen zu entwickeln."
+note: "**WKW-Fragen** zu stellen heißt, eine lösungsorientierte Denkhaltung anzunehmen. Diese Frageform ermöglicht es, Herausforderungen konstruktiv zu benennen und fokussiert zu bearbeiten. Sie werden meist für die Formulierung einer richtungsweisenden Problemhypothese angewandt. Sie können jedoch an unterschiedlichsten Stellen zum Einsatz kommen, etwa als Leitfrage für ein Meeting, als inspirierende Frage in der Kontaktaufnahme mit anderen Akteuren oder auch als Provokation, um besonders außergewöhnliche Ideen zu entwickeln."
 ---
 
 ### Was und wofür?

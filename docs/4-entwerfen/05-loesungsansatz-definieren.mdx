@@ -6,7 +6,7 @@ image: "/img/social-entwerfen.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as Ideenserviette from "@site/src/assets/methods/ideenserviette.md";
+import * as Ideenskizze from "@site/src/assets/methods/Ideenskizze.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -27,35 +27,36 @@ Die kritische Vereinfachung von Informationen ist eine Fähigkeit, die über den
   src="/img/04_loesungsansatz.svg"
   className="w-64 mx-auto aspect-square"
   aria-hidden
+	alt={"Illustration eines Lösungsansatzes"}
 />
 
 ## Ideenskizze
 
-<!-- linke Seitenspalte -->
+<MethodSummary
+	title={Ideenskizze.frontMatter.title}
+	time={Ideenskizze.frontMatter.time}
+	attributes={Ideenskizze.frontMatter.attributes}
+	footer={Ideenskizze.frontMatter.note}
+>
+	<Ideenskizze.default />
+</MethodSummary>
 
-**Zeitrahmen**\
-30 - 120 Minuten
-
-**Niveau**\
-Einfach - Mittel
-
-**Materialien**\
-Arbeitsvorlage Ideenskizze,\
-Stifte,\
-Klebezettel
-
-**Rollen**\
-Moderation,\
-Dokumentation,\
-Zeitmanagement
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-Mit der **Ideenskizze** kann auf die zentralen Elemente einer Idee eingegangen werden, die die Bedürfnisse und Erwartungen der betroffenen Zielgruppen erfüllen. Die Elemente, wie zum Beispiel Funktionen, Features, Bilder und Textblöcke, werden durch Kurzbeschreibungen greifbar und einfacher kommuni- zierbar gemacht.
-
-**Mehrwert**\
-Ziel ist es, die Ergebnisse aus einer intensiven Arbeitsphase zusammenzufassen und eine übersichtliche Darstellung der zentralen Elemente einer Idee zu erstellen, einschließlich der Herausforderung, des Lösungsansatzes und des Mehrwerts für die jeweilige Akteur:innengruppe.
+<MethodCard
+	title={Ideenskizze.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Ideenskizze.frontMatter.time]}
+	imageUrl={"/img/04_hero.svg"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/04_ideenskizze.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ### Vorgehen
 

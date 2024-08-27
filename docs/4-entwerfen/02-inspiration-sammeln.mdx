@@ -6,8 +6,8 @@ image: "/img/social-entwerfen.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as Inspirationsdatenbank from "@site/src/assets/methods/inspirationsdatenbank.md";
 import * as Innovationsreise from "@site/src/assets/methods/innovationsreise.md";
+import * as Inspirationsdatenbank from "@site/src/assets/methods/inspirationsdatenbank.md";
 import * as Werteturm from "@site/src/assets/methods/werteturm.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
@@ -34,29 +34,31 @@ Wird ein neues Handlungsumfeld erfahren, kann die Wirkung eines bestimmten Lösu
 
 ## Inspirationsdatenbank
 
-<!-- linke Seitenspalte -->
+<MethodSummary
+	title={Inspirationsdatenbank.frontMatter.title}
+	time={Inspirationsdatenbank.frontMatter.time}
+	attributes={Inspirationsdatenbank.frontMatter.attributes}
+	footer={Inspirationsdatenbank.frontMatter.note}
+>
+	<Inspirationsdatenbank.default />
+</MethodSummary>
 
-**Zeitrahmen**\
-30 - 180 Minuten
-
-**Niveau**\
-Einfach - Mittel
-
-**Materialien**\
-Fotos, Skizzen, Klebezettel, Stifte
-
-**Rollen**\
-Moderation\
-Dokumentation,\
-Zeitmanagement\
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-Referenzmaterialien sind eine bewährte Methode, um Ideen zu sammeln und Inspirationen zu finden. Insbesondere beim Brainstorming können sie als Grundlage für eigene Ideen und Konzepte dienen.
-
-**Mehrwert**\
-Ziel ist es, einen systematischen Datenpool zu schaffen, um inspirierende Beispiele zu organisieren und durch Kategorien vergleichbar zu machen.
+<MethodCard
+	title={Inspirationsdatenbank.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Inspirationsdatenbank.frontMatter.time]}
+	imageUrl={"/img/04_hero.svg"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/04_inspirationsdatenbank.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ### Vorgehen
 

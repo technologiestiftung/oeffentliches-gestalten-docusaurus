@@ -7,10 +7,10 @@ image: "/img/social-erkunden.png"
 
 import { MethodSummary } from '@site/src/components/MethodSummary';
 import * as AkteureKartieren from '@site/src/assets/methods/akteure-kartieren.md'
+import * as TransformativeAkteursanalyse from '@site/src/assets/methods/transformative-akteursanalyse.md'
 import { MethodCard } from '@site/src/components/MethodCard';
 import { Link } from '@site/src/components/Link';
 import EditIcon from '@site/static/img/icons/edit.svg';
-import { Hint } from '@site/src/components/Hint';
 
 # System & Akteure verbinden
 
@@ -29,7 +29,7 @@ Je nach Problemstellung können betroffene oder verantwortliche Akteure als Nutz
 
 Wir nutzen die Erkenntnisse aus der **Baumanalyse**, um erste Akteure zu identifizieren (siehe Abbildung). Zusätzlich können die kartierten Mitspieler:innen aus der *Vorbereitungsphase* genutzt werden.
 
-<img src="/img/02_tree_diagram.svg" className="w-full mx-auto aspect-square" aria-hidden />
+<img src="/img/02_tree_diagram.svg" className="w-full mx-auto aspect-square" aria-hidden alt={"Diagramm der Baumanalyse"} />
 
 Welche der dort genannten Personen gehören zu einer der beiden Akteursgruppen? Nachdem wir erste Personen(gruppen) notiert haben, verdichten wir unser Verständnis über diese Akteure und deren Beziehungen mit der Methode _Akteure kartieren_.
 
@@ -70,33 +70,23 @@ für dessen Ursachen verantwortlich?
 
 ## Transformative Akteursanalyse
 
-<!-- linke Seitenspalte -->
+<MethodSummary
+	title={TransformativeAkteursanalyse.frontMatter.title}
+	time={TransformativeAkteursanalyse.frontMatter.time}
+	attributes={TransformativeAkteursanalyse.frontMatter.attributes}
+	footer={TransformativeAkteursanalyse.frontMatter.note}
+>
+	<TransformativeAkteursanalyse.default />
+</MethodSummary>
 
-**Materialien**\
-Stifte, Klebezettel, ein großes Stück Papier z.B. Flipchart oder Rückseite eines Posters, Vorlage
-
-**Zeitrahmen**\
-30 – 50 Minuten
-
-**Rollen**\
-Moderation\
-Dokumentation\
-Zeitmanagement
-
-**Basishaltung**\
-Selbstreflektion - realistische Erwar- tungen entwickeln, ob und wie intensiv Transformationen beeinflusst werden können Empathie - andere Perspektiven sehen und einnehmen wollen
-
-<!-- text in der mitte -->
-
-**Was und wofür?**\
-Gesellschaftliche Transformationsprozesse haben zum Ziel, bestehende Systeme nicht nur zu verbessern, sondern maßgeblich zu verändern. Menschen haben unterschiedliche Rollen, Betroffenheiten und Inter- essen in diesen tiefgreifenden Wandelprozesse.
-
-**Mehrwert**\
-Die Unterscheidung von Regime-, Nischenakteur und Change Agents verdeutlicht den Einfluss der jeweilige Person oder Personengruppe auf die transformative Entwicklung. Basierend darauf können deren jeweilige Motive und Dilemmata einschätzen werden, um bessere menschzentrierte Entscheidungen im Bezug auf gesellschaftliche Transformationen zu treffen.
-
-<!-- text unten klein -->
-
-Akteurslandkarten sind ein Basiswerkzeug partizipativer Prozesse. Sie stellen einen zentralen Ausgangspunkt für die Beteiligung unterschiedlicher Perspektiven dar, um legitime Entscheidungen und wirksame Maßnahmen umzusetzen. Die Kartierung ist immer als Momentaufnahme zu verstehen, da sich die Konstellation der Akteure stetig verändert.
+<MethodCard
+	title={TransformativeAkteursanalyse.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[TransformativeAkteursanalyse.frontMatter.time]}
+	imageUrl={"/img/01_hero.svg"}
+	className="mt-5"
+	footer={<Link className="text-magenta-500 underline" href={'pathname:///arbeitsblatt/02-transformative-akteursanalyse.pdf'} icon={<EditIcon className="w-3 h-3 text-inherit" />}>PDF-Vorlage</Link>}
+/>
 
 ### Vorgehen
 
