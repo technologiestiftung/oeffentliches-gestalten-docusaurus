@@ -77,10 +77,12 @@ const PHASES: PhasesContentType[] = [
       message: "Innovationen begleiten",
       id: "phases.5.subtitle",
     }),
-    href: translate({
-      message: "/buch/navigieren/",
-      id: "phases.5.link",
-    }),
+    href: '#',
+    // TODO: Add link once the chapter is ready
+    // href: translate({
+    //   message: "/buch/navigieren/",
+    //   id: "phases.5.link",
+    // }),
   },
 ];
 
