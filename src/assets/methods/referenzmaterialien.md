@@ -1,5 +1,5 @@
 ---
-title: "Inspirationsdatenbank"
+title: "Referenzmaterialien"
 time: "30 – 180 Minuten"
 attributes:
   - label: "Niveau"
