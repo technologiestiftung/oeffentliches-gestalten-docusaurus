@@ -1,5 +1,5 @@
 ---
-title: "Archetypen-Profil"
+title: "Archetypen-Profile"
 time: "30 – 180 Minuten"
 attributes:
   - label: "Niveau"

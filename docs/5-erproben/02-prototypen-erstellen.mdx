@@ -7,7 +7,7 @@ image: "/img/social-erproben.png"
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
 import * as KonzeptPrototypen from "@site/src/assets/methods/konzept-prototypen.md";
-import * as ArchetypenProfil from "@site/src/assets/methods/archetypen-profil.md";
+import * as ArchetypenProfile from "@site/src/assets/methods/archetypen-profile.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -42,9 +42,9 @@ Ausgestattet mit einer Menge Wissen, erstellen wir einen [Konzept-Prototyp](#kon
 
 <Checkbox
   id="niemals-fertig"
-  label={
-    "**Konzept-Prototypen** sind zweckmäßig und niemals fertig – das darf und soll den Entwürfen angesehen werden."
-  }
+	label={
+	<><b>Konzept-Prototypen</b> sind zweckmäßig und niemals fertig – das darf und soll den Entwürfen angesehen werden</>
+	}
 />
 
 <Checkbox
@@ -77,25 +77,25 @@ Ausgestattet mit einer Menge Wissen, erstellen wir einen [Konzept-Prototyp](#kon
 <Checkbox
   id="erstellen"
   label={
-    "Das Erstellen von **Konzept-Prototypen** sollte Freude bereiten und alle Mitwirkenden aktiv einbeziehen."
+    <>Das Erstellen von <b>Konzept-Prototypen</b> sollte Freude bereiten und alle Mitwirkenden aktiv einbeziehen.</>
   }
 />
 
-## Archetypen-Profil
+## Archetypen-Profile
 
 <MethodSummary
-  title={ArchetypenProfil.frontMatter.title}
-  time={ArchetypenProfil.frontMatter.time}
-  attributes={ArchetypenProfil.frontMatter.attributes}
-  footer={ArchetypenProfil.frontMatter.note}
+  title={ArchetypenProfile.frontMatter.title}
+  time={ArchetypenProfile.frontMatter.time}
+  attributes={ArchetypenProfile.frontMatter.attributes}
+  footer={ArchetypenProfile.frontMatter.note}
 >
-  <ArchetypenProfil.default />
+  <ArchetypenProfile.default />
 </MethodSummary>
 
 <MethodCard
-  title={ArchetypenProfil.frontMatter.title}
+  title={ArchetypenProfile.frontMatter.title}
   surtitle="Arbeitsblatt"
-  attributes={[ArchetypenProfil.frontMatter.time]}
+  attributes={[ArchetypenProfile.frontMatter.time]}
   imageUrl={"/img/05_hero.svg"}
   className="mt-5"
   footer={
