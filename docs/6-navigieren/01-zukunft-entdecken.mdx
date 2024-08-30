@@ -1,12 +1,13 @@
 ---
 sidebar_label: " Zukunft entdecken"
 sidebar_position: 2
-sidebar_class_name: "stage stage-1"
+sidebar_class_name: "stage point-of-vue-1"
 image: "/img/social-erproben.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as TestbasisZusammenstellen from "@site/src/assets/methods/testbasis-zusammenstellen.md";
+import * as WirkungstreppeMitFolgenabschätzung from "@site/src/assets/methods/wirkungstreppe-mit-folgenabschätzung.md";
+import * as KritischeUnsicherheiten from "@site/src/assets/methods/kritische-unsicherheiten.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -26,36 +27,32 @@ Die Betrachtung von kritischen und unsicheren Faktoren regt die Entwicklung von 
 
 ## Wirkungstreppe mit Folgenabschätzung
 
-<!-- linke Seitenspalte -->
-**Zeitrahmen**\
-30 - 45 Minuten
+<MethodSummary
+	title={WirkungstreppeMitFolgenabschätzung.frontMatter.title}
+	time={WirkungstreppeMitFolgenabschätzung.frontMatter.time}
+	attributes={WirkungstreppeMitFolgenabschätzung.frontMatter.attributes}
+	footer={WirkungstreppeMitFolgenabschätzung.frontMatter.note}
+	className="!mt-7"
+>
+	<WirkungstreppeMitFolgenabschätzung.default />
+</MethodSummary>
 
-**Schwierigkeitsgrad**\
-Mittel
-
-**Materialien**\
-MVP-Canvas, Klebezettel, Stifte
-
-**Rollen**\
-Moderation,\
-Dokumentation,\
-Zeitmanagement
-
-**Anregung**\
-Angebote & Maßnahmen in kleinste Handlungs- einheiten unterteilen und im Arbeitsalltag ausprobieren, wie minimale Veränderungen Wirkung zeigen.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-Die **Wirkungstreppe** unterstützt das Denken aus der Zukunft in die Gegenwart. Die langfristigen Wirkungsziele (*Impact*) geben Orientierung, um das Erreichen von mittelfristigen Ergebnissen (*Outcome*) strategisch mit der Umsetzung von geplanten Leistungen und Maßnahmen (*Output*) zu verbinden. Die Funktionsweise eines Vorhabens wird anschaulich abgebildet und in Beziehung zum notwendigen Aufwand (*Input*) gesetzt.
-
-**Mehrwert**\
-Durch die langfristige Projektion in die Zukunft
-lassen sich Abhängigkeiten zwischen der Wirkung
-und dem unmittelbaren Nutzen einer Lösung einfach beschreiben. Das Einbeziehen unbeabsichtigter Konsequenzen beugt dabei der Eindimensionalität vor.
-
-<!-- text unten klein -->
-Wirkungslogiken sind ein bewährtes Werkzeug, um die Qualität und Wirtschaftlichkeit von geplanten Maßnahmen abzuschätzen und zu evaluieren. Dabei sind alle Wirkungsdimensionen von Belang, um die Zusammenhänge zwischen Intervention, Ergebnissen, Wirkungen und Folgen besser nachzuvollziehen.
+<MethodCard
+	title={WirkungstreppeMitFolgenabschätzung.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[WirkungstreppeMitFolgenabschätzung.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_wirkungstreppe-mit-folgenabschaetzung.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ### Vorgehen
 
@@ -74,39 +71,34 @@ pro Feld die Kernaspekte herausarbeiten und notieren.
 
 7. Abschließend überlegen, welche Aktivitäten zum Erreichen der Zielzustände notwendig sind und wie negative Folgen vermindert werden können. Zwischenergebnisse gut dokumentieren und ggf. bei **Kritische Unsicherheiten** weiter verwenden.
 
-<!-- Arbeitsblatt Wirkungstreppe -->
-
 ## Kritische Unsicherheiten
 
-<!-- linke Seitenspalte -->
+<MethodSummary
+	title={KritischeUnsicherheiten.frontMatter.title}
+	time={KritischeUnsicherheiten.frontMatter.time}
+	attributes={KritischeUnsicherheiten.frontMatter.attributes}
+	footer={KritischeUnsicherheiten.frontMatter.note}
+	className="!mt-7"
+>
+	<KritischeUnsicherheiten.default />
+</MethodSummary>
 
-**Zeitrahmen**\
-40 - 90 Minuten
-
-**Schwierigkeitsgrad**\
-Einfach - Mittel
-
-**Materialien**\
-Ggf. Ergebnisse der Wirkungstreppe mit Folgenabschätzung, Klebezettel, Stifte
-
-**Rollen**\
-Moderation,\
-Dokumentation,\
-Zeitmanagement
-
-**Anregung**\
-In bestehenden Abläufen kritische Unsicherheiten identifizieren, um wichtige Prozesse robust abzusichern.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-Durch die Betrachtung von kritischen und unsicheren Faktoren, entsteht ein Spektrum an Szenarien, die für die Umsetzung der Lösung von Bedeutung sind. Um darauf proaktiv reagieren zu können, werden für die unterschiedlichen Szenarien robuste und absichernde Strategien entworfen.
-
-**Mehrwert**\
-Diese Methode fördert das adaptive Denken und fokussiert die Widerstandsfähigkeit gegenüber unvor- hersehbaren Belastungen. Indem Überraschungen früh mitgedacht werden, kann die Reaktionsfähigkeit gesteigert und ein Vertrauen in dezentrale Lösungen gefördert werden.
-
-<!-- text unten klein -->
-Szenarien basieren auf Prognosetechniken, die hauptsächlich in der strategischen Planung in Politik, Wissenschaft und Wirtschaft eingesetzt werden. Ziel ist es, mögliche Entwicklungen der Zukunft zu analysieren und zusammenhängend darzustellen. Diese *Liberating Structure* wurde von H. Lipmanowicz & K. McCandless erfunden und durch J. Ogilvy inspiriert.
+<MethodCard
+	title={KritischeUnsicherheiten.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[KritischeUnsicherheiten.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_kritische-unsicherheiten.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ### Vorgehen
 

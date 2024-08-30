@@ -440,9 +440,6 @@
   "phases.5.link": {
     "message":  "/en/buch/erproben/"
   },
-  "stages.toc.label": {
-    "message": "Stage {stage}"
-  },
   "methodSummary.surtitle": {
     "message": "Method"
   },

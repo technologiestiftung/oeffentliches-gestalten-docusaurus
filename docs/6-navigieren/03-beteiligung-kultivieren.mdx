@@ -1,13 +1,13 @@
 ---
 sidebar_label: "Beteiligung kultivieren"
 sidebar_position: 4
-sidebar_class_name: "stage stage-3"
+sidebar_class_name: "stage point-of-vue-3"
 image: "/img/social-erproben.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-import * as TestverlaufPlanen from "@site/src/assets/methods/testverlauf-planen.md";
-import * as TestDokumentieren from "@site/src/assets/methods/test-dokumentieren.md";
+import * as Kompetenzteams from "@site/src/assets/methods/kompetenzteams.md";
+import * as Beteiligungsoptionen from "@site/src/assets/methods/beteiligungsoptionen.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -29,36 +29,32 @@ Dadurch kann ein Prozess konzipiert werden, der an entscheidenden Punkten betrof
 
 ## Kompetenzteams
 
-<!-- linke Seitenspalte -->
-**Zeitrahmen**\
-40 - 60 Minuten
+<MethodSummary
+	title={Kompetenzteams.frontMatter.title}
+	time={Kompetenzteams.frontMatter.time}
+	attributes={Kompetenzteams.frontMatter.attributes}
+	footer={Kompetenzteams.frontMatter.note}
+	className="!mt-7"
+>
+	<Kompetenzteams.default />
+</MethodSummary>
 
-**Schwierigkeitsgrad**\
-Mittel
-
-**Materialien**\
-Wirkungstreppe mit Folgenabschätzung, MVP-Canvas, Klebezettel, Stifte
-
-**Rollen**\
-Moderation,\
-Dokumentation,\
-Zeitmanagement
-
-**Anregung**\
-Die Personen des Kernteams auf verschiedene Initiativen aufteilen, um das erlangte Methodenwissen systematisch in der Organisation einzubetten.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-
-Mit dieser Methode können größere Innovations- vorhaben in Initiativen unterteilt und die dafür notwendigen Kenntnisse und Fähigkeiten abteilungs- und disziplinübergreifend definiert werden. Initiativen bezeichnen parallel laufende, abgestimmte Maßnahmen mit gemeinsamer Ausrichtung, die durch **Kompetenzteams** eigenverantwortlich bearbeitet werden.
-
-**Mehrwert**\
-Dieses Vorgehen skaliert nicht nur die Lösung, sondern auch eine innovative Denk- und Arbeitsweise. Bestehende Organisationsstrukturen werden respek- tiert, genutzt und bei Bedarf kompetenzorientiert erweitert.
-
-<!-- text unten klein -->
-
-Cross-funktionale Teams sind Experten-Teams mit Mitgliedern aus verschiedenen, sich ergänzenden Disziplinen. Sie haben zum Ziel, ein bestimmtes Thema oder einen Projektabschnitt selbstverantwortlich von Anfang bis Ende zu bearbeiten. In diesem Kontext werden häufig Ansätze wie *Objective Key Results* (OKRs), z.B. in Verbindung mit SCRUM verwendet.
+<MethodCard
+	title={Kompetenzteams.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Kompetenzteams.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_kompetenzteams.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ## Vorgehen
 
@@ -80,37 +76,32 @@ Cross-funktionale Teams sind Experten-Teams mit Mitgliedern aus verschiedenen, s
 
 ## Beteiligungsoptionen
 
-<!-- linke Seitenspalte -->
-**Zeitrahmen**\
-30 - 60 Minuten
+<MethodSummary
+	title={Beteiligungsoptionen.frontMatter.title}
+	time={Beteiligungsoptionen.frontMatter.time}
+	attributes={Beteiligungsoptionen.frontMatter.attributes}
+	footer={Beteiligungsoptionen.frontMatter.note}
+	className="!mt-7"
+>
+	<Beteiligungsoptionen.default />
+</MethodSummary>
 
-**Schwierigkeitsgrad**\
-Mittel - Hoch
-
-**Materialien**\
-Stifte (rot, grün, blau, ...), Klebezettel, Flipcharts
-
-**Rollen**\
-Moderation,\
-Zeitmanagement
-
-**Hinweis**\
-Zu jeder Beteiligung deutlich kommunizieren, wofür sie wichtig ist, woran sich beteiligt wird,
-in welcher Rolle, wie mit den Ergebnissen umgegangen wird und wer weitere Entscheidungen trifft.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-
-Die Übersicht der **Beteiligungsoptionen** öffentlicher Verwaltungen unterstützt die Reflexion und Neukom- bination von gängigen, unüblichen und erwünschten Praktiken. Der Fokus liegt auf der Umsetzung von Lösungen, die z.B. digitale Services, Hilfe für Geflüchtete, Pflegedienste, aber auch Gesetze oder Strategien betreffen können.
-
-**Mehrwert**\
-Diese Methode schärft das Bewusstsein dafür,
-wie Innovationsprozesse und Initiativen mit einer Kombination von **Beteiligungsoptionen** wirkungsvoll gestaltet werden können. Sie ermöglicht, Bekanntes mit Unbekanntem zu verbinden und eine Lösung gemeinsam mit den Betroffenen und Verantwortlichen zu skalieren.
-
-<!-- text unten klein -->
-
-Diese Matrix wurde von S. Junginger entwickelt, um existierende organisationale Gestaltungspraktiken zu erkennen und vorurteilsfrei zu diskutieren. Sie regt an, dass Innovator:innen den bereits vorhandenen Optionen mehr Aufmerksamkeit schenken sollten, um neue Gestaltungsansätze sinnvoll einzubetten.
+<MethodCard
+	title={Beteiligungsoptionen.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Beteiligungsoptionen.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_beteiligungsoptionen.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ## Vorgehen
 
