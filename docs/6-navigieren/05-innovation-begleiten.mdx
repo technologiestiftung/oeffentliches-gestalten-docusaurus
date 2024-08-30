@@ -1,14 +1,13 @@
 ---
 sidebar_label: "Innovation begleiten"
 sidebar_position: 6
-sidebar_class_name: "stage stage-5"
+sidebar_class_name: "stage point-of-vue-5"
 image: "/img/social-erproben.png"
 ---
 
 import { MethodSummary } from "@site/src/components/MethodSummary";
-
-import * as MvpCanvas from "@site/src/assets/methods/mvp-canvas.md";
-
+import * as Zukunftsartikel from "@site/src/assets/methods/zukunftsartikel.md";
+import * as Innovationskompass from "@site/src/assets/methods/innovationskompass.md";
 import { MethodCard } from "@site/src/components/MethodCard";
 import { Link } from "@site/src/components/Link";
 import EditIcon from "@site/static/img/icons/edit.svg";
@@ -31,34 +30,33 @@ Was wäre, wenn wir ab sofort in einer lernenden Organisation arbeiten würden? 
 
 ## Zukunftsartikel
 
-!-- linke Seitenspalte -->
-**Zeitrahmen**\
-30 - 90 Minuten
 
-**Schwierigkeitsgrad**\
-Mittel - Hoch
+<MethodSummary
+	title={Zukunftsartikel.frontMatter.title}
+	time={Zukunftsartikel.frontMatter.time}
+	attributes={Zukunftsartikel.frontMatter.attributes}
+	footer={Zukunftsartikel.frontMatter.note}
+	className="!mt-7"
+>
+	<Zukunftsartikel.default />
+</MethodSummary>
 
-**Materialien**\
-Papier, Stifte
-
-**Rollen**\
-Moderator:in, Zeitmanagement, Kleingruppen à 3 Personen: Reporter:in, Redakteur:in, *Gesprächspartner:in der Zukunft*
-
-**Anregung**\
-Gedankliche Arbeit mit Wunderfrage, z.B. „Was wäre, wenn ...“ abschließen und den Blick für den weiteren Weg schärfen.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-
-Der **Zukunftsartikel** macht es möglich, eine neue Realität gemeinsam zu erkunden und zu beschreiben. Durch das Interview in der zukünftigen Gegenwart wird ein Erkenntnisprozess angestoßen, durch den der Weg zur Umsetzung sichtbar werden kann.
-
-**Mehrwert**\
-Was wäre, wenn wir uns in die Zukunft beamen könnten, in der die Innovation bereits erfolgreich eingeführt ist? Wir würden erfahren, wie sich der Alltag verändert hat. Wir könnten die Wirkung erleben und davon berichten. Welche Meilensteine waren für das Gelingen wirklich wichtig? Welche Aktivitäten und Förder:innen waren entscheidend? Welche Hürden wurden überwunden? Diese Informationen lassen sich in einem Artikel zusammenfassen und erleichtern es Mitgestalter:innen zu inspirieren.
-
-<!-- text unten klein -->
-
-Umfassende Veränderungen rufen häufig Angst hervor. Damit die Lust am Neuen geweckt werden kann, muss das Denken und Führen aus der Zukunft geübt werden. Die *Theory U* des MIT Managementforschers O. Scharmer fördert diese Herangehensweise ganz besonders.
+<MethodCard
+	title={Zukunftsartikel.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Zukunftsartikel.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_zukunftsartikel.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ## Vorgehen
 
@@ -80,37 +78,32 @@ Beteiligte lesen alleine die zur eigenen Rolle gehörende *Regieanweisung*. Roll
 
 ## Innovationskompass
 
-!-- linke Seitenspalte -->
-**Zeitrahmen**\
-10 - 60 Minuten je nach Kontext
+<MethodSummary
+	title={Innovationskompass.frontMatter.title}
+	time={Innovationskompass.frontMatter.time}
+	attributes={Innovationskompass.frontMatter.attributes}
+	footer={Innovationskompass.frontMatter.note}
+	className="!mt-7"
+>
+	<Innovationskompass.default />
+</MethodSummary>
 
-**Schwierigkeitsgrad**\
-Einfach - Mittel 
-
-**Materialien**\
-Stifte, Klebezettel, Flipchart
-
-**Rollen**\
-Moderation,\
-Dokumentation,\
-Zeitmanagement
-
-**Anregung**\
-Vorlage im Kleinformat in der Hosentasche griffbereit haben, um den Kompass zwischendurch anzuwenden und im Alltag schwierige oder festgefahrene Situationen zu meistern.
-
-<!-- text in der Mitte -->
-
-**Was und wofür?**\
-
-Der **Innovationskompass** ist ein Werkzeug, um Veränderungsprozesse im Kleinen und im Großen
-zu navigieren. Die flexible Struktur ermöglicht eine kontextspezifische Anwendung, um je nach Bedarf herauszufinden, was für eine Weiterentwicklung von Bedeutung ist.
-
-**Mehrwert**\
-Durch intuitive Anwendung unterstützt der Kompass das authentische Lernen und selbstorganisierte Arbeiten von Individuen und Teams. Weil er auf den Essenzen verschiedener Innovationsansätze basiert (*SCRUM, Design Thinking, Theory U*), bietet er eine methodisch validierte Grundlage, um eine kollaborative Arbeitskultur bewusst zu gestalten.
-
-<!-- text unten klein -->
-
-Aktuell stellt sich in vielen öffentlichen Verwaltungen die Frage, wie sie sich an stetig verändernde gesellschaftliche Anforderungen anpassen können. Indem personelle, fachliche und koordinierende Führungsverantwortung geteilt und neu organisiert wird, kann eine Arbeitskultur gestärkt werden, die das Potenzial aller Mitarbeiter:innen im System dynamisch nutzt.
+<MethodCard
+	title={Innovationskompass.frontMatter.title}
+	surtitle="Arbeitsblatt"
+	attributes={[Innovationskompass.frontMatter.time]}
+	imageUrl={"/img/06_hero.png"}
+	className="mt-5"
+	footer={
+		<Link
+			className="text-magenta-500 underline"
+			href={"pathname:///arbeitsblatt/06_innovationskompass.pdf"}
+			icon={<EditIcon className="w-3 h-3 text-inherit" />}
+		>
+			PDF-Vorlage
+		</Link>
+	}
+/>
 
 ## Vorgehen
 
