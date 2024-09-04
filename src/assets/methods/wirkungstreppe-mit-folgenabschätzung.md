@@ -1,6 +1,6 @@
 ---
 title: "Wirkungstreppe mit Folgenabschätzung"
-time: "60 – 45 Minuten"
+time: "30 – 45 Minuten"
 attributes:
   - label: "Schwierigkeitsgrad"
     content: "Mittel"

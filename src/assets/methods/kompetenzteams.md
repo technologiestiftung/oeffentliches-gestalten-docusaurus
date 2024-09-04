@@ -1,6 +1,6 @@
 ---
 title: "Kompetenzteams"
-time: "40 - 90 Minuten"
+time: "40 - 60 Minuten"
 attributes:
   - label: "Schwierigkeitsgrad"
     content: "Mittel"

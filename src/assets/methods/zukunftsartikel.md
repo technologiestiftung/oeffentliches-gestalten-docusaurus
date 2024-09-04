@@ -1,6 +1,6 @@
 ---
 title: "Zukunftsartikel"
-time: "30 - 90 Minuten"
+time: "60 - 90 Minuten"
 attributes:
   - label: "Schwierigkeitsgrad"
     content: "Mittel - Hoch"
