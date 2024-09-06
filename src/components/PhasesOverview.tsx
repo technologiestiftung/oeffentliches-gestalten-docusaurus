@@ -71,6 +71,19 @@ const PHASES: PhasesContentType[] = [
     }),
     area: "Lösungsbereich",
   },
+  {
+    title: translate({ message: "Navigieren", id: "phases.6.title" }),
+    subtitle: translate({
+      message: "Innovationen begleiten",
+      id: "phases.5.subtitle",
+    }),
+    href: '#',
+    // TODO: Add link once the chapter is ready
+    // href: translate({
+    //   message: "/buch/navigieren/",
+    //   id: "phases.5.link",
+    // }),
+  },
 ];
 
 interface AreaIndicatorProps {

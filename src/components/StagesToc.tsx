@@ -10,10 +10,11 @@ interface StageType {
 }
 
 interface StagesTocType {
+  stageLabel: string;
   stages: StageType[];
 }
 
-export const StagesToc: FC<StagesTocType> = ({ stages }) => {
+export const StagesToc: FC<StagesTocType> = ({ stageLabel, stages }) => {
   return (
     <div className="grid grid-cols-1 gap-y-12">
       {stages.map((stage, idx) => {
@@ -25,14 +26,7 @@ export const StagesToc: FC<StagesTocType> = ({ stages }) => {
             >
               <div className="md:col-span-2 w-full flex flex-nowrap gap-x-2 items-center">
                 <div className="shrink-0 text-grey-300 italic">
-                  <Translate
-                    id="stages.toc.label"
-                    values={{
-                      stage: idx + 1,
-                    }}
-                  >
-                    {"Etappe {stage}"}
-                  </Translate>
+                  {`${stageLabel} ${idx + 1}`}
                 </div>
                 <hr className="h-px bg-grey-100 w-full !my-0 !border-0 shrink translate-y-0.5" />
               </div>

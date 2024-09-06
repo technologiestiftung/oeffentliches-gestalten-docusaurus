@@ -218,6 +218,16 @@
 :global([lang="en"] .menu__list-item.stage-8 .menu__link:before) { content: 'Stage 8'; }
 :global([lang="en"] .menu__list-item.stage-9 .menu__link:before) { content: 'Stage 9'; }
 
+:global([lang="en"] .menu__list-item.point-of-view-1 .menu__link:before) { content: 'Point of view 1'; }
+:global([lang="en"] .menu__list-item.point-of-view-2 .menu__link:before) { content: 'Point of view 2'; }
+:global([lang="en"] .menu__list-item.point-of-view-3 .menu__link:before) { content: 'Point of view 3'; }
+:global([lang="en"] .menu__list-item.point-of-view-4 .menu__link:before) { content: 'Point of view 4'; }
+:global([lang="en"] .menu__list-item.point-of-view-5 .menu__link:before) { content: 'Point of view 5'; }
+:global([lang="en"] .menu__list-item.point-of-view-6 .menu__link:before) { content: 'Point of view 6'; }
+:global([lang="en"] .menu__list-item.point-of-view-7 .menu__link:before) { content: 'Point of view 7'; }
+:global([lang="en"] .menu__list-item.point-of-view-8 .menu__link:before) { content: 'Point of view 8'; }
+:global([lang="en"] .menu__list-item.point-of-view-9 .menu__link:before) { content: 'Point of view 9'; }
+
 :global([lang="de"] .menu__list-item.stage-1 .menu__link:before) { content: 'Etappe 1'; }
 :global([lang="de"] .menu__list-item.stage-2 .menu__link:before) { content: 'Etappe 2'; }
 :global([lang="de"] .menu__list-item.stage-3 .menu__link:before) { content: 'Etappe 3'; }
@@ -227,3 +237,13 @@
 :global([lang="de"] .menu__list-item.stage-7 .menu__link:before) { content: 'Etappe 7'; }
 :global([lang="de"] .menu__list-item.stage-8 .menu__link:before) { content: 'Etappe 8'; }
 :global([lang="de"] .menu__list-item.stage-9 .menu__link:before) { content: 'Etappe 9'; }
+
+:global([lang="de"] .menu__list-item.point-of-view-1 .menu__link:before) { content: 'Blickpunkt 1'; }
+:global([lang="de"] .menu__list-item.point-of-view-2 .menu__link:before) { content: 'Blickpunkt 2'; }
+:global([lang="de"] .menu__list-item.point-of-view-3 .menu__link:before) { content: 'Blickpunkt 3'; }
+:global([lang="de"] .menu__list-item.point-of-view-4 .menu__link:before) { content: 'Blickpunkt 4'; }
+:global([lang="de"] .menu__list-item.point-of-view-5 .menu__link:before) { content: 'Blickpunkt 5'; }
+:global([lang="de"] .menu__list-item.point-of-view-6 .menu__link:before) { content: 'Blickpunkt 6'; }
+:global([lang="de"] .menu__list-item.point-of-view-7 .menu__link:before) { content: 'Blickpunkt 7'; }
+:global([lang="de"] .menu__list-item.point-of-view-8 .menu__link:before) { content: 'Blickpunkt 8'; }
+:global([lang="de"] .menu__list-item.point-of-view-9 .menu__link:before) { content: 'Blickpunkt 9'; }

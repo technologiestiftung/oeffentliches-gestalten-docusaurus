@@ -59,7 +59,7 @@ export default defineConfig({
     },
   ],
 
-  timeout: 2 * 60 * 1000, // 2 min timeout
+  timeout: 60 * 1000, // 1 min timeout
 
   webServer: {
     port: 3000,
