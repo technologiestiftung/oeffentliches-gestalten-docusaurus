@@ -14,9 +14,12 @@ function screenshotPathname(pathname: string) {
     const url = siteUrl + pathname;
     await page.goto(url);
     await page.addStyleTag({content: stylesheet});
-    page.once('load', async () => {
-      await expect(page).toHaveScreenshot();
-    })
+
+    while (await page.getAttribute('html','data-has-hydrated') !== 'true') {
+      await page.waitForTimeout(50);
+    }
+
+    await expect(page).toHaveScreenshot({ fullPage: true });
   });
 }
 
